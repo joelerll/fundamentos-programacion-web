@@ -1,0 +1,12 @@
+{
+  "name": "fundamentos-programacion-web",
+  "version": "1.0.0",
+  "description": "pagina proyecto desarrollo de aplicaciones web espol",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/joelerll/fundamentos-programacion-web.git",
+    "type": "git"
+  },
+  "author": "Joel Rodriguez <joelerll@gmail.com>",
+  "license": "MIT"
+}
