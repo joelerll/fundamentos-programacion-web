@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Dependencias css-->
+  <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+  <!---->
+  <title>Fundamentos programacion</title>
+</head>
+<body>
+  <h1>Pagina fundamentos, prueba angular {{miNombre}}</h1>
+  <input type="text" ng-model="miNombre">
+  <li><a href="./app/sandbox/sandbox.html">Prueba routing</a></li>
+  <button type="button" class="btn btn-primary">prueba bootsrap</button>
+
+  <!-- Dependencias js -->
+  <script src="./public/js/jquery.js"></script>
+  <script src="./public/js/bootstrap.min.js"></script>
+  <script src="./public/js/angular.min.js" charset="utf-8"></script>
+  <!-- -->
+  <script>
+    var URL = 'https://api.github.com/users/joelerll'
+
+    $.getJSON(URL,function(data) {
+      $('body').append($('<h2/>').text('Prueba api, en jquery  ' + data.bio))
+    })
+  </script>
+</body>
+</html>

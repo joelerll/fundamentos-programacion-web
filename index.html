@@ -1,31 +1,119 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Dependencias css-->
-  <link rel="stylesheet" href="./public/css/bootstrap.min.css">
-  <!---->
-  <title>Fundamentos programacion</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Dependencias css-->
+	<link rel="stylesheet" href="./public/css/bootstrap.min.css">
+	<!---->
+	<title>Fundamentos de programación</title>
+	<style type="text/css">
+		#login{
+			border-radius: 100px;
+			border: solid 1px;
+			width: 50px;
+			height: 50px;
+		}
+		.navbar-default {
+		  background-color: transparent;
+		  border-color: transparent;
+		}
+		@media only screen and (max-width: 766px){
+			.navbar-default {
+		  background-color: white;
+		  border-color: white;
+		}
+		}
+		.navbar-default .navbar-nav > li > a {
+		  color: #001c43;
+		}
+/*
+		#index-body{
+			background-image: url('');
+			background: url(http://blog.espol.edu.ec/arrivade/files/2013/05/IMG-20130530-002324.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+*/
+
+		video#bgvid { 
+		    position: fixed;
+		    top: 50%;
+		    left: 50%;
+		    min-width: 100%;
+		    min-height: 100%;
+		    width: auto;
+		    height: auto;
+		    z-index: -100;
+		    -ms-transform: translateX(-50%) translateY(-50%);
+		    -moz-transform: translateX(-50%) translateY(-50%);
+		    -webkit-transform: translateX(-50%) translateY(-50%);
+		    transform: translateX(-50%) translateY(-50%);
+		    background: url(#) no-repeat;
+		    background-size: cover; 
+		}
+		#frase{
+			color:white;
+			padding: 0px;
+			margin: 0px;
+			font-size: 200%;
+		}
+		.jumbotron{
+			background-color: transparent;
+			position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		}
+		.wrapper {
+		    position: relative;
+		    height: 100vh;
+		}
+	</style>
 </head>
-<body>
-  <h1>Pagina fundamentos, prueba angular {{miNombre}}</h1>
-  <input type="text" ng-model="miNombre">
-  <li><a href="./app/sandbox/sandbox.html">Prueba routing</a></li>
-  <button type="button" class="btn btn-primary">prueba bootsrap</button>
+<body id="index-body">
+		<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+		    <source src="public/media/jamytafy.webm" type="video/webm">
+		    <source src="public/media/jamytafy.mp4" type="video/mp4">
+		</video>
+		<head>
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>    
+			  </div>
+			  <div class="navbar-collapse collapse">
+			    <ul class="nav navbar-nav navbar-left ESPOL-color">
+			        <li><a href="#">ESPOL</a></li>
+			        <li class="ESPOL"><a href="#about">Inicio</a></li>
+				    <li><a href="#contact">Semana a semana</a></li>
+				    <li><a href="#contact">Ayudantías</a></li>
+				    <li><a href="#contact">Sandbox</a></li>
+			    </ul>
+			    <ul class="nav navbar-nav navbar-right">
+			      	<a href="#" class="navbar-brand pull-left"><img id="login" src="http://www.freeiconspng.com/uploads/user-login-icon-14.png"/></a>
+			    </ul>
+			  </div>
+		</nav>
+		</head>
+		<section>
+			<div class="wrapper">
+				<div class="jumbotron">
+					<h1 class="text-center" id="frase">"Si la depuración es el proceso de eliminar errores, entonces la programación debe ser el proceso de introducirlos"-(Edsger Dijkstra)</h1>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer>
 
-  <!-- Dependencias js -->
-  <script src="./public/js/jquery.js"></script>
-  <script src="./public/js/bootstrap.min.js"></script>
-  <script src="./public/js/angular.min.js" charset="utf-8"></script>
-  <!-- -->
-  <script>
-    var URL = 'https://api.github.com/users/joelerll'
-
-    $.getJSON(URL,function(data) {
-      $('body').append($('<h2/>').text('Prueba api, en jquery  ' + data.bio))
-    })
-  </script>
+		<script src="./public/js/jquery.js"></script>
+		<script src="./public/js/bootstrap.min.js"></script>
+	</footer>
 </body>
 </html>
