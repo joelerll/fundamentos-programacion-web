@@ -1,0 +1,53 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  margin: -4;
+  width: 100%;
+}
+
+div.contenido-clase {
+  margin-left: 20px;
+}
+
+.menu-content {
+  padding: 2%;
+  border: solid rgba(5, 6, 6, 0.42) 1px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 750px) {
+    div > i  {
+        class: fa-x1;
+    }
+}
+
+li.active:hover {
+  background-color: rgba(26, 81, 175, 0.69);
+}
+
+div[data-balloon="dispositivas"]::selection {
+  background-color: rgba(26, 81, 175, 0.69);
+}
+
+.clase-contenedor > div.tab-content > div > h3{
+  text-align: center;
+}
+
+h1.titulo-escogida {
+  text-align: center;
+  word-wrap: break-word;
+     -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+     -ms-hyphens: auto;
+     -o-hyphens: auto;
+     hyphens: auto;
+}
+
+@media screen and (max-width: 890px) {
+    h1.titulo-escogida{
+        font-weight: bold;
+        font-size:20px;
+    }
+}

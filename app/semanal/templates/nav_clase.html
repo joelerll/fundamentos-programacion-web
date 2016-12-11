@@ -1,0 +1,62 @@
+<h1 class='titulo-escogida'>{{clase_escogida.id}} {{clase_escogida.descripcion}}</h1>
+
+<ul class="nav nav-pills">
+  <div class="row">
+    <!--
+      <div class="col-xs-3 hvr-underline-from-left menu-content" align="center">
+        <li class="active">
+            <i class="fa fa-chevron-left fa-lg"></i>Previo
+        </li>
+      </div>
+    -->
+    <a data-toggle="pill" href="#diapos">
+      <div data-balloon="dispositivas" data-ballon-length="small" data-balloon-pos="down" class="col-xs-2 menu-content" align="center">
+        <li>
+          <i class="fa fa-file-powerpoint-o fa-lg"></i>
+        </li>
+      </div>
+    </a>
+    <a data-toggle="pill" href="#lectura">
+      <div data-balloon="lectura" data-ballon-length="small" data-balloon-pos="down" class="col-xs-2 menu-content" align="center">
+            <i class="fa fa-book fa-lg"></i>
+      </div>
+    </a>
+    <a data-toggle="pill" href="#taller">
+      <div data-balloon="taller" data-ballon-length="small" data-balloon-pos="down" class="col-xs-2 menu-content" align="center"><i class="fa fa-laptop fa-lg"></i></div>
+    </a>
+    <a data-toggle="pill" href="#practica">
+      <div data-balloon="practica" data-ballon-length="small" data-balloon-pos="down" class="col-xs-2 menu-content" align="center"><i class="fa fa-terminal fa-lg"></i></div>
+    </a>
+    <a data-toggle="pill" href="#ejercicio">
+      <div data-balloon="ejercicio" data-ballon-length="small" data-balloon-pos="down" class="col-xs-2 menu-content" align="center"><i class="fa fa-pencil-square-o fa-lg"></i></div>
+    </a>
+    <a data-toggle="pill" href="#videos">
+      <div data-balloon="videos" data-ballon-length="small" data-balloon-pos="down" class="col-xs-2 menu-content" align="center"><i class="fa fa-film fa-lg"></i></div>
+    </a>
+      <!--
+      <div class="col-xs-3 hvr-underline-from-right menu-content" align="center">Siguiente <i class="fa fa-chevron-right fa-lg"></i></div>-->
+  </div>
+</ul>
+
+<div class="container clase-contenedor">
+  <div class="tab-content">
+    <div id="diapos" class="tab-pane fade">
+      <h3>Diapositivas</h3>
+    </div>
+    <div id="lectura" class="tab-pane fade">
+      <h3>Lectura</h3>
+    </div>
+    <div id="taller" class="tab-pane fade">
+      <h3>Taller</h3>
+    </div>
+    <div id="practica" class="tab-pane fade">
+      <h3>Practica</h3>
+    </div>
+    <div id="ejercicio" class="tab-pane fade">
+      <h3>Ejercicios</h3>
+    </div>
+    <div id="videos" class="tab-pane fade">
+      <h3>Videos</h3>
+    </div>
+  </div>
+</div>

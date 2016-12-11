@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='App'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CSS-->
+  <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/balloon.min.css">
+  <link rel="stylesheet" href="./css/hover-min.css">
+  <link rel="stylesheet" href="./css/contenido.css">
+  <!-- -->
+  <link rel="stylesheet" href="./css/side-bar.css">
+  <link rel="stylesheet" href="./fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <title>Semanal</title>
+</head>
+<body  ng-controller="ClaseTemaController">
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Brand</a>
+	    </div>
+	    <div class="collapse navbar-collapse">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Home</a></li>
+	        <li><a href="#about">About</a></li>
+	        <li><a href="#contact">Contact</a></li>
+	      </ul>
+	    </div><!--/.nav-collapse -->
+	</div><!--/.navbar -->
+
+	<div class="row-offcanvas row-offcanvas-left" ng-controller='ActividadesClasesController'>
+	  <div id="sidebar" class="sidebar-offcanvas">
+	      <div class="col-md-12">
+	        <ul class="nav nav-pills nav-stacked" >
+	          <!--<li class="active"><a href="#">Section</a></li>-->
+            <div class="panel-group">
+              <div class="panel panel-default" ng-repeat='clase in clases'>
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse{{clase.semana}}">Semana {{clase.semana}} </a>
+                  </h4>
+                </div>
+                <div id="collapse{{clase.semana}}" class="panel-collapse collapse">
+                  <li class="list-group item" >
+                    <a href=""  class="list-group-item " id-clase={{clase.clases[0].id}} ng-click="showdiv($event)">Aula: {{clase.clases[0].descripcion}}</a>
+                  </li>
+                  <li class="list-group item" >
+                    <a class="list-group-item" id-clase={{clase.clases[1].id}} ng-click="showdiv($event)"><i class="fa fa-desktop fa-lg"></i> {{clase.clases[1].descripcion}}</a>
+                  </li>
+                </div>
+              </div>
+            </div>
+	        </ul>
+	      </div>
+	  </div>
+
+
+	  <div id="main">
+      <button type="button" class="btn visible-xs" data-toggle="offcanvas"><i class="fa fa-calendar fa-lg"></i></button>
+            <div ng-if=estado class="contenido-clase" ng-include="'./templates/nav_clase.html'" onload="item = clase_escogida"></div>
+<!--
+            <div class="contenido-clase" ng-include="templateURL">
+            </div>
+            <div ng-controller="ctrl">
+      <div>without ng-if the item keeps the last reference as it is hold by the controller scope:</div>
+      <div ng-include="'./templates/my1.html'"
+        onload="item = rightItem">
+      </div>
+      <p ng-if="estado">dfdfsas</p>
+
+              <div ng-controller="ClaseTemaController as ctrl">
+                <contenido-clase hero="ctrl.id_clase"></contenido-clase>
+              </div>
+    -->
+    </div>
+
+	</div><!--/row-offcanvas -->
+  <!-- SCRIPTS -->
+  <script src="../../public/js/angular.min.js" charset="utf-8"></script>
+  <script src="../../public/js/jquery.js" charset="utf-8"></script>
+  <script src="../../public/js/bootstrap.min.js"></script>
+<!---------------------------->
+<script type="text/javascript">
+	$(document).ready(function() {
+	  $('[data-toggle=offcanvas]').click(function() {
+	    $('.row-offcanvas').toggleClass('active');
+	  });
+	});
+</script>
+
+
+  <!-- ANGULAR APPS-->
+  <script src="./app.js" charset="utf-8"></script>
+  <script src="./modules/clases-module.js" charset="utf-8"></script>
+
+</body>
+</html>
