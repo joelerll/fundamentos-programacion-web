@@ -4,7 +4,7 @@ body {
 }
 
 .row {
-  margin: -4;
+  margin: 0;
   width: 100%;
 }
 
@@ -35,7 +35,13 @@ div[data-balloon="dispositivas"]::selection {
   text-align: center;
 }
 
-h1.titulo-escogida {
+
+div.clase-contenedor {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+h3.titulo-escogida {
   text-align: center;
   word-wrap: break-word;
      -webkit-hyphens: auto;
@@ -46,8 +52,96 @@ h1.titulo-escogida {
 }
 
 @media screen and (max-width: 890px) {
-    h1.titulo-escogida{
+    h3.titulo-escogida{
         font-weight: bold;
         font-size:20px;
     }
 }
+
+
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+top: 0;
+left: 0;
+width: 99%;
+height: 60%;
+position: absolute;
+}
+
+.js-video {
+height: 0;
+padding-top: 25px;
+padding-bottom: 67.5%;
+margin-bottom: 10px;
+position: relative;
+overflow: hidden;
+}
+.js-video.widescreen {
+padding-bottom: 56.34%;
+}
+.js-video.vimeo {
+padding-top: 0;
+}
+
+.js-pdf {
+height: 0;
+padding-top: 25px;
+padding-bottom: 67.5%;
+margin-bottom: 10px;
+position: relative;
+overflow: hidden;
+}
+.js-pdf.widescreen {
+padding-bottom: 56.34%;
+}
+.js-pdf.vimeo {
+padding-top: 0;
+}
+
+.js-p {
+height: 0;
+padding-top: 25px;
+padding-bottom: 67.5%;
+margin-bottom: 10px;
+position: relative;
+overflow: hidden;
+}
+.js-p.widescreen {
+padding-bottom: 56.34%;
+}
+.js-p.vimeo {
+padding-top: 0;
+}
+
+iframe, object, embed {
+    max-width: 100%;
+}
+
+.myIframe {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: auto;
+-webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY
+border: solid black 1px;
+}
+.myIframe iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 60%;
+}
+
+div.tab-pane.fade > h4 {
+  text-align: center;
+}
+.nav-pills > li.active > a {
+    background-color:red;
+}
+// This changes the color of the active
+
+.nav-pills>div>a[data-toggle="pill"]:hover {
+    background-color:red;
+}
+// This changes the color of the hovered pill

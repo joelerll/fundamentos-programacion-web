@@ -12,7 +12,7 @@ angular.module('App', []).
       id_clase = $(event.target).attr("id-clase")
       console.log(id_clase);
     }*/
-    $scope.showdiv =  function(id_clase){
+    $scope.showdiv =  function(event){
       id_clase = $(event.target).attr("id-clase")
       $scope.estado = true;
        $http.get('./json/actividades_clase.json')
@@ -46,4 +46,8 @@ angular.module('App', []).
             $scope.rightItem = {color: cl[0].semana};
             $scope.leftItem = {color: cl[1].semana};
           })
-  });
+  }).
+  config(function($interpolateProvider) {
+  $interpolateProvider.startSymbol('{[{');
+  $interpolateProvider.endSymbol('}]}');
+});
