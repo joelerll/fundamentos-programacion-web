@@ -94,3 +94,49 @@
         $("#wrapper").toggleClass("toggled");
     });
     </script>
+
+
+
+
+
+
+
+
+    <div class="container clase-contenedor">
+      <div class="tab-content">
+        <div id="diapos" class="tab-pane fade">
+          <h4>Diapositivas</h4>
+          <div  class="js-pdf [vimeo, widescreen]" id='diapo'>
+            <iframe src={{clase_escogida.data.diapositiva_pdf}} width="500" height="600"></iframe>
+            <script type="text/javascript">
+                console.log({{clase_escogida.data.diapositiva_pdf}})
+            </script>
+          </div>
+        </div>
+        <div id="lectura" class="tab-pane fade">
+          <h4>Lectura</h4>
+          <div class='myIframe'>
+            <iframe width="400" height="400" marginheight="0" marginwidth="0" src={{clase_escogida.data.diapositiva_reveal}} allowFullScreen>
+              <p>{{clase_escogida.data.diapositiva_reveal}}</p>
+            </iframe>
+          </div>
+        </div>
+        <div id="taller" class="tab-pane fade">
+          <h4>Taller</h4>
+        </div>
+        <div id="practica" class="tab-pane fade">
+          <h4>Practica</h4>
+        </div>
+        <div id="ejercicio" class="tab-pane fade">
+          <h4>Ejercicios</h4>
+        </div>
+        <div id="videos" class="tab-pane fade">
+          <h4>Videos</h4>
+          <!--
+          <div class="js-video [vimeo, widescreen]">
+            <iframe width="800" height="315" src="https://www.youtube.com/embed/UF6xeb6Rh0Q"></iframe>
+          </div>
+          <p>https://www.youtube.com/embed/{{clase_escogida.data.video}}</p>
+        </div> -->
+      </div>
+    </div>
