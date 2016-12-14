@@ -8,6 +8,7 @@ body{
 	width: 75%;
 	margin: auto;
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 h2{
@@ -39,4 +40,5 @@ h2{
 .panel-profesor, .panel-ayudante-deberes, .panel-ayudante-clases{
 	display: inline-block;
 	margin-left: 20px;
+	margin-right: 20px;
 }
