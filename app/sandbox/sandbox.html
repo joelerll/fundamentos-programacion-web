@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app='sandboxApp'>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
-
-  <title>Document</title>
+  <title>Sandbox - Ejercicios</title>
 </head>
 <body>
-  <h1>Hello sandbox</h1>
-  <button type='button' class='btn btn-primary'>prueba bootsrap</button>
+  <ejercicios-lista></ejercicios-lista>
 
-  <!-- Dependencias js -->
-  <script src="../../public/js/jquery.js"></script>
-  <script src="../../public/js/bootstrap.min.js"></script>
+  <!-- SCRIPTS -->
   <script src="../../public/js/angular.min.js" charset="utf-8"></script>
+  <script src="../../public/js/jquery.js" charset="utf-8"></script>
+  <script src="../../public/js/bootstrap.min.js"></script>
+  <!---------------------------->
   <!-- -->
-
-  <script type="text/javascript">
-    $('body').append($('<h1/>').text('prueba jquery'))
-  </script>
-
+  <script src="./app.module.js" charset="utf-8"></script>
+  <script src="./ejercicios-lista/ejercicios-lista.module.js" charset="utf-8"></script>
+  <script src="./ejercicios-lista/ejercicios-lista.component.js" charset="utf-8"></script>
+  <!---->
 </body>
 </html>

@@ -1,0 +1,17 @@
+[
+	{
+		"id": "1",
+    "autor": "aavendan",
+		"titulo": "Variables y operadores",
+		"descripcion": "Conocer lo basico de asignacion de variables",
+		"etiquetas": [
+			"variables",
+			"asignacion",
+			"operadores"
+		],
+		"porcentaje_resueltos": "50",
+		"nivel_dificultad": "easy"
+	}, {
+
+  }
+]
