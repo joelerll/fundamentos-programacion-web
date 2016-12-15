@@ -15,7 +15,7 @@ angular.
               }
             })
         })
-        $http.get('../../public/json_files/info.json').then(function(response) {
+        $http.get('../../public/json_files/info_joel.json').then(function(response) {
             response.data.profesores.forEach(function(profesor) {
               profesor.correo.forEach(function(correo) {
                 if(correo == self.ejercicio_data.autor) {
