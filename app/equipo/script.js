@@ -33,7 +33,12 @@ function crearPanel(contenedor, clase, obj){
 	panel = $('<div/>').addClass(clasePanel);
 	panelBody = $('<div/>').addClass('panel-body');
 	var infoAlt = 'imagen ' + clase
-	imgPanel = $('<img/>').addClass('img-responsive center-block').attr({src: 'http://placehold.it/350x150', alt: infoAlt});
+	var imgsrc = obj.img;
+	if(imgsrc===''){
+		imgsrc = 'https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_3.jpg';
+	}
+
+	imgPanel = $('<img/>').addClass('img-responsive center-block').attr({src: imgsrc, alt: infoAlt});
 	pPanel = $('<p/>').text(obj.nombre);
 	panelBody.append(imgPanel, pPanel);
 	panel.append(panelBody);
@@ -45,9 +50,9 @@ function crearPanel(contenedor, clase, obj){
 	//Para editar la informacion que se muestra al abrir el modal
 	panel.click(function(){
 		if(obj.tipo==='grader'){
-			editarModalAyudantes(obj.nombre,'http://placehold.it/350x150','', obj.correo, obj.profesor, obj.paralelo, obj.tipo);
+			editarModalAyudantes(obj.nombre, obj.img,'', obj.correo, obj.profesor, obj.paralelo, obj.tipo);
 		}else if(obj.tipo==='TA'){
-			editarModalAyudantes(obj.nombre,'http://placehold.it/350x150', obj.correo, null, obj.horario, obj.aula, obj.tipo);
+			editarModalAyudantes(obj.nombre, obj.img, obj.correo, null, obj.horario, obj.aula, obj.tipo);
 		}else{
 			editarModalProfesor(obj.nombre, obj.correo, obj.aula, obj.paralelo, obj.dia, obj.hora, obj.img);
 		}

@@ -18,7 +18,8 @@ info = {
         "35",
         "11"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/201419079.jpg"
     },
     {
       "matricula": "201302882",
@@ -37,7 +38,8 @@ info = {
         "2",
         "6"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/201302882.jpg"
     },
     {
       "matricula": "200000000",
@@ -55,7 +57,8 @@ info = {
         "22",
         "25"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/200000000.jpg"
     },
     {
       "matricula": "200000000",
@@ -73,7 +76,8 @@ info = {
         "29",
         "16"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/200000000.jpg"
     },
     {
       "matricula": "201421632",
@@ -91,7 +95,8 @@ info = {
         "10",
         "16"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/201421632.jpg"
     },
     {
       "matricula": "200000000",
@@ -109,7 +114,8 @@ info = {
         "38",
         "12"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/200000000.jpg"
     },
     {
       "matricula": "200000000",
@@ -129,7 +135,8 @@ info = {
         "28",
         "12"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/200000000.jpg"
     },
     {
       "matricula": "201421319",
@@ -149,7 +156,8 @@ info = {
         "26",
         "25"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/201421319.jpg"
     },
     {
       "matricula": "201304684",
@@ -169,7 +177,8 @@ info = {
         "7",
         "8"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/201304684.jpg"	  
     },
     {
       "matricula": "201506161",
@@ -189,7 +198,8 @@ info = {
         "20",
         "14"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/201506161.jpg"
     },
     {
       "matricula": "200000000",
@@ -207,7 +217,8 @@ info = {
         "31",
         "14"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/200000000.jpg"
     },
     {
       "matricula": "201507022",
@@ -226,7 +237,8 @@ info = {
         "23",
         "11"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/201507022.jpg"
     },
     {
       "matricula": "201505935",
@@ -246,7 +258,8 @@ info = {
         "36",
         "13"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/201505935.jpg"
     },
     {
       "matricula": "200000000",
@@ -264,7 +277,8 @@ info = {
         "19",
         "3"
       ],
-      "tipo": "grader"
+      "tipo": "grader",
+	  "img" : "../../public/media/ayudantes/200000000.jpg"
     }
   ],
   "TA": [
@@ -284,7 +298,8 @@ info = {
         "Sala de Ayudantes de FIEC",
         "Sala de Ayudantes de FIEC"
       ],
-      "tipo": "TA"
+      "tipo": "TA",
+	  "img" : "../../public/media/ayudantes/201410264.jpg"
     },
     {
       "matricula": "201302882",
@@ -300,7 +315,8 @@ info = {
         "Sala de Ayudantes de FIEC",
         "Sala de Ayudantes de FIEC"
       ],
-      "tipo": "TA"
+      "tipo": "TA",
+	  "img" : "../../public/media/ayudantes/201302882.jpg"
     },
     {
       "matricula": "201410871",
@@ -316,7 +332,8 @@ info = {
         "24A -  113",
         "\n  Sala de\n  Ayudantes de FIEC"
       ],
-      "tipo": "TA"
+      "tipo": "TA",
+	  "img" : "../../public/media/ayudantes/201410871.jpg"
     },
     {
       "matricula": "201417433",
@@ -332,7 +349,8 @@ info = {
         "24A -  113",
         "Sala de Ayudantes de FIEC"
       ],
-      "tipo": "TA"
+      "tipo": "TA",
+	  "img" : "../../public/media/ayudantes/201417433.jpg"
     },
     {
       "matricula": "201304087",
@@ -350,7 +368,8 @@ info = {
         "Sala de  Ayudantes de FIEC",
         "Sala de Ayudantes de FIEC"
       ],
-      "tipo": "TA"
+      "tipo": "TA",
+	  "img" : "../../public/media/ayudantes/201304087.jpg"
     },
     {
       "matricula": "201304684",
@@ -368,7 +387,8 @@ info = {
         "CIB",
         "CIB"
       ],
-      "tipo": "TA"
+      "tipo": "TA",
+	  "img" : "../../public/media/ayudantes/201304684.jpg"
     },
     {
       "matricula": "201410224",
@@ -384,7 +404,8 @@ info = {
         "24A-204",
         "Sin Asignar"
       ],
-      "tipo": "TA"
+      "tipo": "TA",
+	  "img" : "../../public/media/ayudantes/201410224.jpg"
     },
     {
       "matricula": "200000000",
@@ -400,7 +421,8 @@ info = {
         "A-103",
         "\n  Sala de\n  Ayudantes"
       ],
-      "tipo": "TA"
+      "tipo": "TA",
+	  "img" : "../../public/media/ayudantes/200000000.jpg"
     },
     {
       "matricula": "201421632",
@@ -412,7 +434,8 @@ info = {
       "aula": [
         "24A - 201"
       ],
-      "tipo": "TA"
+      "tipo": "TA",
+	  "img" : "../../public/media/ayudantes/201421632.jpg"
     }
   ],
   "profesores": [
