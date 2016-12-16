@@ -9,8 +9,8 @@ info = {
         "oswaldojosmanyam2@gmail.com"
       ],
       "profesor": [
-        "Eduardo Murillo Baja�a",
-        "Eduardo Murillo Baja�a",
+        "Eduardo Murillo Bajaña",
+        "Eduardo Murillo Bajaña",
         "Jorge Magallanes Borbor"
       ],
       "paralelo": [
@@ -23,7 +23,7 @@ info = {
     },
     {
       "matricula": "201302882",
-      "nombre": "Jorge Luis Cede�o Arteaga",
+      "nombre": "Jorge Luis Cedeño Arteaga",
       "correo": [
         "jlcedeno@espol.edu.ec",
         "jlcedeno@espol.edu.ec",
@@ -50,7 +50,7 @@ info = {
       "profesor": [
         "Jorge Ugarte Fajardo",
         "Edison del Rosario Camposano",
-        "Jos� Villa V�squez"
+        "José Villa Vásquez"
       ],
       "paralelo": [
         "15",
@@ -62,7 +62,7 @@ info = {
     },
     {
       "matricula": "200000000",
-      "nombre": "Josselyn Esther Gallo Mu�oz",
+      "nombre": "Josselyn Esther Gallo Muñoz",
       "correo": [
         ""
       ],
@@ -81,12 +81,12 @@ info = {
     },
     {
       "matricula": "201421632",
-      "nombre": "Jorge Isaac Guerra Sol�s",
+      "nombre": "Jorge Isaac Guerra Solís",
       "correo": [
         "jiguerra@espol.edu.ec"
       ],
       "profesor": [
-        "Marco Calder�n Arguello",
+        "Marco Calderón Arguello",
         "Eduardo Cruz Ramirez",
         "Orlando Zambrano Romero"
       ],
@@ -105,8 +105,8 @@ info = {
         ""
       ],
       "profesor": [
-        "Roc�o Mera Su�rez",
-        "Roc�o Mera Su�rez",
+        "Rocío Mera Suárez",
+        "Rocío Mera Suárez",
         "Ana Tapia Rosero"
       ],
       "paralelo": [
@@ -126,8 +126,8 @@ info = {
         "avnaranj@fiec.espol.edu.ec"
       ],
       "profesor": [
-        "Meiying Cheung Ru�z",
-        "Meiying Cheung Ru�z",
+        "Meiying Cheung Ruíz",
+        "Meiying Cheung Ruíz",
         "Ana Tapia Rosero"
       ],
       "paralelo": [
@@ -140,7 +140,7 @@ info = {
     },
     {
       "matricula": "201421319",
-      "nombre": "Joselyn Ibeth Parra C�rdova",
+      "nombre": "Joselyn Ibeth Parra Córdova",
       "correo": [
         "jiparra@espol.edu.ec",
         "jiparra@espol.edu.ec",
@@ -148,8 +148,8 @@ info = {
       ],
       "profesor": [
         "Jhonny Pincay Nieves",
-        "Dalton Noboa Mac�as",
-        "Jos� Villa V�squez"
+        "Dalton Noboa Macías",
+        "José Villa Vásquez"
       ],
       "paralelo": [
         "1",
@@ -203,13 +203,13 @@ info = {
     },
     {
       "matricula": "200000000",
-      "nombre": "Juan Carlos Saltos N��ez",
+      "nombre": "Juan Carlos Saltos Núñez",
       "correo": [
         ""
       ],
       "profesor": [
-        "Ver�nica Carrasco Idrovo",
-        "Ver�nica Carrasco Idrovo",
+        "Verónica Carrasco Idrovo",
+        "Verónica Carrasco Idrovo",
         "Miguel Realpe Robalino"
       ],
       "paralelo": [
@@ -222,7 +222,7 @@ info = {
     },
     {
       "matricula": "201507022",
-      "nombre": "Ariel Enrique S�nchez Mu�oz",
+      "nombre": "Ariel Enrique Sánchez Muñoz",
       "correo": [
         "ariensan@espol.edu.ec",
         "ariel4432@hotmail.com"
@@ -242,15 +242,15 @@ info = {
     },
     {
       "matricula": "201505935",
-      "nombre": "Miguel �ngel S�nchez Romero",
+      "nombre": "Miguel Ángel Sánchez Romero",
       "correo": [
         "migansan@espol.edu.ec",
         "migansan@fiec.espol.edu.ec",
         "mangelsr@live.com"
       ],
       "profesor": [
-        "�ngela Carrera Rivera",
-        "�ngela Carrera Rivera",
+        "Ángela Carrera Rivera",
+        "Ángela Carrera Rivera",
         "Rodrigo Saraguro Bravo"
       ],
       "paralelo": [
@@ -263,13 +263,13 @@ info = {
     },
     {
       "matricula": "200000000",
-      "nombre": "Anni Rosa Santacruz Hern�ndez",
+      "nombre": "Anni Rosa Santacruz Hernández",
       "correo": [
         ""
       ],
       "profesor": [
-        "Paola Y�nez Pazmi�o",
-        "Paola Y�nez Pazmi�o",
+        "Paola Yánez Pazmiño",
+        "Paola Yánez Pazmiño",
         "Carmen Vaca Ruiz"
       ],
       "paralelo": [
@@ -284,11 +284,11 @@ info = {
   "TA": [
     {
       "matricula": "201410264",
-      "nombre": "Galo Daniel Castillo L�pez",
+      "nombre": "Galo Daniel Castillo López",
       "correo": "gadacast@espol.edu.ec",
       "horario": [
         "Lunes 14:00 - 16:30",
-        "Mi�rcoles 14:00 - 16:30",
+        "MIÉRCOLES 14:00 - 16:30",
         "Martes 10:30 - 11:30",
         "Jueves 10:30 - 11:30"
       ],
@@ -303,7 +303,7 @@ info = {
     },
     {
       "matricula": "201302882",
-      "nombre": "Jorge Luis Cede�o Arteaga",
+      "nombre": "Jorge Luis Cedeño Arteaga",
       "correo": "jlcedeno@espol.edu.ec",
       "horario": [
         "Martes 13:30 - 17:30",
@@ -320,7 +320,7 @@ info = {
     },
     {
       "matricula": "201410871",
-      "nombre": "Mar�a Bel�n Guaranda Cabezas",
+      "nombre": "María Belén Guaranda Cabezas",
       "correo": "mguarand@espol.edu.ec",
       "horario": [
         "Lunes  7:30  - 9:30 ",
@@ -354,7 +354,7 @@ info = {
     },
     {
       "matricula": "201304087",
-      "nombre": "Emmanuel Fernando Mor�n Barreiro",
+      "nombre": "Emmanuel Fernando Morán Barreiro",
       "correo": "fnando1995@gmail.com",
       "horario": [
         "Lunes  7:30  - 9:30 ",
@@ -426,7 +426,7 @@ info = {
     },
     {
       "matricula": "201421632",
-      "nombre": "Jorge Isaac Guerra Sol�s",
+      "nombre": "Jorge Isaac Guerra Solís",
       "correo": "jiguerra@espol.edu.ec",
       "horario": [
         "Jueves 7:30 - 9:30"
@@ -452,7 +452,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES",
+        "MIÉRCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -515,7 +515,7 @@ info = {
     {
       "nombre": "CARLO UNDA MARIA LORENA",
       "aula": [
-        "LABORATORIO DE INGENIER�A DE SOFTWARE",
+        "LABORATORIO DE INGENIERÍA DE SOFTWARE",
         "15A-01"
       ],
       "paralelo": [
@@ -536,7 +536,7 @@ info = {
       "aula": [
         "15A-02",
         "LAB. CENTAURO",
-        "LABORATORIO DE INGENIER�A DE SOFTWARE",
+        "LABORATORIO DE INGENIERÍA DE SOFTWARE",
         "COM4"
       ],
       "paralelo": [
@@ -545,7 +545,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES",
+        "MIÉRCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -573,7 +573,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES"
+        "MIÉRCOLES"
       ],
       "hora": [
         "9:30:00-11:30:00",
@@ -596,7 +596,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES",
+        "MIÉRCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -620,7 +620,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES"
+        "MIÉRCOLES"
       ],
       "hora": [
         "13:30:00-15:30:00"
@@ -654,7 +654,7 @@ info = {
     {
       "nombre": "FALCONES MONTESDEOCA CRUZ MARIA",
       "aula": [
-        "LABORATORIO DE INGENIER�A DE SOFTWARE",
+        "LABORATORIO DE INGENIERÍA DE SOFTWARE",
         "COMP A FIMCP",
         "A-103",
         "COM4"
@@ -665,7 +665,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES",
+        "MIÉRCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -714,7 +714,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES",
+        "MIÉRCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -729,7 +729,7 @@ info = {
       "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_7.jpg"
     },
     {
-      "nombre": "MERA SU�REZ ROC�O ELIZABETH",
+      "nombre": "MERA SUÁREZ ROCÍO ELIZABETH",
       "aula": [
         "A-210",
         "24C-106 FIMCP",
@@ -741,7 +741,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES",
+        "MIÉRCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -756,7 +756,7 @@ info = {
       "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_8.jpg"
     },
     {
-      "nombre": "MURILLO BAJA�A EDUARDO WENCESLAO",
+      "nombre": "MURILLO BAJAÑA EDUARDO WENCESLAO",
       "aula": [
         "COM2",
         "A-114",
@@ -768,7 +768,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES"
+        "MIÉRCOLES"
       ],
       "hora": [
         "7:30:00-9:30:00",
@@ -791,7 +791,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES"
+        "MIÉRCOLES"
       ],
       "hora": [
         "16:30:00-18:30:00"
@@ -802,7 +802,7 @@ info = {
     {
       "nombre": "PINCAY NIEVES JHONNY VLADIMIR",
       "aula": [
-        "LABORATORIO DE INGENIER�A DE SOFTWARE",
+        "LABORATORIO DE INGENIERÍA DE SOFTWARE",
         "A-113"
       ],
       "paralelo": [
@@ -810,7 +810,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES"
+        "MIÉRCOLES"
       ],
       "hora": [
         "11:30:00-13:30:00"
@@ -832,7 +832,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES"
+        "MIÉRCOLES"
       ],
       "hora": [
         "15:30:00-17:30:00"
@@ -851,7 +851,7 @@ info = {
         "5"
       ],
       "dia": [
-        "MI�RCOLES",
+        "MIÉRCOLES",
         "VIERNES",
         "MARTES",
         "JUEVES"
@@ -876,7 +876,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES"
+        "MIÉRCOLES"
       ],
       "hora": [
         "13:30:00-15:30:00",
@@ -899,7 +899,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES"
+        "MIÉRCOLES"
       ],
       "hora": [
         "9:30:00-11:30:00"
@@ -918,7 +918,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES"
+        "MIÉRCOLES"
       ],
       "hora": [
         "9:30:00-11:30:00"
@@ -980,7 +980,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES"
+        "MIÉRCOLES"
       ],
       "hora": [
         "14:30:00-16:30:00"
@@ -989,7 +989,7 @@ info = {
       "img": ""
     },
     {
-      "nombre": "YANEZ PAZMI�O WENDY PAOLA",
+      "nombre": "YANEZ PAZMIÑO WENDY PAOLA",
       "aula": [
         "LAB. CENTAURO",
         "A-201",
@@ -1001,7 +1001,7 @@ info = {
       ],
       "dia": [
         "LUNES",
-        "MI�RCOLES"
+        "MIÉRCOLES"
       ],
       "hora": [
         "9:30:00-11:30:00",
