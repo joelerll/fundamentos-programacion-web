@@ -8,23 +8,21 @@ function createDivs(objJSON){
 	var clasePanel;	//nombre completo de la clase del panel
 	var panel, panelBody, imgPanel, pPanel;
 	//DIV DE COORDINADOR
-	crearPanel('.coordinador', 'coordinador', objJSON.profesores[1]);
-
-
+	crearPanel('.row-coordinador', 'coordinador', objJSON.profesores[1]);
 	//DIV DE PROFESORES
 	var arrayProf = objJSON.profesores;
 	arrayProf.forEach(function(profesor){
-		crearPanel('.profesores', 'profesor', profesor);
+		crearPanel('.row-profesor', 'profesor', profesor);
 	});
 	//DIVS DE AYUDANTES DEBERES
 	var arrayGraders = objJSON.graders;
 	arrayGraders.forEach(function(grader){
-		crearPanel('.ayudante-deberes', 'ayudante-deberes', grader);
+		crearPanel('.row-deberes', 'ayudante-deberes', grader);
 	});
 	//DIVS DE TAs
 	var arrayTA = objJSON.TA;
 	arrayTA.forEach(function(ta){
-		crearPanel('.ayudante-clases', 'ayudante-clases', ta);
+		crearPanel('.row-clases', 'ayudante-clases', ta);
 	});	
 }
 
@@ -41,6 +39,7 @@ function crearPanel(contenedor, clase, obj){
 	imgPanel = $('<img/>').addClass('img-responsive center-block').attr({src: imgsrc, alt: infoAlt});
 	pPanel = $('<p/>').text(obj.nombre);
 	panelBody.append(imgPanel, pPanel);
+	/*panelBody.append(imgPanel);*/
 	panel.append(panelBody);
 	//Para que cada panel abra un modal
 	panel.attr({
@@ -57,7 +56,16 @@ function crearPanel(contenedor, clase, obj){
 			editarModalProfesor(obj.nombre, obj.correo, obj.aula, obj.paralelo, obj.dia, obj.hora, obj.img);
 		}
 	});
-	$(contenedor).append(panel);
+	var col;
+	if(clase==='coordinador'){
+		col = $('<div/>').addClass('col-md-12');	//Como solo hay 1 coordinador, este tiene que estar centrado
+	}else{
+		col = $('<div/>').addClass('col-md-4');
+	}
+	
+	
+	col.append(panel);
+	$(contenedor).append(col);
 }
 
 function crearModal(){
