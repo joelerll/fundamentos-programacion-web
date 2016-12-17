@@ -20,7 +20,7 @@
 		.navbar-default .navbar-nav > li > a {
 		  color: #001c43;
 		}
-		ul.nav a:hover { background-color: white !important; }
+		ul.nav a:hover { background-color: #00FFFF !important; }
 		
 		@media only screen and (max-width: 766px){
 			.navbar-default {

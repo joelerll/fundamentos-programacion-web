@@ -100,7 +100,7 @@ h6{
 	color: #001c43;
 }
 ul.nav a:hover { 
-	background-color: white !important; 
+	background-color: rgba(0,255,255,0.3) !important; 
 }
 
 body.modal-open div.modal-backdrop { 
