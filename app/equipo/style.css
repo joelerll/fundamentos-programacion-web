@@ -8,16 +8,11 @@
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
-
+	background: rgba(255,255,255,0.8);
 }
 
 body{
-	background-image: url('');
-	background: url(http://blog.espol.edu.ec/arrivade/files/2013/05/IMG-20130530-002324.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: url('https://webdesignledger.com/wp-content/uploads/2012/09/patterns03.jpg');
 }
 
 h2{
@@ -26,7 +21,7 @@ h2{
 	font-size: 24px;
 	font-weight: bold;
 	margin: 10px 0 10px 0;
-	color: white;
+	color: black;
 }
 
 img + p{
@@ -72,7 +67,7 @@ img + p{
 
 
 /*NAVBAR*/
-#login{
+.login{
 	width: 30px;
 	height: 30px;
 	border-radius: 100px;
@@ -91,10 +86,10 @@ h6{
 	border-color: transparent;
 	position: relative !important;
 }
-/*#myNavbar .btn{
+.myNavbar .btn{
 	background-color: transparent;
 	border-color: transparent;
-}*/
+}
 .clearer{
 	clear:both;
 }
