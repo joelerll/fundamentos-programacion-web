@@ -34,6 +34,15 @@ http.createServer(function (request, response) {
         case '.wav':
             contentType = 'audio/wav';
             break;
+				case '.ttf':
+						contentType = 'font/opentype';
+						break;
+				case '.woff':
+						contentType = 'application/x-font-woff';
+						break;
+        case '.woff2':
+						contentType = 'application/x-font-woff';
+						break;
     }
 
     fs.readFile(filePath, function(error, content) {
