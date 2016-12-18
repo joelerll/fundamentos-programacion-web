@@ -2,6 +2,11 @@
 $(document).ready(function(){
 	crearModal();
 	createDivs(info);
+	crearModalLogin();
+	$('#btnLogin').click(function(){
+		$('.loginModal').remove();
+		crearModalLogin();
+	});
 })
 
 function createDivs(objJSON){	
@@ -76,12 +81,12 @@ function crearModal(){
 
 	var modalContent = $('<div/>').addClass('modal-content text-center');
 	//HEADER
-	var modalHeader = $('<div/>').addClass('modal-header');
+	var modalHeader = $('<div/>').addClass('modal-header').attr('id', 'modalHeaderPanel');
 	var header = $('<h4/>').addClass('modal-title');
 	header.text('Modal Header');
 	modalHeader.append(header);
 	//BODY
-	var modalBody = $('<div/>').addClass('modal-body');
+	var modalBody = $('<div/>').addClass('modal-body').attr('id', 'modalBodyPanel');
 	var p = $('<p/>').text('hola');
 	p.attr('id', 'texto');
 	modalBody.append(p);
@@ -93,42 +98,110 @@ function crearModal(){
 }
 
 function editarModalAyudantes(name, imgSrc, mail, arrayMail, array1, array2, tipo){
-	$('.modal-body').empty()	//Vacio el popup
+	$('#modalBodyPanel').empty()	//Vacio el popup
 	var img = $('<img/>').addClass('img-responsive center-block').attr({src: imgSrc, alt : 'imagen'});
 	var nombre = $('<p/>').text(name);
-	$('.modal-body').append(img, nombre);
+	$('#modalBodyPanel').append(img, nombre);
 	//Para anadir la informacion de los mails
 	if(mail!=''){	//Solo si es TA se le pasa algo en mail
-		$('.modal-body').append($('<p/>').text(mail));
+		$('#modalBodyPanel').append($('<p/>').text(mail));
 	}else{		//Si no es TA entonces mail esta vacio y se usa arrayMail
 		arrayMail.forEach(function(email){
-			$('.modal-body').append($('<p/>').text(email))
+			$('#modalBodyPanel').append($('<p/>').text(email))
 		});
 	}
 	//Para anadir informacion de horarios, paralelos, profesores y aulas
 	for(var i = 0 ; i < array1.length ; i++){
 				var texto = array1[i] + " : " + array2[i];
-				$('.modal-body').append($('<p>').text(texto));
+				$('#modalBodyPanel').append($('<p>').text(texto));
 	}
 	//Cambiar el header
-	$('.modal-header').empty();
+	$('#modalHeaderPanel').empty();
 	var header = $('<h4/>').text(tipo);
-	$('.modal-header').append(header);
+	$('#modalHeaderPanel').append(header);
 }
 
 function editarModalProfesor(name, arrayMail, arrayAula, arrayParalelo, arrayDia, arrayHora, img){
-	$('.modal-body').empty();
+	$('#modalBodyPanel').empty();
 	var img = $('<img/>').addClass('img-responsive center-block').attr({src: img, alt : 'imagen'});
 	var nombre = $('<p/>').text(name);
-	$('.modal-body').append(img, nombre);
+	$('#modalBodyPanel').append(img, nombre);
 	arrayMail.forEach(function(email){
-				$('.modal-body').append($('<p/>').text(email))
+				$('#modalBodyPanel').append($('<p/>').text(email))
 	});
 	/*for(var i = 0 ; i < arrayHorarios.length ; i++){
 				var texto = arrayHorarios[i] + " : " + arrayAulas[i];
 				$('.modal-body').append($('<p>').text(texto));
 	}*/
-	$('.modal-header').empty();
+	$('#modalHeaderPanel').empty();
 	var header = $('<h4/>').text('Profesor');
-	$('.modal-header').append(header);
+	$('#modalHeaderPanel').append(header);
+}
+
+
+function crearModalLogin(){
+	var modalLogin = $('<div/>').addClass('modal fade');
+	modalLogin.attr({'id' : 'loginModal', 'role' : 'dialog'});
+
+	var modalDialog = $('<div/>').addClass('modal-dialog');
+	var modalContent = $('<div/>').addClass('modal-content');
+
+	//HEADER
+	var modalHeader = $('<div/>').addClass('modal-header').attr('id', 'modalHeaderLogin');
+	var title = $('<h3/>').addClass('modal-title words');
+	title.text('Login');
+	
+	modalHeader.append(title);
+	
+	//BODY
+	var modalBody = $('<div/>').addClass('modal-body');
+	var form = $('<form/>');
+	
+	var formGroupUsuario = $('<div/>').addClass('form-group');
+	var lblUsuario = $('<label/>').attr({'for' : 'usr', 'class' : 'words', 'text-align' : 'left'}).text('Usuario:');
+	var inputUsuario = $('<input/>').attr({'type' : 'text', 'class' : 'form-control', 'id' : 'usr'});
+	formGroupUsuario.append(lblUsuario, inputUsuario);
+
+	var formGroupPass = $('<div/>').addClass('form-group');
+	var labelPass = $('<label/>').attr({'for' : 'pwd', 'class' : 'words'}).text('Contraseña:');
+	var inputPass = $('<input/>').attr({'type' : 'password', 'class' : 'form-control', 'id' : 'pwd'}); 
+	formGroupPass.append(labelPass, inputPass);
+
+	var checkBox = $('<div/>').addClass('checkbox');
+	var lblCheck = $('<label/>');
+	var inputCheck = $('<input/>').attr({'type' : 'checkbox', 'value' : '', 'class' : 'words'});
+	lblCheck.append(inputCheck, 'No cerrar sesion');
+	var formEstProf = $('<div/>').attr({'action' : ''});
+	var radioEst = $('<input/>').attr({'type' : 'radio', 'name' : 'tipo', 'value' : 'male'});
+	var radioProf = $('<input/>').attr({'type' : 'radio', 'name' : 'tipo', 'value' : 'female'});
+	
+	formEstProf.append(radioEst, ' Estudiante', $('<br/>'), radioProf, ' Profesor', $('<br/>'));
+	
+	checkBox.append(lblCheck, $('<br/>'), formEstProf);
+
+	form.append(formGroupUsuario, formGroupPass, checkBox);
+	
+	modalBody.append(form);
+	
+	//FOOTER
+	var modalFooter = $('<div/>').addClass('modal-footer');
+	var btnLogin = $('<button/>').attr({'type' : 'button', 'class' : 'btn btn-default inline pull-left', 'id' : 'entrar'});
+	btnLogin.text('Login');
+	var btnClose = $('<button/>').attr({'type' : 'button', 'class' : 'btn btn-default inline pull-right', 'data-dismiss' : 'modal'});
+	btnClose.text('Close');
+	var hr = $('<hr/>').addClass('clearer');
+	var aCrearCuenta = $('<a/>').attr({'href' : '#', 'class' : 'words'});
+	var aText1 = $('<h6/>').text('Crear una cuenta');
+	aCrearCuenta.append(aText1);
+	var aOlvidarPass = $('<a/>').attr({'href' : '#', 'class' : 'words'});
+	var aText2= $('<h6/>').text('¿Olvidaste tu contraseña?');
+	aOlvidarPass.append(aText2);
+	
+	modalFooter.append(btnLogin, btnClose, hr, aCrearCuenta, aOlvidarPass);
+
+	modalContent.append(modalHeader, modalBody, modalFooter);
+	modalDialog.append(modalContent);
+	modalLogin.append(modalDialog);
+
+	$('#myNavbar').append(modalLogin);
 }

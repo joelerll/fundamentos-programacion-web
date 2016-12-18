@@ -10,80 +10,46 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="../../public/css/custom-navbar.css">
+	<!--<link rel="stylesheet" type="text/css" href="../../public/css/custom-navbar.css">-->
 
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-default navbar-static-top">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
-		      </button>
-		      <a class="navbar-brand" href="#">ESPOL</a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav">
-		        <li class="espol"><a href="../../index.html">Inicio</a></li>
-		        <li class="espol"><a href="../semanal/semanal.html">Semana a Semana</a></li>
-		        <li class="espol"><a href="../equipo/equipo.html">Equipo</a></li>
-		        <li class="espol"><a href="#">Sandbox</a></li>
-		      </ul>
-		      <ul class="nav navbar-nav navbar-right">
-		        <li>
-		        	<button class="btn btn-info"  data-toggle="modal" data-target="#myModal">
-					    <img src="../../public/media/img/no-Avatar.jpg" id="login" />
-					</button>
-					
-		        </li>
-		      </ul>
-		    <!--Modal para el PopUP de login-->
-					<div class="modal fade" id="myModal" role="dialog">
-					    <div class="modal-dialog">
-					    
-						      <!-- Modal content-->
-						    <div class="modal-content">
-						    	<div class="modal-header">
-						        	<button type="button" class="close" data-dismiss="modal"></button>
-						        	<h3 class="modal-title words">Login</h3>
-						    	</div>
-						    	<div class="modal-body">
-						    		<form>
-									    <div class="form-group">
-									      <label for="usr" class="words">Usuario:</label>
-									      <input type="text" class="form-control" id="usr">
-									    </div>
-									    <div class="form-group">
-									      <label for="pwd" class="words">Contraseña:</label>
-									      <input type="password" class="form-control" id="pwd">
-									    </div>
-									    <div class="checkbox">
-											<label><input type="checkbox" value="" class="words">No cerrar sesión</label>
-											<br>
-											<form action="">
-											  <input type="radio" name="tipo" value="male">Estudiante<br>
-											  <input type="radio" name="tipo" value="female">Profesor<br>
-											</form>
-										</div>
-									  </form>
-						    	</div>
-						    	<div class="modal-footer">
-						    		<button type="button" class="btn btn-default inline pull-left" id="entrar">Entrar</button>
-						    		<button type="button" class="btn btn-default inline pull-right" data-dismiss="modal">Close</button>
-						    		<hr class="clearer">
-						    		<a href="#" class="words"><h6>Crear una cuenta</h6></a>
-						    		<a href="app/misc/forgotPass.html" class="words"><h6>¿Olvidaste tu contraseña?</h6></a>
-						    	</div>
-							</div>
-					      
-						</div>
-					</div>
-						<!--Fin de la creación del modal-->
-		    </div>
-		  </div>
+			<div class="container-fluid">
+		    
+		    	<div class="navbar-header">
+		      	<!--Boton responsive va a expandir la barra de navegacion-->
+		      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>                        
+			      	</button>
+			      	<a class="navbar-brand" href="#">ESPOL</a>
+		    	</div> 
+		    	<!--Fin de navbar header-->
+		    	<!--Aqui comienza la barra de navegacion-->
+		    	<div class="collapse navbar-collapse" id="myNavbar">
+			      	<!--Barra de navegacion izquierda-->
+			      	<ul class="nav navbar-nav">
+				        <li class="espol"><a href="../../index.html">Inicio</a></li>
+				        <li class="espol"><a href="../semanal/semanal.html">Semana a Semana</a></li>
+				        <li class="espol"><a href="../equipo/equipo.html">Equipo</a></li>
+				        <li class="espol"><a href="#">Sandbox</a></li>
+			      	</ul>
+			      	<!--Fin de barra de navegacion izquierda-->
+					<!--Barra de navegacion derecha-->
+			      	<ul class="nav navbar-nav navbar-right">
+				        <li>
+				        	<button id="btnLogin" class="btn btn-info"  data-toggle="modal" data-target="#loginModal">
+							    <img src="../../public/media/ayudantes/no_avatar.jpg" id="login" />
+							</button>
+				        </li>
+				    </ul>
+				    <!--Fin de barra de navegacion derecha-->
+		    
+		    	</div><!--fin navbar-->
+		  	</div><!--fin container-->
 		</nav>
 	</header>
 	<div class="main">
