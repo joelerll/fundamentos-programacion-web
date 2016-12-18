@@ -18,7 +18,7 @@ angular.
         }).
         when('/profesores', {
           template: "<profesor-elegir></profesor-elegir>",
-          css: ['/app/sandbox/1_dependencies/css/font-awesome.min.css','/app/sandbox/profesor-elegir/css/profesor-elegir.css']
+          css: ['/app/sandbox/1_dependencies/css/font-awesome.min.css','/app/sandbox/profesor-elegir/css/profesor-elegir.css','/app/sandbox/1_dependencies/css/bootstrap.css']
         }).
         when('/profesor/:profesorId', {
           template: "<profesor-ejercicios></profesor-ejercicios>",

@@ -1,8 +1,15 @@
-<nav>
-  <a href="#!/profesor/{{$ctrl.autor}}">ejercicios</a>
+<h2>Ejercicios {{$ctrl.autor}}</h2>
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li>
+    </li>
+    <li><a href="#!/">Sandbox</a></li>
+    <li><a href="#!/profesores">Profesores</a></li>
+    <li>
+      <a href="#!/profesor/{{$ctrl.autor}}">Ejercicios</a>
+    </li>
+  </ul>
 </nav>
-<h3>{{$ctrl.profesores[0].nombre}}</h3>
-<h3>Ejercicios {{$ctrl.autor}}</h3>
 <div class='row'>
   <div class='col-md-1 col-sm-1 col-xs-1'>
   </div>
@@ -37,8 +44,8 @@
                 <a href="#!/ejercicios/{{ejercicio.id}}" class='ejercicio-titulo-link'>{{ejercicio.titulo}}</a>
               </div>
               <div class='col-md-6 col-sm-6 col-xs-12 '>
-                <a ng-click="$ctrl.deleteItem($index)">x</a>
                 <span class='autor'>{{ejercicio.autor}}</span>
+                <button ng-click="$ctrl.deleteItem($index)" class='btn btn-danger'>Eliminar</button>
               </div>
             </div>
           </header>
