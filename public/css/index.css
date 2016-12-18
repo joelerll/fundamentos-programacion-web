@@ -1,4 +1,3 @@
-
 #ask{
 	color: white;
 	text-align: center;
@@ -22,15 +21,6 @@ h6{
 }
 .modal-footer button{
 	width: 45%;
-}
-@media only screen and (max-width: 766px){
-	.custom-class { width: 100%; display:block; }
-	.custom-class p{
-		font-size: 0.5em;
-	}
-	#ask{
-		font-size: 2em;
-	}
 }
 .custom-class p{
 		padding: 0px;
@@ -110,3 +100,17 @@ blockquote h3:after {
     font-family: 'Georgia'; 
 }
 /*Fin del estilo de la cita*/
+
+@media only screen and (max-width: 766px){
+	.custom-class { width: 100%; display:block; }
+	.custom-class p{
+		font-size: 0.5em;
+	}
+	#ask{
+		font-size: 2em;
+	}
+	.container-small{
+		width: 100%;
+		font-size: 80%;
+	}
+}
