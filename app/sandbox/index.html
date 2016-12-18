@@ -1,35 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='sandboxApp'>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="sandbox.css">
-  <link rel="stylesheet" href="../../public/css/bootstrap.css">
-  <link rel="stylesheet" href="../../public/css/bootstrap-select.css">
-  <link rel="stylesheet" href="./public/css/font-awesome.min.css">
-  <title>Sandbox - Ejercicios</title>
-</head>
-<body>
-  <div ng-view></div>
-  <!-- SCRIPTS -->
-  <script src="../../public/js/jquery.js"></script>
-  <script src="../../public/js/bootstrap.js"></script>
-  <script src="../../public/js/bootstrap-select.js"></script>
-  <script src="../../public/js/angular.js"></script>
-  <script src="../../public/js/angular-route.js"></script>
-  <script src="../../public/js/angular-css.js"></script>
+  <title>Ingreso Sandbox</title>
 
- <!---------------------------->
- <script type="text/javascript">
- </script>
-  <!-- -->
-  <script src="./app.module.js" charset="utf-8"></script>
-  <script src="./app.config.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="./1_dependencies/css/bootstrap.css">
+</head>
+<body ng-app='sandboxApp'>
+  <div ng-view></div>
+  <script src="./1_dependencies/js/angular.js" charset="utf-8"></script>
+  <script src="./1_dependencies/js/angular-route.js" charset="utf-8"></script>
+  <script src="./1_dependencies/js/angular-css.js" charset="utf-8"></script>
   <script src="./ejercicios-lista/ejercicios-lista.module.js" charset="utf-8"></script>
   <script src="./ejercicios-lista/ejercicios-lista.component.js" charset="utf-8"></script>
   <script src="./ejercicio-detalle/ejercicio-detalle.module.js" charset="utf-8"></script>
   <script src="./ejercicio-detalle/ejercicio-detalle.component.js" charset="utf-8"></script>
-  <!---->
+  <script src="./profesor-elegir/profesor-elegir.module.js" charset="utf-8"></script>
+  <script src="./profesor-elegir/profesor-elegir.component.js" charset="utf-8"></script>
+  <script src="./profesor-ejercicios/profesor-ejercicios.module.js" charset="utf-8"></script>
+  <script src="./profesor-ejercicios/profesor-ejercicios.componet.js" charset="utf-8"></script>
+  <script src="./mis-ejercicios/mis-ejercicios.module.js" charset="utf-8"></script>
+  <script src="./mis-ejercicios/mis-ejercicios.component.js" charset="utf-8"></script>
+  <script src="./app.module.js" charset="utf-8"></script>
+  <script src="./app.config.js" charset="utf-8"></script>
+
 </body>
 </html>

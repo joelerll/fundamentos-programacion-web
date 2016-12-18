@@ -1,9 +1,10 @@
 angular.
-  module('ejerciciosLista').
-  component('ejerciciosLista', {
-    templateUrl: 'ejercicios-lista/ejercicios-lista.template.html',
-    controller: ["$http",function EjerciciosListaController($http) {
+  module('misEjercicios').
+  component('misEjercicios', {
+    templateUrl: 'mis-ejercicios/mis-ejercicios.template.html',
+    controller: ["$http","$routeParams",function EjerciciosListaController($http,$routeParams) {
       var self = this
+      self.autor = $routeParams.profesorId
       self.$back = function() {
         window.history.back();
       };
@@ -20,6 +21,13 @@ angular.
       }
       $http.get('../../public/json_files/ejercicios/ejercicios.json').then(function(response) {
           self.ejercicios = response.data
-      });
+      })
+      this.deleteItem = function (index) {
+        self.ejercicios.splice(index, 1);
+      }
+
+      this.editar = function() {
+
+      }
     }]
   })

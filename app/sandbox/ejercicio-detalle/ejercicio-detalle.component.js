@@ -5,6 +5,17 @@ angular.
     controller: ['$http','$routeParams',
       function EjercicioDetalleController($http,$routeParams) {
         var self = this
+        self.$back = function() {
+          window.history.back();
+        };
+        self.range = function(min, max, step) {
+            step = step || 1;
+            var input = [];
+            for (var i = min; i <= max; i += step) {
+                input.push(i);
+            }
+            return input;
+        };
         $http.get('../../public/json_files/ejercicios/'+$routeParams.ejercicioId+'.json').then(function(response) {
           self.ejercicio = response.data
         })
@@ -24,6 +35,7 @@ angular.
               })
             })
         })
+
       }
     ]
   })

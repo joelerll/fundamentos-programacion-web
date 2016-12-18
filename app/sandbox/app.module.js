@@ -1,6 +1,9 @@
 angular.module('sandboxApp', [
   'ngRoute',
   'angularCSS',
+  'ejerciciosLista',
   'ejercicioDetalle',
-  'ejerciciosLista'
+  'profesorElegir',
+  'profesorEjercicios',
+  'misEjercicios'
 ])

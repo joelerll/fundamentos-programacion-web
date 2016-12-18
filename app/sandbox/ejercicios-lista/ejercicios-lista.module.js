@@ -1,1 +1,1 @@
-angular.module('ejerciciosLista',[])
+angular.module('ejerciciosLista',['ngRoute'])

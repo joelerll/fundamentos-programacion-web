@@ -1,3 +1,3 @@
 angular.module('ejercicioDetalle', [
-  'ngRoute'
+  'ngRoute',
 ])

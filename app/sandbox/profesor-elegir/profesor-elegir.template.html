@@ -1,0 +1,18 @@
+<div class='contenedor'>
+  <div>
+    <nav>
+      <a href="#!/">login</a>
+    </nav>
+  </div>
+  <h3>Elegir algun profesor</h3>
+  <div class='profesores'>
+    <div ng-repeat='profesor in $ctrl.profesores'>
+      <div ng-if='profesor.correo.length == 1'>
+        <a href="#!/profesor/{{profesor.correo[0]}}">{{profesor.nombre}}</a>
+      </div>
+      <div ng-if='profesor.correo.length == 2'>
+        <a href="#!/profesor/{{profesor.correo[1]}}">{{profesor.nombre}}</a>
+      </div>
+    </div>
+  </div>
+</div>

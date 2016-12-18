@@ -1,28 +1,35 @@
-  <div class='row'>
-    <div class='col-md-1 col-sm-1 col-xs-1'>
-    </div>
-    <div class='col-md-11 col-sm-11 col-xs-11'>
-      <div class"opciones-orden">
-        <div class="row">
-          <div class="col-md-6 col-xs-12">
+<nav>
+  <a href="#!/profesor/{{$ctrl.autor}}">ejercicios</a>
+</nav>
+<h3>{{$ctrl.profesores[0].nombre}}</h3>
+<h3>Ejercicios {{$ctrl.autor}}</h3>
+<div class='row'>
+  <div class='col-md-1 col-sm-1 col-xs-1'>
+  </div>
+  <div class='col-md-11 col-sm-11 col-xs-11'>
+    <div class"opciones-orden">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class='ejercicio-rating'>
+            <select ng-model='$ctrl.orderProp'  class="selector">
+              <option value="nivel_dificultad">Ascedente</option>
+              <option value="-nivel_dificultad">Descendente</option>
+            </select>
           </div>
-          <div class="col-md-3 col-xs-12">
-            <div class='ejercicio-rating'>
-              <select ng-model='$ctrl.orderProp'  class="selector">
-                <option value="nivel_dificultad">Ascedente</option>
-                <option value="-nivel_dificultad">Descendente</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-3 col-xs-12">
-            <div class='search-content'>
-              <span class='search'>Buscar:</span>
-              <input ng-model='$ctrl.query'>
-            </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <div class='search-content'>
+            <span class='search'>Buscar:</span>
+            <input ng-model='$ctrl.query'>
           </div>
         </div>
       </div>
-      <div class='ejercicios' ng-repeat='ejercicio in $ctrl.ejercicios | filter: $ctrl.query | orderBy: $ctrl.orderProp'>
+    </div>
+    <div class='ejercicios' ng-repeat='ejercicio in $ctrl.ejercicios | filter: $ctrl.query | orderBy: $ctrl.orderProp'>
+      <div ng-if="$ctrl.autor == ejercicio.autor">
+        <div>{{}}</div>
         <div class='ejercicio'>
           <header class='ejercicio-titulo'>
             <div class='row'>
@@ -30,6 +37,7 @@
                 <a href="#!/ejercicios/{{ejercicio.id}}" class='ejercicio-titulo-link'>{{ejercicio.titulo}}</a>
               </div>
               <div class='col-md-6 col-sm-6 col-xs-12 '>
+                <a ng-click="$ctrl.deleteItem($index)">x</a>
                 <span class='autor'>{{ejercicio.autor}}</span>
               </div>
             </div>
@@ -59,6 +67,8 @@
           </footer>
         </div>
       </div>
+
     </div>
   </div>
+</div>
 </div>
