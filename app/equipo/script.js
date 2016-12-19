@@ -36,9 +36,12 @@ function crearPanel(contenedor, clase, obj){
 	panel = $('<div/>').addClass(clasePanel);
 	panelBody = $('<div/>').addClass('panel-body');
 	var infoAlt = 'imagen ' + clase
-	var imgsrc = obj.img;
+	var imgsrc =  obj.img;
 	if(imgsrc===''){
 		imgsrc = 'https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_3.jpg';
+	}
+	if(obj.nombre==='AVENDAÑO SUDARIO ALLAN ROBERTO'){
+		imgsrc = '../../' + obj.img;
 	}
 
 	imgPanel = $('<img/>').addClass('img-responsive center-block').attr({src: imgsrc, alt: infoAlt});
