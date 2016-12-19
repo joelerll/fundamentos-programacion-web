@@ -20,7 +20,9 @@
 
 
   <div ng-include="'./nav.template.html'"></div>
-<ui-view></ui-view>
+  <a ui-sref="saludo" ui-sref-active="active"></a>
+  <a ui-sref="profesores" ui-sref-active="active"></a>
+  <ui-view></ui-view>
   <script src="./1_dependencies/js/jquery.js" charset="utf-8"></script>
   <script src="./1_dependencies/js/angular.js" charset="utf-8"></script>
   <script src="./1_dependencies/js/angular-route.js" charset="utf-8"></script>
