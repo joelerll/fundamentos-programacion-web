@@ -12,7 +12,11 @@
 	<!---->
 	<title>Fundamentos de programación</title>
 	<style type="text/css">		
-		
+		.profile-img{
+			width: 200px;
+			border-radius: 100px;
+			margin-bottom: 2%;
+		}
 	</style>
 </head>
 <body id="index-body">
@@ -29,17 +33,19 @@
 			    </div>
 			    <div class="collapse navbar-collapse myNavbar" id="myNavbar">
 			      <ul class="nav navbar-nav">
-			        <li class="espol"><a href="index.html">Inicio</a></li>
+			        <li class="espol"><a href="indexTeacher.html">Inicio</a></li>
 			        <li class="espol"><a href="app/curso/curso.html">El Curso</a></li>
 			        <li class="espol"><a href="app/semanal/semanal.html">Semana a Semana</a></li>
 			        <li class="espol"><a href="app/equipo/equipo.html">Equipo</a></li>
 			        <li class="espol"><a href="app/ayudantias/ayudantias.html">Ayudantías</a></li>
 			        <li class="espol"><a href="#">Sandbox</a></li>
+			        <li class="espol"><a href="app/proyectos/proyectos.html">Proyectos</a></li>
+			        <li class="espol"><a href="app/perfil/perfil.html">Perfil</a></li>
 			      </ul>
 			      <ul class="nav navbar-nav navbar-right">
 			        <li>
 			        	<button class="btn btn-info"  data-toggle="modal" data-target="#myModal">
-						    <img src="public/media/img/no-Avatar.jpg" id="login" />
+						    <img src="public/media/avatar/xidrovo.jpg" id="login" />
 						</button>
 						
 			        </li>
@@ -52,30 +58,23 @@
 							    <div class="modal-content">
 							    	<div class="modal-header">
 							        	<button type="button" class="close" data-dismiss="modal"></button>
-							        	<h3 class="modal-title words">Login</h3>
+							        	<img src="public/media/avatar/xidrovo.jpg" class="profile-img img-responsive center-block">
+							        	<a href="app/perfil/perfil.html"><p class="text-center">Ver Perfil</p></a>
 							    	</div>
 							    	<div class="modal-body">
 							    		<form>
-										    <div class="form-group">
-										      <label for="usr" class="words">Usuario:</label>
-										      <input type="text" class="form-control" id="usr">
+										    <div class="form-group text-center">
+										      <h4>Xavier Idrovo</h4>
 										    </div>
-										    <div class="form-group">
-										      <label for="pwd" class="words">Contraseña:</label>
-										      <input type="password" class="form-control" id="pwd">
+										    <div class="form-group text-center">
+										      <h4>xidrovo</h4>
 										    </div>
-										    <div class="checkbox">
-												<label><input type="checkbox" value="" class="words">No cerrar sesión</label>
-											</div>
 										  </form>
 							    	</div>
 							    	<div class="modal-footer">
-							    		<button type="button" class="btn btn-default inline pull-left" id="entrar">Entrar</button>
-							    		<button type="button" class="btn btn-default inline pull-right" data-dismiss="modal">Close</button>
+							    		<button type="button" class="btn btn-default inline pull-left" id="sign-out">Sign out</button>
+							    		<button type="button" class="btn btn-default inline pull-right" data-dismiss="modal">Cerrar</button>
 							    		<hr class="clearer">
-							    		<a href="#" class="words"><h6>Crear una cuenta</h6></a>
-							    		<a href="app/misc/forgotPass.html" class="words"><h6>¿Olvidaste tu contraseña?</h6></a>
-							    	</div>
 								</div>
 						      
 							</div>
