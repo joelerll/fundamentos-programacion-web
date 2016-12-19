@@ -14,22 +14,22 @@
   <form class='formulario'>
    <div class="form-group titulo">
      <label for="autor">Titulo</label>
-     <input type="text" class="form-control"placeholder="titulo">
+     <input type="text" class="form-control"placeholder="titulo" required="true" oninvalid="this.setCustomValidity('Ingrese titulo no vacio')">
    </div>
    <div class="form-group tags">
      <tags-input ng-model="$ctrl.tags" placeholder='anadir tags' ></tags-input>
    </div>
    <div class='form-group dificultad'>
-     <label for="dificultad">Dificultad</label><input-stars max="5" icon-base="fa fa-fw" icon-empty="fa-circle-o" icon-hover="hover" icon-full="fa-circle" ng-model="YourCtrl.property"></input-stars>
+     <label for="dificultad">Dificultad</label><input-stars max="5" icon-base="fa fa-fw" icon-empty="fa-circle-o" icon-hover="hover" icon-full="fa-circle" ng-model="YourCtrl.property" oninvalid="this.setCustomValidity('Ingrese in ranking')"></input-stars>
    </div>
    <div class="form-group declaracion-problema">
      <label for="exampleInputPassword1">Declaracion Problema</label>
-     <textarea class="form-control" rows="10" placeholder="200 max"></textarea>
+     <textarea class="form-control" rows="10" placeholder="200 max" required="true" oninvalid="this.setCustomValidity('Ingrese declaracoin problema')"></textarea>
    </div>
    <div class="form-group notas">
      <label for="exampleInputFile">Ingrese Notas</label>
          <fieldset  data-ng-repeat="choice in $ctrl.choices">
-           <input type="text" class='form-control' ng-model="choice.name" name="" placeholder="Ingrese una anotacion, max 25">
+           <input type="text" class='form-control' ng-model="choice.name" name="" placeholder="Ingrese una anotacion, max 25" required="true" oninvalid="this.setCustomValidity('Ingrese algo en nota')">
            <button class="btn btn-danger" ng-show="$last" ng-click="$ctrl.removeChoice()">-</button>
            <br>
         </fieldset>
@@ -37,16 +37,16 @@
    </div>
    <div class="form-group formato-entrada">
       <label for="">Formato de entrada</label>
-      <textarea class="form-control" rows="5" placeholder="50 max"></textarea>
+      <textarea class="form-control" rows="5" placeholder="50 max" required="true" oninvalid="this.setCustomValidity('Ingrese formato entrada')"></textarea>
    </div>
    <div class="form-group constrains">
       <label for="">Constrains</label>
-      <textarea class="form-control" rows="5" placeholder="50 max"></textarea>
+      <textarea class="form-control" rows="5" placeholder="50 max" required="true" oninvalid="this.setCustomValidity('Ingrese constrain')"></textarea>
    </div>
    <div class="form-group formato-salida">
      <label for="exampleInputFile">Ingrese Salidas</label>
          <fieldset  data-ng-repeat="choice in $ctrl.salida">
-           <input type="text" class='form-control' ng-model="salida.name" name="" placeholder="Ingrese una salida, max 25">
+           <input type="text" class='form-control' ng-model="salida.name" name="" placeholder="Ingrese una salida, max 25" required="true" oninvalid="this.setCustomValidity('Ingrese salidas')">
            <button class="btn btn-danger" ng-show="$last" ng-click="$ctrl.removeSalida()">-</button>
            <br>
         </fieldset>
@@ -55,7 +55,7 @@
    <div class="form-group ejemplo-entrada">
      <label for="exampleInputFile">Ejemplos entradas</label>
          <fieldset  data-ng-repeat="choice in $ctrl.entrada">
-           <input type="text" class='form-control' ng-model="entrada.name" name="" placeholder="Ingrese una entrada ejemplo, max 25">
+           <input type="text" class='form-control' ng-model="entrada.name" name="" placeholder="Ingrese una entrada ejemplo, max 25" required="true" oninvalid="this.setCustomValidity('Ingrese entrada')">
            <button class="btn btn-danger" ng-show="$last" ng-click="$ctrl.removeEntrada()">-</button>
            <br>
         </fieldset>
@@ -64,7 +64,7 @@
    <div class="form-group ejemplo-salida">
      <label for="exampleInputFile">Ejemplos Salidas</label>
          <fieldset  data-ng-repeat="choice in $ctrl.salida_sample">
-           <input type="text" class='form-control' ng-model="salida_sample.name" name="" placeholder="Ingrese una salida ejemplo, max 25">
+           <input type="text" class='form-control' ng-model="salida_sample.name" name="" placeholder="Ingrese una salida ejemplo, max 25" required="true" oninvalid="this.setCustomValidity('Ingrese algun ejemplo')">
            <button class="btn btn-danger" ng-show="$last" ng-click="$ctrl.removeSalida_sample()">-</button>
            <br>
         </fieldset>
@@ -72,7 +72,10 @@
    </div>
    <div class="form-group explicacion">
      <label for="exampleInputPassword1">Explicacion Problema</label>
-     <textarea class="form-control" rows="10" placeholder="200 max"></textarea>
+     <textarea class="form-control" rows="10" placeholder="200 max" required="true" oninvalid="this.setCustomValidity('Ingrese explicacion')"></textarea>
    </div>
-   <button type="submit" class="btn btn-default">Crear</button>
+   <div>
+     <p ng-model="errores"></p>
+   </div>
+   <button type="submit" class="btn btn-default" ng-click="$ctrl.verificar()">Crear</button>
   </form>

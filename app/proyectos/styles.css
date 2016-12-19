@@ -1,0 +1,14 @@
+nav.navegacion {
+  margin-left: 5%;
+}
+
+div.contenedor {
+  margin-top: 1%;
+  margin-left: 5%
+}
+
+
+/* inicio o saludo.js*/
+h1.saludo {
+  text-align: center;
+}

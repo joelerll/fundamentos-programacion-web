@@ -69,5 +69,19 @@ angular.
          this.closeAlert = function(index) {
            this.alerts.splice(index, 1);
          };
+
+         this.titulo = ''
+         this.dificultad = ''
+         this.declaracion_problema = ''
+         this.formato_de_entrada = ''
+         this.constrains = ''
+         this.explicacion_problema = ''
+        this.errores = ''
+        this.verificar = function() {
+          var titulo
+          if (this.titulo == ''){
+            this.errores = titulo
+          }
+        }
     }]
   })

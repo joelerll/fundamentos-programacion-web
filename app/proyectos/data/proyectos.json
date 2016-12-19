@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "autor": "aavendan@espol.edu.ec",
+    "titulo": "Instituto geofisico",
+    "requerimientos": [
+      "Elaborar un programa que permita ingresar los reportes",
+      "Por cada texto ingresado, mostar individualment"
+    ],
+
+  }
+]

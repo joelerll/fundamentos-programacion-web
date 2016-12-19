@@ -1,0 +1,38 @@
+<div class="contenedor">
+  <h1 class='saludo'> En esta seccion puede crear su proyecto</h1>
+</div>
+<nav aria-label="Page navigation" class="navegacion">
+<ul class="pagination ">
+  <li><a ui-sref="saludo" ui-sref-active="active">Inicio</a></li>
+  <li><a ui-sref="profesores" ui-sref-active="active">Profesores</a></li>
+</ul>
+</nav>
+
+<div id="wysihtml5-toolbar" style="display: none;">
+<a data-wysihtml5-command="bold">bold</a>
+<a data-wysihtml5-command="italic">italic</a>
+
+<!-- Some wysihtml5 commands require extra parameters -->
+<a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red">red</a>
+<a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green">green</a>
+<a data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue">blue</a>
+<a data-wysihtml5-command="bold" title="CTRL+B">bold</a> |
+<a data-wysihtml5-command="italic" title="CTRL+I">italic</a>
+<a data-wysihtml5-action="change_view">switch to html view</a>
+<!-- Some wysihtml5 commands like 'createLink' require extra paramaters specified by the user (eg. href) -->
+<a data-wysihtml5-command="createLink">insert link</a>
+<div data-wysihtml5-dialog="createLink" style="display: none;">
+  <label>
+    Link:
+    <input data-wysihtml5-dialog-field="href" value="http://" class="text">
+  </label>
+  <a data-wysihtml5-dialog-action="save">OK</a> <a data-wysihtml5-dialog-action="cancel">Cancel</a>
+</div>
+</div>
+<form><textarea id="wysihtml5-textarea" placeholder="Enter your text ..." autofocus rows='20' cols="90"></textarea></form>
+<script>
+var editor = new wysihtml5.Editor("wysihtml5-textarea", { // id of textarea element
+  toolbar:      "wysihtml5-toolbar", // id of toolbar element
+  parserRules:  wysihtml5ParserRules // defined in parser rules set
+});
+</script>

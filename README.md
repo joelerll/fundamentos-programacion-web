@@ -1,38 +1,39 @@
 # Proyecto de Desarrollo de Aplicaciones Web
 | Inicio | El Curso | Semana a Semana | Equipo | Ayudantias | Sandbox | Proyectos | Perfil |
 |:-------|:---------|:----------------|:-------|:-----------|:--------|:----------|:-------|
-| [x]    | [ ]      | [x]             | [x]    | [ ]        | [ ]     | [ ]       | [x]    |
+| [x]    | [x]      | [x]             | [x]    | [ ]        | [ ]     | [ ]       | [x]    |
 
 # Partes
-[x] Menu
-[ ] Carrusel de imagenes
-[x] Modal
-[ ] Paneles con fondo
-[ ] Transparencis rbga
-[x] Usar Bootstrap
-[x] Responsive
-[ ] Otros fonts
-[x] pagina principal index.html
-[ ] validaciones javascript
-[ ] controles html5
-[x] funcionalidad ajax para consultas a documentos
-[x] Uso de heroku
+[x] Menu <br>
+[ ] Carrusel de imagenes<br>
+[x] Modal<br>
+[ ] Paneles con fondo<br>
+[ ] Transparencis rbga<br>
+[x] Usar Bootstrap<br>
+[x] Responsive<br>
+[ ] Otros fonts<br>
+[x] pagina principal index.html<br>
+[ ] validaciones javascript<br>
+[ ] controles html5<br>
+[x] funcionalidad ajax para consultas a documentos<br>
+[x] Uso de heroku<br>
 
 ## Integrantes
-* Joel Rodriguez
-- Semanal
-- Sandbox estudiante
-- Sandbox profesor
+* Joel Rodriguez<br>
+[x] Semanal<br>
+[x] Sandbox estudiante<br>
+[ ] Sandbox profesor<br>
 
-* Edison Mora
-- Equipo
-- El curso
+* Edison Mora<br>
+[x] Equipo<br>
+[x] El curso<br>
+[ ] Ayudantias<br>
 
-* Xavier Idrovo
-- Inicio
-- Ayudantias
-- Perfil
-- Obtencion data
+* Xavier Idrovo<br>
+[x] Inicio<br>
+[ ] Ayudantias<br>
+[x] Perfil<br>
+[x] Obtencion data<br>
 
 * Lenin Tenecela
 
