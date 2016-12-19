@@ -6,7 +6,7 @@
 # Partes
 [ ] faltas ortograficas <br>
 [ ] mejorar colores Sandbox <br>
-[ ] mejorar corrousel imagenes <br>
+[] mejorar corrousel imagenes <br>
 [ ] arreglar navbar links<br>
 [ ] mapa Ayudantias <br>
 [ ] proyectos editor texto <br>
