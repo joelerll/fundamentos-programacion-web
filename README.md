@@ -4,14 +4,32 @@
 | [x]    | [x]      | [x]             | [x]    | [ ]        | [ ]     | [ ]       | [x]    |
 
 # Partes
+[ ] faltas ortograficas <br>
+[ ] mejorar colores Sandbox <br>
+[ ] mejorar corrousel imagenes <br>
+[ ] arreglar navbar links<br>
+[ ] mapa Ayudantias <br>
+[ ] proyectos editor texto <br>
+[ ] validaciones crear ejercicio <br>
+[ ] cambiar ingreso rangking <br>
+[ ] mejorar paneles buscar y selector <br>
+[ ] fonts cambiar <br>
+[ ] boton subir codigo nuevo-ejercicio <br>
+[ ] navegacion Sandbox <br>
+[ ] colocar imagenes curso <br>
+[ ] equipo mejorar presentacion datos <br>
+[ ] descargar fotos profesores <br>
+[ ] llenar datos semana a Semana <br>
+[ ] botones mejorar (colores y login) <br>
+[ ] mejorar perfil codeacademy <br>
+[ ] cambio de semana animacion <br>
 [x] Menu <br>
 [ ] Carrusel de imagenes<br>
 [x] Modal<br>
 [ ] Paneles con fondo<br>
-[ ] Transparencis rbga<br>
+[ ] Transparencias rbga<br>
 [x] Usar Bootstrap<br>
 [x] Responsive<br>
-[ ] Otros fonts<br>
 [x] pagina principal index.html<br>
 [ ] validaciones javascript<br>
 [ ] controles html5<br>
@@ -23,6 +41,7 @@
 [x] Semanal<br>
 [x] Sandbox estudiante<br>
 [ ] Sandbox profesor<br>
+[ ] Proyetos <br>
 
 * Edison Mora<br>
 [x] Equipo<br>
@@ -31,7 +50,7 @@
 
 * Xavier Idrovo<br>
 [x] Inicio<br>
-[ ] Ayudantias<br>
+[ ] Login<br>
 [x] Perfil<br>
 [x] Obtencion data<br>
 
