@@ -7,6 +7,10 @@ div.span {
 
 }
 
+h2 {
+  text-align: center;
+}
+
 span.dificultad {
   font-weight: bold;
 }
