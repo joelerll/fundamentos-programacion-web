@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
 *{
 	/*border: 1px solid blue;*/
 	box-sizing: border-box;
 }
-
+p, h2{
+	font-family: 'Lora', sans-serif;
+}
 .main{
 	width: 65%;
 	margin: auto;
@@ -17,7 +21,7 @@ body{
 
 h2{
 	text-align: center;
-	font-family: Georgia;
+	/*font-family: Georgia;*/
 	font-size: 24px;
 	font-weight: bold;
 	margin: 10px 0 10px 0;

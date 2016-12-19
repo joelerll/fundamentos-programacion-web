@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
 *{
 	/*border: 1px solid black;*/
 	box-sizing: border-box;
 	background: rgba(255,255,255,0.8);
 }
+
+p{
+	font-family: "Lora", sans-serif;
+}
+
 body{
 	background-color: #f5f8fa;
 }
