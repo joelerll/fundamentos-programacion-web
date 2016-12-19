@@ -5,42 +5,38 @@ $(document).ready(function(){
 
 function createDivs(JSON){
 	var arrayTA = JSON.TA;
+	var i = 0;
 	arrayTA.forEach(function(ta){
-		createRow(ta, '.container', 'ta');
+		createRow(ta, '.container', 'ta', i);
+		i++;
 	});
 }
 
-function createRow(obj, container, clase){
-	var row = $('<div/>').addClass('row');
-	
-	var colImg = $('<div/>').addClass('col-md-4');
+function createRow(obj, container, clase, i){
+	var row = $('<div/>').addClass('row featurette');
+	var colImg, colInfo;
+	if(i%2==0){
+		colImg = $('<div/>').addClass('col-md-4');
+		colInfo = $('<div/>').addClass('col-md-8');
+	}else{
+		colImg = $('<div/>').addClass('col-md-4 col-md-push-8');
+		colInfo = $('<div/>').addClass('col-md-8 col-md-pull-4');
+	}
 	img = $('<img/>').addClass('img-responsive center-block').attr({'src': obj.img, 'alt': 'imagen de ta', 'id' : 'imgAyudante'});
-	/*var panelImg = $('<div/>').addClass('panel panel-default panel-img');
-	var panelImgBody = $('<div/>').addClass('panel-body panel-body-img');
-	panelImgBody.append(img);
-	panelImg.append(panelImgBody);
-	colImg.append(panelImg);*/
 	colImg.append(img);
 	
-	var colInfo = $('<div/>').addClass('col-md-8');
+	
 	var nombre = $('<p/>').text(obj.nombre);
 	var correo = $('<p/>').text(obj.correo);
-	/*var panelInfo = $('<div/>').addClass('panel panel-default panel-info');
-	var panelInfoBody = $('<div/>').addClass('panel-body panel-body-info');
-	panelInfoBody.append(nombre, correo);*/
 	colInfo.append(nombre, correo);
 	var horario;
 	for (var i = 0; i < obj.horario.length; i++) {
 		horario = obj.horario[i] + ' en ' + obj.aula[i];
-		/*panelInfoBody.append($('<p/>').text(horario));*/
 		colInfo.append($('<p/>').text(horario));
 	}
-	/*panelInfo.append(panelInfoBody);
-	colInfo.append(panelInfo);*/
-
-
 	row.append(colImg, colInfo);
-	$(container).append(row);
+	var hr = $('<hr/>').addClass('featurette-divider');
+	$(container).append(hr, row, hr);
 }
 
 

@@ -29,7 +29,9 @@ body{
 
 .col-md-4, .col-md-8{
 	vertical-align: middle;
-		text-align: center;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .panel-body  {
@@ -57,9 +59,13 @@ body{
 		text-align: justify;
 	}
 
-	img{
-		height: 200px;
-		width: 200px;
+	#imgAyudante{
+		max-height: 250px;
+		min-height: 250px;
+		height: 250px;
+		max-width: 250px;
+		min-width: 250px;
+		width: 250px;
 	}
 }
 
