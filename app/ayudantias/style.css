@@ -14,11 +14,11 @@ body{
 	margin-bottom: 30px;
 
 }
-
+/*
 .row [class*="col-"]{
 	margin-bottom: -99999px;
 	padding-bottom: 99999px;
-}
+}*/
 
 .row{
 	/*border: 1px solid black;*/
@@ -57,8 +57,9 @@ body{
 		text-align: justify;
 	}
 
-	header{
-		/*padding: 15px;*/
+	img{
+		height: 200px;
+		width: 200px;
 	}
 }
 

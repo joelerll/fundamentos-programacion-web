@@ -15,26 +15,28 @@ function createRow(obj, container, clase){
 	
 	var colImg = $('<div/>').addClass('col-md-4');
 	img = $('<img/>').addClass('img-responsive center-block').attr({'src': obj.img, 'alt': 'imagen de ta', 'id' : 'imgAyudante'});
-	var panelImg = $('<div/>').addClass('panel panel-default panel-img');
+	/*var panelImg = $('<div/>').addClass('panel panel-default panel-img');
 	var panelImgBody = $('<div/>').addClass('panel-body panel-body-img');
 	panelImgBody.append(img);
 	panelImg.append(panelImgBody);
-	colImg.append(panelImg);
+	colImg.append(panelImg);*/
+	colImg.append(img);
 	
 	var colInfo = $('<div/>').addClass('col-md-8');
 	var nombre = $('<p/>').text(obj.nombre);
 	var correo = $('<p/>').text(obj.correo);
-	var panelInfo = $('<div/>').addClass('panel panel-default panel-info');
+	/*var panelInfo = $('<div/>').addClass('panel panel-default panel-info');
 	var panelInfoBody = $('<div/>').addClass('panel-body panel-body-info');
-	panelInfoBody.append(nombre, correo);
-	
+	panelInfoBody.append(nombre, correo);*/
+	colInfo.append(nombre, correo);
 	var horario;
 	for (var i = 0; i < obj.horario.length; i++) {
 		horario = obj.horario[i] + ' en ' + obj.aula[i];
-		panelInfoBody.append($('<p/>').text(horario));
+		/*panelInfoBody.append($('<p/>').text(horario));*/
+		colInfo.append($('<p/>').text(horario));
 	}
-	panelInfo.append(panelInfoBody);
-	colInfo.append(panelInfo);
+	/*panelInfo.append(panelInfoBody);
+	colInfo.append(panelInfo);*/
 
 
 	row.append(colImg, colInfo);
