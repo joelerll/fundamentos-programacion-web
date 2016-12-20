@@ -4,9 +4,11 @@
 	/*border: 1px solid blue;*/
 	box-sizing: border-box;
 }
+
 p, h2{
 	font-family: 'Lora', sans-serif;
 }
+
 .main{
 	width: 65%;
 	margin: auto;
@@ -15,17 +17,15 @@ p, h2{
 	background: rgba(255,255,255,0.8);
 }
 
-body{
-	background-color: #f5f8fa;
-}
-
 h2{
 	text-align: center;
-	/*font-family: Georgia;*/
 	font-size: 24px;
 	font-weight: bold;
 	margin: 10px 0 10px 0;
 	color: black;
+}
+h5, h4{
+	font-weight: bold;
 }
 
 img + p{
@@ -48,7 +48,6 @@ img + p{
 .modal{
 	/*top : 25%;*/
 	outline : none;	
-
 }
 
 /*Para laptops*/
@@ -68,44 +67,4 @@ img + p{
     }
 }
 
-/*NAVBAR*/
-#login{
-	width: 30px;
-	height: 30px;
-	border-radius: 100px;
-	border: 1px solid;
-	margin-left: auto;
-    margin-right: auto;
-}
-.words{
-	color: #001c43;
-}	
-h6{
-	text-align: left;
-}
-.navbar-default{
-  	background-color: rgba(255,255,255,0.8); 
-	border-color: transparent;
-	position: relative !important;
-}
-/*#myNavbar .btn{
-	background-color: transparent;
-	border-color: transparent;
-}*/
-.clearer{
-	clear:both;
-}
-.modal-footer button{
-	width: 45%;
-}
-.navbar-default .navbar-nav > li > a {
-	color: #001c43;
-}
-ul.nav a:hover { 
-	background-color: white !important; 
-}
-
-body.modal-open div.modal-backdrop { 
-		    z-index: 0; 
-}
 
