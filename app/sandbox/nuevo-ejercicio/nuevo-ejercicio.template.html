@@ -168,4 +168,5 @@
     </div>
     <div uib-alert ng-repeat="alert in $ctrl.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="$ctrl.closeAlert($index)" style="background-color:#31B0D5;color:white">{{alert.msg}}</div>
     <button type="button" class="btn btn-default" ng-click="$ctrl.addAlert()">Crear</button>
+    <button type="button" class="btn btn-default" ng-click="$ctrl.borrar_alertas()">Borrar Alertas</button>
   </form>

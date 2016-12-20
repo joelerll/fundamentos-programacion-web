@@ -1,0 +1,26 @@
+.mensajes-errores {
+  transition:3s linear all;
+}
+
+.mensajes-errores.ng-active {
+  color: red;
+}
+.mensajes-errores.ng-inactive {
+  color: green;
+}
+
+
+div.contenedor {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 4%;
+  margin-bottom : 4%
+}
+
+h2 {
+  text-align: center;
+}
+
+div.titulo, div.tags, div.descripcion {
+  margin-bottom: 3%;
+}

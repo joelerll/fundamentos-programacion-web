@@ -1,0 +1,12 @@
+angular.module('proyectosApp',[
+  'ngRoute',
+  'angularCSS',
+  'ngTagsInput',
+  'ngAnimate',
+  'textAngular',
+  'ui.bootstrap',
+  'ngTouch',
+  'presentacionProyectos',
+  'listaProyectos',
+  'nuevoProyecto'
+])

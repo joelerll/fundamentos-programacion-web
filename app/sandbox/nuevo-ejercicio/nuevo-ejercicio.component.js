@@ -33,6 +33,9 @@ angular.
 
          this.addAlert = function() {
             var cont = 0
+            if (this.alerts.length != 0) {
+              this.alerts = []
+            }
             if (this.titulo == '') {
                 this.alerts.push({msg: 'NO INGRESO TITULO'});
                 cont = cont +1
@@ -92,6 +95,8 @@ angular.
          this.closeAlert = function(index) {
            this.alerts.splice(index, 1);
          };
-
+				 this.borrar_alertas = function() {
+ 	        this.alerts = []
+ 	      }
     }]
   })

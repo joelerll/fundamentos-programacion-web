@@ -9,5 +9,5 @@ angular.module('sandboxApp', [
   'profesorEjercicios',
   'misEjercicios',
   'nuevoEjercicio',
-  'editarEjercicio'
+  'editarEjercicio',
 ])

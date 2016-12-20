@@ -1,0 +1,99 @@
+<div class='contenedor'>
+  <h2>Nuevo Proyecto</h2>
+
+  <form class='formulario' name='proyectoForm' novalidate>
+    <div class='titulo form-group'>
+      <div class="form-group" ng-class="{ 'has-error': proyectoForm.titulo.$touched && proyectoForm.titulo.$invalid }">
+        <label>Titulo</label>
+        <input type="text" name="titulo" class="form-control"
+          ng-model="$ctrl.titulo"
+          ng-minlength="5"
+          ng-maxlength="40"
+          required placeholder="min 5 - max 20">
+
+        <div class="mensajes-errores" ng-messages="proyectoForm.titulo.$error" ng-if="proyectoForm.titulo.$touched">
+          <p ng-message="minlength">El tamaño minimo es de 15.</p>
+          <p ng-message="maxlength">El tamaño maximo es de 40.</p>
+          <p ng-message="required">Campo obligatorio</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tags form-group">
+      <div class="form-group" name="tags" ng-class="{ 'has-error': proyectoForm.tags.$touched && proyectoForm.tags.$invalid }">
+        <tags-input ng-model="$ctrl.tags" placeholder='añadir tags (enter)' name='tags'></tags-input>
+        <div ng-messages="{noTags:!$ctrl.tags.length}" ng-if="proyectoForm.titulo.$touched">
+          <div ng-message="noTags" style="color: red">Ingrese al menos un tag</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="descripcion form-group">
+      <label>Descripcion</label>
+      <div text-angular ng-model="$ctrl.htmlContent" ta-toolbar="[['h1','h2','h3','p'],['bold','italics','underline','quote'],['ul','ol'],['justifyLeft','justifyCenter','justifyRight','justifyFull'],['insertImage','insertLink','insertVideo']]" name="editor" ta-text-editor-class="border-around" ta-html-editor-class="" style='border: solid #cccccc 1px;'></div>
+    </div>
+
+    <div class="hora-fecha form-group">
+      <div class='row'>
+        <div class='col-md-6 col-xs-12'>
+          <div class='centerBlock'>
+            <label>Fecha entrega</label>
+            <div class='date'>
+            <style>
+              .full button span {
+                background-color: limegreen;
+                border-radius: 32px;
+                color: black;
+              }
+              .partially button span {
+                background-color: orange;
+                border-radius: 32px;
+                color: black;
+              }
+            </style>
+                <div style="display:inline-block; min-height:290px;">
+                  <div uib-datepicker ng-model="$ctrl.dt" class="well well-sm" datepicker-options="$ctrl.options"></div>
+                </div>
+                <div class='row'>
+                  <div class='col-md-4 col-xs-12'>
+                    <span>Fecha entrega es: </span>
+                  </div>
+                  <div class='col-md-8 col-xs-12 text-left'>
+                    <span>{{$ctrl.dt | date:'fullDate' }}</span>
+                  </div>
+                </div>
+                <br>
+                <button type="button" class="btn btn-sm btn-info" ng-click="$ctrl.today()">Hoy</button>
+                <button type="button" class="btn btn-sm btn-danger" ng-click="$ctrl.clear()">Limpiar</button>
+            </div>
+
+          </div>
+        </div>
+        <div class='col-md-6 col-xs-12'>
+          <label>Hora entrega</label>
+          <div class='hora'>
+            <div class='row'>
+              <div class='col-md-5'>
+                <div uib-timepicker ng-model="$ctrl.mytime" ng-change="$ctrl.changed()" hour-step="$ctrl.hstep" minute-step="$ctrl.mstep" show-meridian="$ctrl.ismeridian"></div>
+              </div>
+              <div class='col-md-5'>
+                <button type="button" class="btn btn-info " style='margin-bottom: 1%' ng-click="$ctrl.toggleMode()">12H / 24H</button> <br>
+                <button type="button" class="btn btn-default" style='margin-bottom: 1%' ng-click="$ctrl.update()">Fijar 11:59 PM</button> <br>
+                <button type="button" class="btn btn-danger" style='margin-bottom: 1%' ng-click="$ctrl.clear_time()">Limpiar</button> <br>
+              </div>
+              <div class='col-md-2'></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="archivo form-group">
+      <label>Subir archivo</label>
+    </div>
+    <div uib-alert ng-repeat="alert in $ctrl.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="$ctrl.closeAlert($index)" style="background-color:#31B0D5;color:white">{{alert.msg}}</div>
+    <button type="button" class="btn btn-default" ng-click="$ctrl.submit()">Crear</button>
+    <button type="button" class="btn btn-default" ng-click="$ctrl.borrar_alertas()">Borrar Alertas</button>
+  </form>
+</div>

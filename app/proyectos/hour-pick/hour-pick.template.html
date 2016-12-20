@@ -1,0 +1,13 @@
+<div class='hora'>
+  <div class='row'>
+    <div class='col-md-5'>
+      <div uib-timepicker ng-model="$ctrl.mytime" ng-change="$ctrl.changed()" hour-step="$ctrl.hstep" minute-step="$ctrl.mstep" show-meridian="$ctrl.ismeridian"></div>
+    </div>
+    <div class='col-md-5'>
+      <button type="button" class="btn btn-info " style='margin-bottom: 1%' ng-click="$ctrl.toggleMode()">12H / 24H</button> <br>
+      <button type="button" class="btn btn-default" style='margin-bottom: 1%' ng-click="$ctrl.update()">Fijar 11:59 PM</button> <br>
+      <button type="button" class="btn btn-danger" style='margin-bottom: 1%' ng-click="$ctrl.clear()">Limpiar</button> <br>
+    </div>
+    <div class='col-md-2'></div>
+  </div>
+</div>
