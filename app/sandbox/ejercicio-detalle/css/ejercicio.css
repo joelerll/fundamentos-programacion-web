@@ -99,3 +99,28 @@ body {
     opacity: 0;
     filter: alpha(opacity=0);
 }
+
+li {
+  list-style-type: none;
+}
+nav.navegacion-links > li > a {
+  color: rgba(8, 9, 8, 0.77);
+}
+
+div.content-header {
+  padding-left: 5%;
+  padding-bottom: 2%;
+  margin-left: 0%;
+  color: rgba(22, 8, 16, 0.57);
+  border-bottom: solid rgba(5, 5, 4, 0.35) 1px;
+}
+
+
+.btn-group > button > a {
+  color: black
+}
+
+div.nav-link {
+  margin-right: 8%;
+  margin-left: 8%;
+}

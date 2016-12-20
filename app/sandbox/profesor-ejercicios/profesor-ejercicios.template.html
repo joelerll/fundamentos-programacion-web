@@ -1,20 +1,25 @@
+<div class='nav-link'>
+  <div class="btn-group btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+      <a href="#!/"><button type="button" class="btn btn-default">Sandbox</button></a>
+    </div>
+    <div class="btn-group" role="group">
+      <a href="#!/profesores"><button type="button" class="btn btn-default">Profesores</button></a>
+    </div>
+    <div class="btn-group" role="group">
+      <a ng-if='$ctrl.profesor_data.correo.length == 1' href="#!/profesor/ejercicos/{{$ctrl.profesor_data.correo[0]}}"><button type="button" class="btn btn-default">Mis Ejercicios</button></a>
+      <a ng-if='$ctrl.profesor_data.correo.length == 2' href="#!/profesor/ejercicos/{{$ctrl.profesor_data.correo[1]}}"><button type="button" class="btn btn-default">Mis Ejercicios</button></a>
+    </div>
+    <div class="btn-group" role="group">
+      <a ng-if='$ctrl.profesor_data.correo.length == 2' href="#!/profesor/ejercicios/{{$ctrl.profesor_data.correo[1]}}/nuevo"><button type="button" class="btn btn-default">Nuevo</button></a>
+      <a ng-if='$ctrl.profesor_data.correo.length == 1' href="#!/profesor/ejercicios/{{$ctrl.profesor_data.correo[0]}}/nuevo"><button type="button" class="btn btn-default">Nuevo</button></a>
+    </div>
+  </div>
+</div>
+
 <div class='titulo'>
   <h2>Lista Ejercicios disponibles</h2>
 </div>
-<nav aria-label="Page navigation">
-  <ul class="pagination">
-    <li>
-    </li>
-    <li><a href="#!/">Sandbox</a></li>
-    <li><a href="#!/profesores">Profesores</a></li>
-    <li>
-      <a ng-if='$ctrl.profesor_data.correo.length == 1' href="#!/profesor/ejercicos/{{$ctrl.profesor_data.correo[0]}}">Mis Ejercicios</a>
-      <a ng-if='$ctrl.profesor_data.correo.length == 2' href="#!/profesor/ejercicos/{{$ctrl.profesor_data.correo[1]}}">Mis Ejercicios</a>
-    </li>
-    <li>
-    </li>
-  </ul>
-</nav>
 
 <link rel="stylesheet" href="">
 <ejercicios-lista></ejercicios-lista>

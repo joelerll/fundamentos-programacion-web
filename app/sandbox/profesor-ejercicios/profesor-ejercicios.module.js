@@ -1,3 +1,4 @@
 angular.module('profesorEjercicios', [
-  'ngRoute'
+  'ngRoute',
+  'ngMessages'
 ])

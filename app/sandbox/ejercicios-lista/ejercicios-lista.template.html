@@ -10,15 +10,17 @@
           <div class="col-md-3 col-xs-12">
             <div class='ejercicio-rating'>
               <select ng-model='$ctrl.orderProp'  class="selector">
-                <option value="nivel_dificultad">Ascedente</option>
-                <option value="-nivel_dificultad">Descendente</option>
+                <div class="cs-options">
+                  <option value="nivel_dificultad">Ascedente</option>
+                  <option value="-nivel_dificultad">Descendente</option>
+                </div>
               </select>
             </div>
           </div>
           <div class="col-md-3 col-xs-12">
             <div class='search-content'>
-              <span class='search'>Buscar:</span>
-              <input ng-model='$ctrl.query'>
+                <icon class='buscar fa fa-search fa-lg'> </icon>
+              <input type="text" class="form-control buscar" ng-model='$ctrl.query' placeholder="Buscar...">
             </div>
           </div>
         </div>

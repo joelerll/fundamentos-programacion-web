@@ -10,78 +10,88 @@ angular.
         ];
         this.choices = [];
 
-        this.addNewChoice = function() {
-          var newItemNo = this.choices.length+1;
-          this.choices.push({'id':'choice'+newItemNo});
-        };
-
-        this.removeChoice = function() {
-          var lastItem = this.choices.length-1;
-          this.choices.splice(lastItem);
-        };
-        this.salida = [];
-
-        this.addNewSalida = function() {
-          var newItemNo = this.salida.length+1;
-          this.salida.push({'id':'choice'+newItemNo});
-        };
-
-        this.removeSalida = function() {
-          var lastItem = this.salida.length-1;
-          this.salida.splice(lastItem);
-        };
-        this.entrada = [];
-
-        this.addNewEntrada = function() {
-          var newItemNo = this.entrada.length+1;
-          this.entrada.push({'id':'choice'+newItemNo});
-        };
-
-        this.removeEntrada = function() {
-          var lastItem = this.entrada.length-1;
-          this.entrada.splice(lastItem);
-        };
-        this.salida_sample = [];
-
-        this.addNewSalida_sample = function() {
-          var newItemNo = this.salida_sample.length+1;
-          this.salida_sample.push({'id':'choice'+newItemNo});
-        };
-
-        this.removeSalida_sample = function() {
-          var lastItem = this.salida_sample.length-1;
-          this.salida_sample.splice(lastItem);
-        };
-
         this.go = function ( path ) {
           $location.path( path );
         };
 
+          this.nota = ''
+          this.formato_de_entrada = ''
+          this.salida = ''
+          this.ejemplo_entrada = ''
+          this.ejemplo_salida = ''
+         this.titulo = ''
+         this.dificultad = 0
+         this.declaracion_problema = ''
+         this.formato_de_entrada = ''
+         this.constrains = ''
+         this.explicacion_problema = ''
+        this.errores = ''
+        this.ranking = ''
+
         this.alerts = [
-           { type: 'danger', msg: 'Oh snap! Change a few things up and try submitting again.' },
-           { type: 'success', msg: 'Well done! You successfully read this important alert message.' }
-       ];
+         ];
 
          this.addAlert = function() {
-           this.alerts.push({msg: 'Another alert!'});
+            var cont = 0
+            if (this.titulo == '') {
+                this.alerts.push({msg: 'NO INGRESO TITULO'});
+                cont = cont +1
+            }
+            if (this.dificultad == 0){
+                this.alerts.push({msg: 'NO INGRESO DIFICULTAD'});
+                cont = cont +1
+            }
+            if (this.tags.length == 0){
+                this.alerts.push({msg: 'NO INGRESO NINGUN TAG'});
+                cont = cont +1
+            }
+            if (this.declaracion_problema == ''){
+                this.alerts.push({msg: 'NO INGRESO DECLARACION PROBLEMA'});
+                cont = cont +1
+            }
+            if (this.nota == ''){
+                this.alerts.push({msg: 'NO INGRESO NOTA'});
+                cont = cont +1
+            }
+            if (this.formato_de_entrada == ''){
+                this.alerts.push({msg: 'NO INGRESO FORMATO DE ENTRADA'});
+                cont = cont +1
+            }
+            if (this.salida == ''){
+                this.alerts.push({msg: 'NO INGRESO SALIDA'});
+                cont = cont +1
+            }
+            if (this.ejemplo_entrada == ''){
+                this.alerts.push({msg: 'NO INGRESO EJEMPLO ENTRADA'});
+                cont = cont +1
+            }
+            if (this.ejemplo_salida == ''){
+                this.alerts.push({msg: 'NO INGRESO EJEMPLO SALIDA'});
+                cont = cont +1
+            }
+            if (this.explicacion_problema == ''){
+                this.alerts.push({msg: 'NO INGRESO EXPLICACION PROBLEMA'});
+                cont = cont +1
+            }
+            if (cont = 10){
+              this.alerts.push({type: 'success', msg: 'REGISTRO COMPLETADO'});
+              this.titulo = ''
+              this.dificultad = 0
+              this.tags = []
+              this.declaracion_problema = ''
+              this.nota = ''
+              this.formato_de_entrada = ''
+              this.salida = ''
+              this.ejemplo_entrada = ''
+              this.ejemplo_salida = ''
+              this.explicacion_problema = ''
+            }
+
          };
 
          this.closeAlert = function(index) {
            this.alerts.splice(index, 1);
          };
 
-         this.titulo = ''
-         this.dificultad = ''
-         this.declaracion_problema = ''
-         this.formato_de_entrada = ''
-         this.constrains = ''
-         this.explicacion_problema = ''
-        this.errores = ''
-        this.verificar = function() {
-          var titulo
-          if (this.titulo == ''){
-            this.errores = titulo
-          }
-        }
     }]
   })

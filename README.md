@@ -5,17 +5,17 @@
 
 # Partes
 [ ] faltas ortograficas <br>
-[ ] mejorar colores Sandbox <br>
+[x] mejorar colores Sandbox <br>
 [ ] mejorar corrousel imagenes <br>
 [ ] arreglar navbar links<br>
 [ ] mapa Ayudantias <br>
 [ ] proyectos editor texto <br>
-[ ] validaciones crear ejercicio <br>
-[ ] cambiar ingreso rangking <br>
-[ ] mejorar paneles buscar y selector <br>
+[x] validaciones crear ejercicio <br>
+[x] cambiar ingreso rangking <br>
+[x] mejorar paneles buscar y selector <br>
 [ ] fonts cambiar <br>
 [ ] boton subir codigo nuevo-ejercicio <br>
-[ ] navegacion Sandbox <br>
+[x] navegacion Sandbox <br>
 [ ] colocar imagenes curso <br>
 [ ] equipo mejorar presentacion datos <br>
 [ ] descargar fotos profesores <br>
@@ -23,6 +23,7 @@
 [ ] botones mejorar (colores y login) <br>
 [ ] mejorar perfil codeacademy <br>
 [ ] cambio de semana animacion <br>
+[ ] modificar ejercicio <br>
 [x] Menu <br>
 [ ] Carrusel de imagenes<br>
 [x] Modal<br>
