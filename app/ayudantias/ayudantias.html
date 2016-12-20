@@ -14,10 +14,7 @@
 
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 	<style type="text/css">
-		#map{
-			width: 500px;
-			height: 500px;
-		}
+	
 	</style>
 	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 </head>
@@ -33,7 +30,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>                        
 			    </button>
-		      	<a class="navbar-brand" href="index.html">ESPOL</a>
+		      	<a class="navbar-brand" href="../../index.html">ESPOL</a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 			    <ul class="nav navbar-nav">
@@ -42,8 +39,8 @@
 			        <li class="espol"><a href="../../app/semanal/semanal.html">Semana a Semana</a></li>
 			        <li class="espol"><a href="../../app/equipo/equipo.html">Equipo</a></li>
 			        <li class="espol"><a href="../../app/ayudantias/ayudantias.html">Ayudantías</a></li>
-			        <li class="espol"><a href="#">Sandbox</a></li>
-			        <li class="espol"><a href="../../app/proyectos/proyectos.html">Proyectos</a></li>
+			        <li class="espol"><a href="../../app/sandbox/index.html">Sandbox</a></li>
+			        <li class="espol"><a href="../../app/proyectos/index.html">Proyectos</a></li>
 			        <li class="espol"><a href="../../app/perfil/perfil.html">Perfil</a></li>
 			    </ul>
 			    <ul class="nav navbar-nav navbar-right">
@@ -88,7 +85,7 @@
 								<button type="button" class="btn btn-default inline pull-right" data-dismiss="modal">Close</button>
 								<hr class="clearer">
 								<a href="#" class="words"><h6>Crear una cuenta</h6></a>
-							    <a href="app/misc/forgotPass.html" class="words"><h6>¿Olvidaste tu contraseña?</h6></a>
+							    <a href="../../app/misc/forgotPass.html" class="words"><h6>¿Olvidaste tu contraseña?</h6></a>
 							</div>
 						</div>
 					</div>
@@ -98,6 +95,16 @@
 		  </div>
 		</nav>
 	</header>
+	<div class="modal" id="mapModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body" id="map">
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
 	<div class="container" id="back">
 
 	</div>
@@ -107,6 +114,16 @@
 		<script src="../../public/js/bootstrap.min.js"></script>
 		<!--JSON-->
 		<script src = '../../public/json_files/info.json'></script>
+		<script type="text/javascript">
+		var map = L.map('map',{
+		    center: [43.64701, -79.39425],
+		    zoom: 15
+	    });
+
+	    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	    	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	    }).addTo(map);
+	</script>
 		<!--JS script-->
 		<script src="scriptAyudantias.js"></script>
 	</footer>

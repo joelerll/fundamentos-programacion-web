@@ -1,5 +1,10 @@
 $(document).ready(function(){
 	createDivs(info);
+	$('#mapModal').on('show.bs.modal', function(){
+	  setTimeout(function() {
+	    map.invalidateSize();
+	  }, 10);
+	 });
 
 });
 
@@ -25,10 +30,10 @@ function createRow(obj, container, clase, i){
 	img = $('<img/>').addClass('img-responsive center-block').attr({'src': obj.img, 'alt': 'imagen de ta', 'id' : 'imgAyudante'});
 	colImg.append(img);
 	
-	
 	var nombre = $('<p/>').text(obj.nombre);
 	var correo = $('<p/>').text(obj.correo);
 	colInfo.append(nombre, correo);
+	
 	var horario;
 	for (var i = 0; i < obj.horario.length; i++) {
 		horario = obj.horario[i] + ' en ' + obj.aula[i];
@@ -41,8 +46,17 @@ function createRow(obj, container, clase, i){
 	}).text('Ver mapa');
 
 	mapLink.click(function(){
-		crearModal();
-		crearMapa();
+		//crearModal();
+		//crearMapa();
+		map.setView(new L.LatLng(obj.lat[0], obj.lng[0]), 15);
+		var marker, lat, lng, aula;
+		for (var j = 0; j < obj.lat.length; j++) {
+			lat = obj.lat[j];
+			lng = obj.lng[j];
+			marker = L.marker([lat, lng]).addTo(map);
+			aula = obj.aula[j];
+			marker.bindPopup(aula).openPopup();
+		}
 	});
 
 
@@ -73,9 +87,9 @@ function crearModal(){
 
 
 function crearMapa(){
-	var map = L.map('modalBodyPanel',{
+	var map = L.map('map',{
 		    center: [43.64701, -79.39425],
-		    zoom: 10
+		    zoom: 15
 	});
 
 	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
