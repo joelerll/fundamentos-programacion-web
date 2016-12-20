@@ -1,5 +1,13 @@
-angular.module('App', []).
+angular.module('App', ['ngAnimate']).
   controller('ActividadesClasesController', function($scope, $http) {
+    $.fn.extend({
+        animateCss: function (animationName) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            this.addClass('animated ' + animationName).one(animationEnd, function() {
+                $(this).removeClass('animated ' + animationName);
+            });
+        }
+    });
   $http.get('./json/actividades_clase.json')
        .then(function(res){
           $scope.clases = res.data.actividades
@@ -13,6 +21,7 @@ angular.module('App', []).
       console.log(id_clase);
     }*/
     $scope.showdiv =  function(event){
+      $('.titulo-escogida').animateCss('rollIn');
       id_clase = $(event.target).attr("id-clase")
       $scope.estado = true;
        $http.get('./json/actividades_clase.json')

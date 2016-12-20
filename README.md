@@ -14,7 +14,7 @@
 [x] cambiar ingreso rangking <br>
 [x] mejorar paneles buscar y selector <br>
 [x] fonts cambiar <br>
-[ ] boton subir codigo nuevo-ejercicio <br>
+[x] boton subir codigo nuevo-ejercicio <br>
 [x] navegacion Sandbox <br>
 [ ] colocar imagenes curso <br>
 [x] equipo mejorar presentacion datos <br>
@@ -22,9 +22,9 @@
 [ ] llenar datos semana a Semana <br>
 [ ] botones mejorar (colores y login) <br>
 [ ] mejorar perfil codeacademy <br>
-[ ] cambio de semana animacion <br>
-[ ] modificar ejercicio <br>
-[ ] animar busquedas de ejercicios <br>
+[x] cambio de semana animacion <br>
+[x] modificar ejercicio <br>
+[x] animar busquedas de ejercicios <br>
 [x] Menu <br>
 [x] Carrusel de imagenes<br>
 [x] Modal<br>

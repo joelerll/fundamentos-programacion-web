@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/side-bar.css">
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link rel="stylesheet" href="../../public/css/custom-navbar.css">
+  <link rel="stylesheet" href="./css/animate.css">
   <title>Semanal</title>
 </head>
 <body  ng-controller="ClaseTemaController">
@@ -106,10 +107,10 @@
                 </div>
                 <div id="collapse{[{clase.semana}]}" class="panel-collapse collapse">
                   <li class="list-group item" >
-                    <a href=""  class="list-group-item " id-clase={[{clase.clases[0].id}]} ng-click="showdiv($event)">Aula: {[{clase.clases[0].descripcion}]}</a>
+                    <a href=""  class="list-group-item " id-clase={[{clase.clases[0].id}]} ng-click="showdiv($event)" >Aula: {[{clase.clases[0].descripcion}]}</a>
                   </li>
                   <li class="list-group item" >
-                    <a class="list-group-item" id-clase={[{clase.clases[1].id}]} ng-click="showdiv($event)"><i class="fa fa-desktop fa-lg"></i> {[{clase.clases[1].descripcion}]}
+                    <a class="list-group-item" id-clase={[{clase.clases[1].id}]} ng-click="showdiv($event)" ><i class="fa fa-desktop fa-lg"></i> {[{clase.clases[1].descripcion}]}
                     </a>
                   </li>
                 </div>
@@ -129,6 +130,7 @@
   <script src="../../public/js/angular.min.js" charset="utf-8"></script>
   <script src="../../public/js/jquery.js" charset="utf-8"></script>
   <script src="../../public/js/bootstrap.min.js"></script>
+  <script src="./js/angular-animate.js" charset="utf-8"></script>
   <!---------------------------->
   <script type="text/javascript">
   	$(document).ready(function() {
