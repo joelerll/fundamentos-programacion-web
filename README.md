@@ -1,7 +1,7 @@
 # Proyecto de Desarrollo de Aplicaciones Web
 | Inicio | El Curso | Semana a Semana | Equipo | Ayudantias | Sandbox | Proyectos | Perfil |
 |:-------|:---------|:----------------|:-------|:-----------|:--------|:----------|:-------|
-| [x]    | [x]      | [x]             | [x]    | [ ]        | [ ]     | [ ]       | [x]    |
+| [x]    | [x]      | [x]             | [x]    | [ ]        | [x]     | [ ]       | [x]    |
 
 # Partes
 [ ] faltas ortograficas <br>
@@ -24,6 +24,7 @@
 [ ] mejorar perfil codeacademy <br>
 [ ] cambio de semana animacion <br>
 [ ] modificar ejercicio <br>
+[ ] animar busquedas de ejercicios
 [x] Menu <br>
 [ ] Carrusel de imagenes<br>
 [x] Modal<br>
@@ -32,8 +33,8 @@
 [x] Usar Bootstrap<br>
 [x] Responsive<br>
 [x] pagina principal index.html<br>
-[ ] validaciones javascript<br>
-[ ] controles html5<br>
+[x] validaciones javascript<br>
+[x] controles html5<br>
 [x] funcionalidad ajax para consultas a documentos<br>
 [x] Uso de heroku<br>
 

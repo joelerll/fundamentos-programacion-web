@@ -1,0 +1,28 @@
+div.contenedor {
+  margin: 2%;
+}
+
+h1 {
+  text-align: center;
+}
+
+form.formulario {
+  margin: 5%;
+}
+
+div.nav-link {
+  margin-right: 5%;
+  margin-left: 8%;
+}
+
+
+.mensajes-errores {
+  transition:3s linear all;
+}
+
+.mensajes-errores.ng-active {
+  color: red;
+}
+.mensajes-errores.ng-inactive {
+  color: green;
+}

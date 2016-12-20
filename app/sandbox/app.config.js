@@ -35,6 +35,10 @@ angular.
 					template: '<nuevo-ejercicio></nuevo-ejercicio>',
           css: ['/app/sandbox/nuevo-ejercicio/css/nuevo-ejercicio.css','/app/sandbox/1_dependencies/css/font-awesome.min.css']
 				}).
+				when('/profesor/ejercicios/:profesorId/:ejercicioId/editar', {
+				  template: '<editar-ejercicio></editar-ejercicio>',
+            css: ['/app/sandbox/1_dependencies/css/font-awesome.min.css','/app/sandbox/editar-ejercicio/css/editar-ejercicio.css']
+				}).
         otherwise('/')
     }
   ]).
