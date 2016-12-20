@@ -9,8 +9,8 @@
         "oswaldojosmanyam2@gmail.com"
       ],
       "profesor": [
-        "Eduardo Murillo Bajaña",
-        "Eduardo Murillo Bajaña",
+        "Eduardo Murillo Baja�a",
+        "Eduardo Murillo Baja�a",
         "Jorge Magallanes Borbor"
       ],
       "paralelo": [
@@ -18,12 +18,11 @@
         "35",
         "11"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/201419079.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "201302882",
-      "nombre": "Jorge Luis Cedeño Arteaga",
+      "nombre": "Jorge Luis Cede�o Arteaga",
       "correo": [
         "jlcedeno@espol.edu.ec",
         "jlcedeno@espol.edu.ec",
@@ -38,8 +37,7 @@
         "2",
         "6"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/201302882.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "200000000",
@@ -50,19 +48,18 @@
       "profesor": [
         "Jorge Ugarte Fajardo",
         "Edison del Rosario Camposano",
-        "José Villa Vásquez"
+        "Jos� Villa V�squez"
       ],
       "paralelo": [
         "15",
         "22",
         "25"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/200000000.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "200000000",
-      "nombre": "Josselyn Esther Gallo Muñoz",
+      "nombre": "Josselyn Esther Gallo Mu�oz",
       "correo": [
         ""
       ],
@@ -76,17 +73,16 @@
         "29",
         "16"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/200000000.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "201421632",
-      "nombre": "Jorge Isaac Guerra Solís",
+      "nombre": "Jorge Isaac Guerra Sol�s",
       "correo": [
         "jiguerra@espol.edu.ec"
       ],
       "profesor": [
-        "Marco Calderón Arguello",
+        "Marco Calder�n Arguello",
         "Eduardo Cruz Ramirez",
         "Orlando Zambrano Romero"
       ],
@@ -95,8 +91,7 @@
         "10",
         "16"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/201421632.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "200000000",
@@ -105,8 +100,8 @@
         ""
       ],
       "profesor": [
-        "Rocío Mera Suárez",
-        "Rocío Mera Suárez",
+        "Roc�o Mera Su�rez",
+        "Roc�o Mera Su�rez",
         "Ana Tapia Rosero"
       ],
       "paralelo": [
@@ -114,8 +109,7 @@
         "38",
         "12"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/200000000.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "200000000",
@@ -126,8 +120,8 @@
         "avnaranj@fiec.espol.edu.ec"
       ],
       "profesor": [
-        "Meiying Cheung Ruíz",
-        "Meiying Cheung Ruíz",
+        "Meiying Cheung Ru�z",
+        "Meiying Cheung Ru�z",
         "Ana Tapia Rosero"
       ],
       "paralelo": [
@@ -135,12 +129,11 @@
         "28",
         "12"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/200000000.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "201421319",
-      "nombre": "Joselyn Ibeth Parra Córdova",
+      "nombre": "Joselyn Ibeth Parra C�rdova",
       "correo": [
         "jiparra@espol.edu.ec",
         "jiparra@espol.edu.ec",
@@ -148,16 +141,15 @@
       ],
       "profesor": [
         "Jhonny Pincay Nieves",
-        "Dalton Noboa Macías",
-        "José Villa Vásquez"
+        "Dalton Noboa Mac�as",
+        "Jos� Villa V�squez"
       ],
       "paralelo": [
         "1",
         "26",
         "25"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/201421319.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "201304684",
@@ -177,8 +169,7 @@
         "7",
         "8"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/201304684.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "201506161",
@@ -198,18 +189,17 @@
         "20",
         "14"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/201506161.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "200000000",
-      "nombre": "Juan Carlos Saltos Núñez",
+      "nombre": "Juan Carlos Saltos N��ez",
       "correo": [
         ""
       ],
       "profesor": [
-        "Verónica Carrasco Idrovo",
-        "Verónica Carrasco Idrovo",
+        "Ver�nica Carrasco Idrovo",
+        "Ver�nica Carrasco Idrovo",
         "Miguel Realpe Robalino"
       ],
       "paralelo": [
@@ -217,12 +207,11 @@
         "31",
         "14"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/200000000.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "201507022",
-      "nombre": "Ariel Enrique Sánchez Muñoz",
+      "nombre": "Ariel Enrique S�nchez Mu�oz",
       "correo": [
         "ariensan@espol.edu.ec",
         "ariel4432@hotmail.com"
@@ -237,20 +226,19 @@
         "23",
         "11"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/201507022.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "201505935",
-      "nombre": "Miguel Ángel Sánchez Romero",
+      "nombre": "Miguel �ngel S�nchez Romero",
       "correo": [
         "migansan@espol.edu.ec",
         "migansan@fiec.espol.edu.ec",
         "mangelsr@live.com"
       ],
       "profesor": [
-        "Ángela Carrera Rivera",
-        "Ángela Carrera Rivera",
+        "�ngela Carrera Rivera",
+        "�ngela Carrera Rivera",
         "Rodrigo Saraguro Bravo"
       ],
       "paralelo": [
@@ -258,18 +246,17 @@
         "36",
         "13"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/201505935.jpg"
+      "tipo": "grader"
     },
     {
       "matricula": "200000000",
-      "nombre": "Anni Rosa Santacruz Hernández",
+      "nombre": "Anni Rosa Santacruz Hern�ndez",
       "correo": [
         ""
       ],
       "profesor": [
-        "Paola Yánez Pazmiño",
-        "Paola Yánez Pazmiño",
+        "Paola Y�nez Pazmi�o",
+        "Paola Y�nez Pazmi�o",
         "Carmen Vaca Ruiz"
       ],
       "paralelo": [
@@ -277,18 +264,17 @@
         "19",
         "3"
       ],
-      "tipo": "grader",
-	  "img" : "../../public/media/ayudantes/200000000.jpg"
+      "tipo": "grader"
     }
   ],
   "TA": [
     {
       "matricula": "201410264",
-      "nombre": "Galo Daniel Castillo López",
+      "nombre": "Galo Daniel Castillo L�pez",
       "correo": "gadacast@espol.edu.ec",
       "horario": [
         "Lunes 14:00 - 16:30",
-        "MIÉRCOLES 14:00 - 16:30",
+        "Mi�rcoles 14:00 - 16:30",
         "Martes 10:30 - 11:30",
         "Jueves 10:30 - 11:30"
       ],
@@ -298,12 +284,11 @@
         "Sala de Ayudantes de FIEC",
         "Sala de Ayudantes de FIEC"
       ],
-      "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201410264.jpg"
+      "tipo": "TA"
     },
     {
       "matricula": "201302882",
-      "nombre": "Jorge Luis Cedeño Arteaga",
+      "nombre": "Jorge Luis Cede�o Arteaga",
       "correo": "jlcedeno@espol.edu.ec",
       "horario": [
         "Martes 13:30 - 17:30",
@@ -315,12 +300,11 @@
         "Sala de Ayudantes de FIEC",
         "Sala de Ayudantes de FIEC"
       ],
-      "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201302882.jpg"
+      "tipo": "TA"
     },
     {
       "matricula": "201410871",
-      "nombre": "María Belén Guaranda Cabezas",
+      "nombre": "Mar�a Bel�n Guaranda Cabezas",
       "correo": "mguarand@espol.edu.ec",
       "horario": [
         "Lunes  7:30  - 9:30 ",
@@ -332,8 +316,7 @@
         "24A -  113",
         "\n  Sala de\n  Ayudantes de FIEC"
       ],
-      "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201410871.jpg"
+      "tipo": "TA"
     },
     {
       "matricula": "201417433",
@@ -349,12 +332,11 @@
         "24A -  113",
         "Sala de Ayudantes de FIEC"
       ],
-      "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201417433.jpg"
+      "tipo": "TA"
     },
     {
       "matricula": "201304087",
-      "nombre": "Emmanuel Fernando Morán Barreiro",
+      "nombre": "Emmanuel Fernando Mor�n Barreiro",
       "correo": "fnando1995@gmail.com",
       "horario": [
         "Lunes  7:30  - 9:30 ",
@@ -368,8 +350,7 @@
         "Sala de  Ayudantes de FIEC",
         "Sala de Ayudantes de FIEC"
       ],
-      "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201304087.jpg"
+      "tipo": "TA"
     },
     {
       "matricula": "201304684",
@@ -387,8 +368,7 @@
         "CIB",
         "CIB"
       ],
-      "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201304684.jpg"
+      "tipo": "TA"
     },
     {
       "matricula": "201410224",
@@ -404,8 +384,7 @@
         "24A-204",
         "Sin Asignar"
       ],
-      "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201410224.jpg"
+      "tipo": "TA"
     },
     {
       "matricula": "200000000",
@@ -421,12 +400,11 @@
         "A-103",
         "\n  Sala de\n  Ayudantes"
       ],
-      "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/200000000.jpg"
+      "tipo": "TA"
     },
     {
       "matricula": "201421632",
-      "nombre": "Jorge Isaac Guerra Solís",
+      "nombre": "Jorge Isaac Guerra Sol�s",
       "correo": "jiguerra@espol.edu.ec",
       "horario": [
         "Jueves 7:30 - 9:30"
@@ -434,8 +412,7 @@
       "aula": [
         "24A - 201"
       ],
-      "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201421632.jpg"
+      "tipo": "TA"
     }
   ],
   "profesores": [
@@ -452,7 +429,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES",
+        "MI�RCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -464,7 +441,7 @@
         "aavendan@fiec.espol.edu.ec",
         "aavendan@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_3.jpg"
+      "img": "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "BONILLA RAFAEL IGNACIO",
@@ -489,7 +466,7 @@
       "correo": [
         "rabonilla@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/rafael%20bonilla.jpg"
+      "img": "../../public/media/profesores/bonilla.jpg"
     },
     {
       "nombre": "CALDERON ARGUELLO MARCO ANTONIO",
@@ -510,12 +487,12 @@
       "correo": [
         "ancalder@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/mcalderon.jpg"
+      "img": "../../public/media/profesores/calderon.jpg"
     },
     {
       "nombre": "CARLO UNDA MARIA LORENA",
       "aula": [
-        "LABORATORIO DE INGENIERÍA DE SOFTWARE",
+        "LABORATORIO DE INGENIER�A DE SOFTWARE",
         "15A-01"
       ],
       "paralelo": [
@@ -529,14 +506,14 @@
         "13:30:00-15:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/lcarlo_0.jpg"
+      "img": "../../public/media/profesores/carlo.jpg"
     },
     {
       "nombre": "CARRASCO IDROVO VERONICA JANNETH",
       "aula": [
         "15A-02",
         "LAB. CENTAURO",
-        "LABORATORIO DE INGENIERÍA DE SOFTWARE",
+        "LABORATORIO DE INGENIER�A DE SOFTWARE",
         "COM4"
       ],
       "paralelo": [
@@ -545,7 +522,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES",
+        "MI�RCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -557,7 +534,7 @@
         "vcarrasc@fiec.espol.edu.ec",
         "vcarrasc@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_3.jpg"
+      "img": "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "CARRERA RIVERA ANGELA ISABEL",
@@ -573,7 +550,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES"
+        "MI�RCOLES"
       ],
       "hora": [
         "9:30:00-11:30:00",
@@ -596,7 +573,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES",
+        "MI�RCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -607,7 +584,7 @@
         "icheung@espol.edu.ec",
         "mcheung@fiec.espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_5.jpg"
+      "img": "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "CRUZ RAMIREZ EDUARDO SEGUNDO",
@@ -620,7 +597,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES"
+        "MI�RCOLES"
       ],
       "hora": [
         "13:30:00-15:30:00"
@@ -628,7 +605,7 @@
       "correo": [
         "escruz@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/eduardocruz2.jpg"
+      "img": "../../public/media/profesores/cruz.jpg"
     },
     {
       "nombre": "DEL ROSARIO CAMPOSANO EDISON ISAIAS",
@@ -649,12 +626,12 @@
       "correo": [
         "edelros@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/erosario.jpg"
+      "img": "../../public/media/profesores/rosario.jpg"
     },
     {
       "nombre": "FALCONES MONTESDEOCA CRUZ MARIA",
       "aula": [
-        "LABORATORIO DE INGENIERÍA DE SOFTWARE",
+        "LABORATORIO DE INGENIER�A DE SOFTWARE",
         "COMP A FIMCP",
         "A-103",
         "COM4"
@@ -665,7 +642,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES",
+        "MI�RCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -677,7 +654,7 @@
         "cfalcone@espol.edu.ec",
         "cfalcone@fiec.espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/cruz%20falcones.jpg"
+      "img": "../../public/media/profesores/falcones.jpg"
     },
     {
       "nombre": "MAGALLANES BORBOR JORGE ANTONIO",
@@ -698,7 +675,7 @@
       "correo": [
         "jmagalla@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/jorge%20magallanes.jpg"
+      "img": "../../public/media/profesores/magallanes.jpg"
     },
     {
       "nombre": "MALO PINZA FRANK CARLOS",
@@ -714,7 +691,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES",
+        "MI�RCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -726,10 +703,10 @@
         "fmalo@fiec.espol.edu.ec",
         "fmalo@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_7.jpg"
+      "img": "../../public/media/profesores/no-Avatar.jpg"
     },
     {
-      "nombre": "MERA SUÁREZ ROCÍO ELIZABETH",
+      "nombre": "MERA SUAREZ ROCIO ELIZABETH",
       "aula": [
         "A-210",
         "24C-106 FIMCP",
@@ -741,7 +718,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES",
+        "MI�RCOLES",
         "JUEVES",
         "MARTES"
       ],
@@ -753,10 +730,10 @@
         "remera@espol.edu.ec",
         "emera@fiec.espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_8.jpg"
+      "img": "../../public/media/profesores/no-Avatar.jpg"
     },
     {
-      "nombre": "MURILLO BAJAÑA EDUARDO WENCESLAO",
+      "nombre": "MURILLO BAJANA EDUARDO WENCESLAO",
       "aula": [
         "COM2",
         "A-114",
@@ -768,7 +745,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES"
+        "MI�RCOLES"
       ],
       "hora": [
         "7:30:00-9:30:00",
@@ -778,7 +755,7 @@
         "wmurillo@fiec.espol.edu.ec",
         "emurillo@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"
+      "img": "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "NOBOA MACIAS DALTON GEOVANNY",
@@ -791,7 +768,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES"
+        "MI�RCOLES"
       ],
       "hora": [
         "16:30:00-18:30:00"
@@ -802,7 +779,7 @@
     {
       "nombre": "PINCAY NIEVES JHONNY VLADIMIR",
       "aula": [
-        "LABORATORIO DE INGENIERÍA DE SOFTWARE",
+        "LABORATORIO DE INGENIER�A DE SOFTWARE",
         "A-113"
       ],
       "paralelo": [
@@ -810,7 +787,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES"
+        "MI�RCOLES"
       ],
       "hora": [
         "11:30:00-13:30:00"
@@ -819,7 +796,7 @@
         "jpincay@fiec.espol.edu.ec",
         "jvpincay@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/johnny%20pincay_0.jpg"
+      "img": "../../public/media/profesores/pincay.jpg"
     },
     {
       "nombre": "REALPE ROBALINO MIGUEL ANDRES",
@@ -832,13 +809,13 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES"
+        "MI�RCOLES"
       ],
       "hora": [
         "15:30:00-17:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/mrealpe_0.jpg"
+      "img": "../../public/media/profesores/realpe.jpg"
     },
     {
       "nombre": "RODRIGUEZ OJEDA LUIS ENRIQUE",
@@ -851,7 +828,7 @@
         "5"
       ],
       "dia": [
-        "MIÉRCOLES",
+        "MI�RCOLES",
         "VIERNES",
         "MARTES",
         "JUEVES"
@@ -876,7 +853,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES"
+        "MI�RCOLES"
       ],
       "hora": [
         "13:30:00-15:30:00",
@@ -886,7 +863,7 @@
         "vsaltos@fiec.espol.edu.ec",
         "gvsaltos@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_10.jpg"
+      "img": "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "SARAGURO BRAVO RODRIGO ALEXANDER",
@@ -899,13 +876,13 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES"
+        "MI�RCOLES"
       ],
       "hora": [
         "9:30:00-11:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/saraguro.jpg"
+      "img": "../../public/media/profesores/saraguro.jpg"
     },
     {
       "nombre": "TAPIA ROSERO ANA TERESA",
@@ -918,7 +895,7 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES"
+        "MI�RCOLES"
       ],
       "hora": [
         "9:30:00-11:30:00"
@@ -927,7 +904,7 @@
         "atapia@fiec.espol.edu.ec",
         "atapia@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/ana%20tapia.jpg"
+      "img": "../../public/media/profesores/tapia.jpg"
     },
     {
       "nombre": "UGARTE FAJARDO JORGE GUSTAVO",
@@ -946,7 +923,7 @@
         "9:30:00-11:30:00"
       ],
       "correo": [],
-      "img": ""
+      "img": "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "VACA RUIZ CARMEN KARINA",
@@ -967,7 +944,7 @@
       "correo": [
         "cvaca@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/cvaca_0.jpg"
+      "img": "../../public/media/profesores/vaca.jpg"
     },
     {
       "nombre": "VILLA VASQUEZ JOSE FABIAN",
@@ -980,16 +957,16 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES"
+        "MI�RCOLES"
       ],
       "hora": [
         "14:30:00-16:30:00"
       ],
       "correo": [],
-      "img": ""
+      "img": "../../public/media/profesores/no-Avatar.jpg"
     },
     {
-      "nombre": "YANEZ PAZMIÑO WENDY PAOLA",
+      "nombre": "YANEZ PAZMINO WENDY PAOLA",
       "aula": [
         "LAB. CENTAURO",
         "A-201",
@@ -1001,14 +978,14 @@
       ],
       "dia": [
         "LUNES",
-        "MIÉRCOLES"
+        "MI�RCOLES"
       ],
       "hora": [
         "9:30:00-11:30:00",
         "11:30:00-13:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/pyanez_0.jpg"
+      "img": "../../public/media/profesores/yanez.jpg"
     }
   ]
 }
