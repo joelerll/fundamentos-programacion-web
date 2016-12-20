@@ -4,6 +4,7 @@ angular.module('proyectosApp',[
   'ngTagsInput',
   'ngAnimate',
   'textAngular',
+  'angular.backtop',
   'ui.bootstrap',
   'ngTouch',
   'presentacionProyectos',

@@ -21,7 +21,7 @@
     "protractor": "^4.0.13"
   },
   "scripts": {
-    "sync": "browser-sync start --server --files \"./app/sandbox/ejercicio-detalle/*.html,./app/sandbox/ejercicios-lista/*.html,./app/sandbox/ejercicio-detalle/*.css\" ",
+    "sync": "browser-sync start --server --files \"./app/proyectos/lista-proyectos/*.html,./app/proyectos/lista-proyectos/*.js,./app/proyectos/lista-proyectos/css/*.css\" ",
     "server": "node index.js"
   }
 }

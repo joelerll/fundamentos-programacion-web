@@ -1,1 +1,43 @@
-<h1>Todos los proyectos</h1>
+<style>
+  .horizontal-collapse {
+    height: 70px;
+  }
+  .navbar-collapse.in {
+    overflow-y: hidden;
+  }
+</style>
+<div class='contenedor'>
+  <h1 class='proyecto'>Todos los proyectos</h1>
+  <div class='proyectos'>
+    <div class="proyecto" ng-repeat='proyecto in $ctrl.proyectos'>
+      <div class='row'>
+        <div class="col-lg-7 col-md-8 col-xs-12">
+          <div class='titulo-proyecto'>
+            <span>{{proyecto.titulo}}</span>
+          </div>
+          <div class='fecha-proyecto'>
+            <i class='fa fa-calendar fa-lg'></i><span class='fecha'> {{proyecto.fecha_entrega.day}}/{{proyecto.fecha_entrega.month}}/{{proyecto.fecha_entrega.year}}</span>
+          </div>
+          <div class='hora-proyecto'>
+            <i class='fa fa-clock-o fa-lg'></i><span class='hora'> {{proyecto.hora_entrega.hour}}:{{proyecto.hora_entrega.minutes}}</span>
+          </div>
+          <div class='tags'>
+            <span class='zen'>Tags: </span><span ng-repeat='tag in proyecto.tags'><i class='fa fa-tags fa-lg'></i>  {{tag}}  </span>
+          </div>
+        </div>
+        <div class-"col-lg-5 col-md-5 col-xs-12">
+          <div class='autor'>
+            <span>{{proyecto.autor}}</span>
+          </div>
+        </div>
+      </div>
+      <div class='ver-proyecto'>
+        <button type="button" class="btn btn-success" ng-click="isCollapsed = !isCollapsed">Ver proyecto</button>
+        <div uib-collapse="!isCollapsed">
+          <div ng-bind-html="proyecto.descripcion"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

@@ -3,6 +3,7 @@ angular.module('sandboxApp', [
   'angularCSS',
   'ngTagsInput',
   'ngAnimate',
+  'angular.backtop',
   'ejerciciosLista',
   'ejercicioDetalle',
   'profesorElegir',

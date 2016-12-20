@@ -9,7 +9,7 @@
 [ ] mejorar corrousel imagenes <br>
 [x] arreglar navbar links<br>
 [x] mapa Ayudantias <br>
-[ ] proyectos editor texto <br>
+[x] proyectos editor texto <br>
 [x] validaciones crear ejercicio <br>
 [x] cambiar ingreso rangking <br>
 [x] mejorar paneles buscar y selector <br>

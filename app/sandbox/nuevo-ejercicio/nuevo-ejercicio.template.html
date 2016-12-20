@@ -166,6 +166,7 @@
       </div>
 
     </div>
+		<back-top scroll-speed=600 button-theme="light"><i class='fa fa-arrow-up fa-2x'></i></back-top>
     <div uib-alert ng-repeat="alert in $ctrl.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="$ctrl.closeAlert($index)" style="background-color:#31B0D5;color:white">{{alert.msg}}</div>
     <button type="button" class="btn btn-default" ng-click="$ctrl.addAlert()">Crear</button>
     <button type="button" class="btn btn-default" ng-click="$ctrl.borrar_alertas()">Borrar Alertas</button>

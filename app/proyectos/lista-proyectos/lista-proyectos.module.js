@@ -1,1 +1,1 @@
-angular.module('listaProyectos',[])
+angular.module('listaProyectos',['ngAnimate'])

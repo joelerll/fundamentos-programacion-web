@@ -1,0 +1,55 @@
+div.contenedor {
+  margin-top: 4%;
+  margin-bottom: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+h1.proyecto {
+  text-align: center;
+}
+
+div.proyecto {
+  margin-bottom: 2%;
+  border: solid #0187D0 2px;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+div.titulo-proyecto{
+  padding-bottom: 2%;
+  padding-top: 0%;
+}
+div.hora-proyecto {
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+div.titulo-proyecto > span {
+  font-size: 1.5em;
+}
+
+span.fecha {
+  margin-left: 2%;
+  color: #62bcfa;
+}
+
+span.hora {
+  margin-left: 2%;
+}
+
+span.zen {
+  color: #747474;
+}
+
+icon {
+  color: #B2E4FB
+}
+
+div.ver-proyecto {
+  text-align: center;
+}
+
+div.autor {
+  margin-left: 5%;
+}
