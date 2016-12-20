@@ -7,17 +7,17 @@
 [ ] faltas ortograficas <br>
 [x] mejorar colores Sandbox <br>
 [ ] mejorar corrousel imagenes <br>
-[ ] arreglar navbar links<br>
+[x] arreglar navbar links<br>
 [ ] mapa Ayudantias <br>
 [ ] proyectos editor texto <br>
 [x] validaciones crear ejercicio <br>
 [x] cambiar ingreso rangking <br>
 [x] mejorar paneles buscar y selector <br>
-[ ] fonts cambiar <br>
+[x] fonts cambiar <br>
 [ ] boton subir codigo nuevo-ejercicio <br>
 [x] navegacion Sandbox <br>
 [ ] colocar imagenes curso <br>
-[ ] equipo mejorar presentacion datos <br>
+[x] equipo mejorar presentacion datos <br>
 [ ] descargar fotos profesores <br>
 [ ] llenar datos semana a Semana <br>
 [ ] botones mejorar (colores y login) <br>
@@ -25,7 +25,7 @@
 [ ] cambio de semana animacion <br>
 [ ] modificar ejercicio <br>
 [x] Menu <br>
-[ ] Carrusel de imagenes<br>
+[x] Carrusel de imagenes<br>
 [x] Modal<br>
 [ ] Paneles con fondo<br>
 [ ] Transparencias rbga<br>
