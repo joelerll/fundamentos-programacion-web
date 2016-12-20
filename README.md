@@ -24,7 +24,7 @@
 [ ] mejorar perfil codeacademy <br>
 [ ] cambio de semana animacion <br>
 [ ] modificar ejercicio <br>
-[ ] animar busquedas de ejercicios
+[ ] animar busquedas de ejercicios <br>
 [x] Menu <br>
 [x] Carrusel de imagenes<br>
 [x] Modal<br>

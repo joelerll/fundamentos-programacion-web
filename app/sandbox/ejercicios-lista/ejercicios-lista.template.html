@@ -25,7 +25,7 @@
           </div>
         </div>
       </div>
-      <div class='ejercicios' ng-repeat='ejercicio in $ctrl.ejercicios | filter: $ctrl.query | orderBy: $ctrl.orderProp'>
+      <div class='ejercicios ejercicios-list-item'  ng-animate="'animate'" ng-repeat='ejercicio in $ctrl.ejercicios | filter: $ctrl.query | orderBy: $ctrl.orderProp' >
         <div class='ejercicio'>
           <header class='ejercicio-titulo'>
             <div class='row'>
