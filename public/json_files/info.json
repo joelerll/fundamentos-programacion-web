@@ -465,7 +465,7 @@ info = {
         "aavendan@espol.edu.ec"
       ],
       /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/javiles.jpg"*/
-	  "img" : "public/media/profesores/javiles.jpg"
+	  "img" : "../../public/media/profesores/javiles.jpg"
     },
     {
       "nombre": "BONILLA RAFAEL IGNACIO",
@@ -490,7 +490,8 @@ info = {
       "correo": [
         "rabonilla@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/rafael%20bonilla.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/rafael%20bonilla.jpg"*/
+	  "img" : "../../public/media/profesores/bonilla.jpg"
     },
     {
       "nombre": "CALDERON ARGUELLO MARCO ANTONIO",
@@ -511,7 +512,8 @@ info = {
       "correo": [
         "ancalder@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/mcalderon.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/mcalderon.jpg"*/
+		"img" : "../../public/media/profesores/calderon.jpg"
     },
     {
       "nombre": "CARLO UNDA MARIA LORENA",
@@ -530,7 +532,8 @@ info = {
         "13:30:00-15:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/lcarlo_0.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/lcarlo_0.jpg"*/
+	  "img" : "../../public/media/profesores/carlo.jpg"
     },
     {
       "nombre": "CARRASCO IDROVO VERONICA JANNETH",
@@ -558,7 +561,8 @@ info = {
         "vcarrasc@fiec.espol.edu.ec",
         "vcarrasc@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_3.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_3.jpg"*/
+	  "img" : "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "CARRERA RIVERA ANGELA ISABEL",
@@ -581,7 +585,8 @@ info = {
         "13:30:00-15:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"*/
+  	  "img" : "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "CHEUNG RUIZ IRENE MEIYING",
@@ -608,7 +613,8 @@ info = {
         "icheung@espol.edu.ec",
         "mcheung@fiec.espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"*/
+  	  "img" : "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "CRUZ RAMIREZ EDUARDO SEGUNDO",
@@ -629,7 +635,8 @@ info = {
       "correo": [
         "escruz@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/eduardocruz2.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/eduardocruz2.jpg"*/
+  	  "img" : "../../public/media/profesores/cruz.jpg"
     },
     {
       "nombre": "DEL ROSARIO CAMPOSANO EDISON ISAIAS",
@@ -650,7 +657,8 @@ info = {
       "correo": [
         "edelros@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/erosario.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/erosario.jpg"*/
+  	  "img" : "../../public/media/profesores/rosario.jpg"
     },
     {
       "nombre": "FALCONES MONTESDEOCA CRUZ MARIA",
@@ -678,7 +686,8 @@ info = {
         "cfalcone@espol.edu.ec",
         "cfalcone@fiec.espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/cruz%20falcones.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/cruz%20falcones.jpg"*/
+  	  "img" : "../../public/media/profesores/falcones.jpg"
     },
     {
       "nombre": "MAGALLANES BORBOR JORGE ANTONIO",
@@ -699,7 +708,8 @@ info = {
       "correo": [
         "jmagalla@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/jorge%20magallanes.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/jorge%20magallanes.jpg"*/
+  	  "img" : "../../public/media/profesores/magallanes.jpg"
     },
     {
       "nombre": "MALO PINZA FRANK CARLOS",
@@ -727,7 +737,8 @@ info = {
         "fmalo@fiec.espol.edu.ec",
         "fmalo@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_7.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_7.jpg"*/
+  	  "img" : "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "MERA SUÁREZ ROCÍO ELIZABETH",
@@ -754,7 +765,8 @@ info = {
         "remera@espol.edu.ec",
         "emera@fiec.espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_8.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_8.jpg"*/
+  	  "img" : "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "MURILLO BAJAÑA EDUARDO WENCESLAO",
@@ -779,7 +791,8 @@ info = {
         "wmurillo@fiec.espol.edu.ec",
         "emurillo@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"*/
+	  "img" : "../../public/media/profesores/no-Avatar.jpg"	  
     },
     {
       "nombre": "NOBOA MACIAS DALTON GEOVANNY",
@@ -798,7 +811,8 @@ info = {
         "16:30:00-18:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"*/
+	  "img" : "../../public/media/profesores/no-Avatar.jpg"	  
     },
     {
       "nombre": "PINCAY NIEVES JHONNY VLADIMIR",
@@ -820,7 +834,8 @@ info = {
         "jpincay@fiec.espol.edu.ec",
         "jvpincay@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/johnny%20pincay_0.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/johnny%20pincay_0.jpg"*/
+	  "img" : "../../public/media/profesores/pincay.jpg"	  
     },
     {
       "nombre": "REALPE ROBALINO MIGUEL ANDRES",
@@ -839,7 +854,8 @@ info = {
         "15:30:00-17:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/mrealpe_0.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/mrealpe_0.jpg"*/
+	  "img" : "../../public/media/profesores/realpe.jpg"	  
     },
     {
       "nombre": "RODRIGUEZ OJEDA LUIS ENRIQUE",
@@ -862,7 +878,8 @@ info = {
         "9:30:00-11:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"*/
+	  "img" : "../../public/media/profesores/no-Avatar.jpg"	  
     },
     {
       "nombre": "SALTOS BERNAL GINGER VIVIANA",
@@ -887,7 +904,8 @@ info = {
         "vsaltos@fiec.espol.edu.ec",
         "gvsaltos@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_10.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_10.jpg"*/
+	  "img" : "../../public/media/profesores/no-Avatar.jpg"	  
     },
     {
       "nombre": "SARAGURO BRAVO RODRIGO ALEXANDER",
@@ -906,7 +924,8 @@ info = {
         "9:30:00-11:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/saraguro.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/saraguro.jpg"*/
+	  "img" : "../../public/media/profesores/saraguro.jpg"	  
     },
     {
       "nombre": "TAPIA ROSERO ANA TERESA",
@@ -928,7 +947,8 @@ info = {
         "atapia@fiec.espol.edu.ec",
         "atapia@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/ana%20tapia.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/ana%20tapia.jpg"*/
+	  "img" : "../../public/media/profesores/tapia.jpg"	  
     },
     {
       "nombre": "UGARTE FAJARDO JORGE GUSTAVO",
@@ -947,7 +967,8 @@ info = {
         "9:30:00-11:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"*/
+	  "img" : "../../public/media/profesores/no-Avatar.jpg"	  
     },
     {
       "nombre": "VACA RUIZ CARMEN KARINA",
@@ -968,7 +989,8 @@ info = {
       "correo": [
         "cvaca@espol.edu.ec"
       ],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/cvaca_0.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/cvaca_0.jpg"*/
+  	  "img" : "../../public/media/profesores/vaca.jpg"
     },
     {
       "nombre": "VILLA VASQUEZ JOSE FABIAN",
@@ -987,7 +1009,8 @@ info = {
         "14:30:00-16:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_9.jpg"*/
+  	  "img" : "../../public/media/profesores/no-Avatar.jpg"
     },
     {
       "nombre": "YANEZ PAZMIÑO WENDY PAOLA",
@@ -1009,7 +1032,8 @@ info = {
         "11:30:00-13:30:00"
       ],
       "correo": [],
-      "img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/pyanez_0.jpg"
+      /*"img": "https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/pyanez_0.jpg"*/
+	  "img" : "../../public/media/profesores/yanez.jpg"	  
     }
   ]
 }

@@ -38,12 +38,8 @@ function crearPanel(contenedor, clase, obj){
 	var infoAlt = 'imagen ' + clase
 	var imgsrc =  obj.img;
 	if(imgsrc===''){
-		imgsrc = 'https://www.fiec.espol.edu.ec/sites/fiec.espol.edu.ec/files/no-avatar_3.jpg';
+		imgsrc = "../../public/media/profesores/no-Avatar.jpg";
 	}
-	if(obj.nombre==='AVENDAÑO SUDARIO ALLAN ROBERTO'){
-		imgsrc = '../../' + obj.img;
-	}
-
 	imgPanel = $('<img/>').addClass('img-responsive center-block').attr({src: imgsrc, alt: infoAlt});
 	pPanel = $('<p/>').text(obj.nombre);
 	panelBody.append(imgPanel, pPanel);

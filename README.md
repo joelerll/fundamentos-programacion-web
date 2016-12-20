@@ -8,7 +8,7 @@
 [x] mejorar colores Sandbox <br>
 [ ] mejorar corrousel imagenes <br>
 [x] arreglar navbar links<br>
-[ ] mapa Ayudantias <br>
+[x] mapa Ayudantias <br>
 [ ] proyectos editor texto <br>
 [x] validaciones crear ejercicio <br>
 [x] cambiar ingreso rangking <br>
@@ -18,7 +18,7 @@
 [x] navegacion Sandbox <br>
 [ ] colocar imagenes curso <br>
 [x] equipo mejorar presentacion datos <br>
-[ ] descargar fotos profesores <br>
+[x] descargar fotos profesores <br>
 [ ] llenar datos semana a Semana <br>
 [ ] botones mejorar (colores y login) <br>
 [ ] mejorar perfil codeacademy <br>
