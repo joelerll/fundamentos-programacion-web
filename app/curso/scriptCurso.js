@@ -1,5 +1,22 @@
 $(document).ready(function(){
 	crearCarousel();
+	/*
+	$('#writeBtn').click(function(){
+		/*
+		var obj = {
+		    name: 'Dhayalan',
+		    score: 100
+		};
+
+		localStorage.setItem('gameStorage', JSON.stringify(obj));
+		console.log(JSON.parse(localStorage.getItem('gameStorage')))
+	//});*/
+	/*
+	});
+	var obj = JSON.parse(localStorage.getItem('temp'))
+		var flag = obj.flag;
+		editarNavbar(flag);
+	console.log(JSON.parse(localStorage.getItem('temp')));*/
 });
 
 function crearCarousel(){
