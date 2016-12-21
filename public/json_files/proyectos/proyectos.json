@@ -7,7 +7,7 @@
 			"mi primer proyecto",
 			"prueba uno"
 		],
-		"descripcion": "<h1>Nuevo proyecto uno</h1>",
+		"descripcion": "../../public/json_files/proyectos/descripciones/1.html",
 		"fecha_entrega": {
 			"day": "20",
 			"month": "2",
@@ -26,7 +26,7 @@
   		"mi primer proyecto 2",
   		"prueba uno 2"
   	],
-  	"descripcion": "<h1>Nuevo proyecto uno 2</h1>",
+  	"descripcion": "../../public/json_files/proyectos/descripciones/2.html",
   	"fecha_entrega": {
   		"day": "2",
   		"month": "2",
@@ -45,7 +45,7 @@
   		"mi primer proyecto 3",
   		"prueba uno 3"
   	],
-  	"descripcion": "<p style=\"text-align: center;\">Mi primer Proyectos</p><h1>​Este es h1</h1><p>este es p</p><p><u>underline</u></p><p><b>bold</b></p><blockquote><p>quote<span style=\"font-size: 14px;\">lista</span></p></blockquote><p>",
+  	"descripcion": "../../public/json_files/proyectos/descripciones/3.html",
   	"fecha_entrega": {
   		"day": "3",
   		"month": "3",
@@ -64,7 +64,7 @@
   		"mi primer proyecto 4",
   		"prueba uno 4"
   	],
-  	"descripcion": "<h1>Nuevo proyecto uno 4</h1>",
+  	"descripcion": "../../public/json_files/proyectos/descripciones/4.html",
   	"fecha_entrega": {
   		"day": "4",
   		"month": "4",
@@ -83,7 +83,7 @@
   		"mi primer proyecto 5",
   		"prueba uno 5"
   	],
-  	"descripcion": "<h1>Nuevo proyecto uno 5</h1>",
+  	"descripcion": "../../public/json_files/proyectos/descripciones/5.html",
   	"fecha_entrega": {
   		"day": "5",
   		"month": "5",

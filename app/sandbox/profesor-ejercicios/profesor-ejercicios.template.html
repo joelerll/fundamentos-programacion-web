@@ -7,8 +7,8 @@
       <a href="#!/profesores"><button type="button" class="btn btn-default">Profesores</button></a>
     </div>
     <div class="btn-group" role="group">
-      <a ng-if='$ctrl.profesor_data.correo.length == 1' href="#!/profesor/ejercicos/{{$ctrl.profesor_data.correo[0]}}"><button type="button" class="btn btn-default">Mis Ejercicios</button></a>
-      <a ng-if='$ctrl.profesor_data.correo.length == 2' href="#!/profesor/ejercicos/{{$ctrl.profesor_data.correo[1]}}"><button type="button" class="btn btn-default">Mis Ejercicios</button></a>
+      <a ng-if='$ctrl.profesor_data.correo.length == 1' href="#!/profesor/ejercicos/{{$ctrl.profesor_data.correo[0]}}"><button type="button" class="btn btn-default">Ejercicios</button></a>
+      <a ng-if='$ctrl.profesor_data.correo.length == 2' href="#!/profesor/ejercicos/{{$ctrl.profesor_data.correo[1]}}"><button type="button" class="btn btn-default">Ejercicios</button></a>
     </div>
     <div class="btn-group" role="group">
       <a ng-if='$ctrl.profesor_data.correo.length == 2' href="#!/profesor/ejercicios/{{$ctrl.profesor_data.correo[1]}}/nuevo"><button type="button" class="btn btn-default">Nuevo</button></a>

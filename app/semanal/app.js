@@ -1,4 +1,4 @@
-angular.module('App', ['ngAnimate']).
+angular.module('App', ['ngAnimate','diapoMostar']).
   controller('ActividadesClasesController', function($scope, $http) {
     $.fn.extend({
         animateCss: function (animationName) {
@@ -21,7 +21,7 @@ angular.module('App', ['ngAnimate']).
       console.log(id_clase);
     }*/
     $scope.showdiv =  function(event){
-      $('.titulo-escogida').animateCss('rollIn');
+      $('.titulo-escogida').animateCss('bounceInDown');
       id_clase = $(event.target).attr("id-clase")
       $scope.estado = true;
        $http.get('./json/actividades_clase.json')
