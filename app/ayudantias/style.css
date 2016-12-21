@@ -74,14 +74,9 @@ body{
 		min-width: 250px;
 		width: 250px;
 	}
-}
-
-
-#modalBodyPanel{
-	height: 100%;
-}
-
-.modal-content{
-	height: 500px;
+		#map{
+			
+			height: 500px;
+		}
 }
 

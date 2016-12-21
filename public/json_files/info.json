@@ -299,7 +299,9 @@ info = {
         "Sala de Ayudantes de FIEC"
       ],
       "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201410264.jpg"
+	  "img" : "../../public/media/ayudantes/201410264.jpg",
+	  "lat" : ["-2.145476", "-2.145476", "-2.145331", "-2.145331"],
+	  "lng" : ["-79.965951", "-79.965951", "-79.965897", "-79.965897"]
     },
     {
       "matricula": "201302882",
@@ -316,7 +318,9 @@ info = {
         "Sala de Ayudantes de FIEC"
       ],
       "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201302882.jpg"
+	  "img" : "../../public/media/ayudantes/201302882.jpg",
+	  "lat" : ["-2.145476", "-2.145331", "-2.145331"],
+	  "lng" : ["-79.965951", "-79.965897", "-79.965897"]
     },
     {
       "matricula": "201410871",
@@ -333,7 +337,9 @@ info = {
         "\n  Sala de\n  Ayudantes de FIEC"
       ],
       "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201410871.jpg"
+	  "img" : "../../public/media/ayudantes/201410871.jpg", 
+	  "lat" : ["-2.145476", "-2.145476", "-2.145331"],
+	  "lng" : ["-79.965951", "-79.965951", "-79.965897"]	  
     },
     {
       "matricula": "201417433",
@@ -350,7 +356,10 @@ info = {
         "Sala de Ayudantes de FIEC"
       ],
       "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201417433.jpg"
+	  "img" : "../../public/media/ayudantes/201417433.jpg",
+  	  "lat" : ["-2.145476", "-2.145476", "-2.145331"],
+	  "lng" : ["-79.965951", "-79.965951", "-79.965897"]	  
+
     },
     {
       "matricula": "201304087",
@@ -369,7 +378,9 @@ info = {
         "Sala de Ayudantes de FIEC"
       ],
       "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201304087.jpg"
+	  "img" : "../../public/media/ayudantes/201304087.jpg",
+	  "lat" : ["-2.145476", "-2.145476", "-2.145331", "-2.145331"],
+	  "lng" : ["-79.965951", "-79.965951", "-79.965897", "-79.965897"]
     },
     {
       "matricula": "201304684",
@@ -388,7 +399,9 @@ info = {
         "CIB"
       ],
       "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201304684.jpg"
+	  "img" : "../../public/media/ayudantes/201304684.jpg",
+  	  "lat" : ["-2.145476", "-2.145476", "-2.147036", "-2.147036"],
+	  "lng" : ["-79.965951", "-79.965951", "-79.966020", "-79.966020"]
     },
     {
       "matricula": "201410224",
@@ -405,7 +418,10 @@ info = {
         "Sin Asignar"
       ],
       "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201410224.jpg"
+	  "img" : "../../public/media/ayudantes/201410224.jpg",
+   	  "lat" : ["-2.145476", "-2.145476", "-2.147036"],
+	  "lng" : ["-79.965951", "-79.965951", "-79.966020"]
+
     },
     {
       "matricula": "200000000",
@@ -422,7 +438,9 @@ info = {
         "\n  Sala de\n  Ayudantes"
       ],
       "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/200000000.jpg"
+	  "img" : "../../public/media/ayudantes/200000000.jpg",
+  	  "lat" : ["-2.145476", "-2.145476", "-2.147036"],
+	  "lng" : ["-79.965951", "-79.965951", "-79.966020"]
     },
     {
       "matricula": "201421632",
@@ -435,7 +453,9 @@ info = {
         "24A - 201"
       ],
       "tipo": "TA",
-	  "img" : "../../public/media/ayudantes/201421632.jpg"
+	  "img" : "../../public/media/ayudantes/201421632.jpg",
+  	  "lat" : ["-2.145476"],
+	  "lng" : ["-79.965951"]
     }
   ],
   "profesores": [
