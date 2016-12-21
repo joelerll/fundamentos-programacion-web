@@ -7,6 +7,7 @@ angular.module('proyectosApp',[
   'angular.backtop',
   'ui.bootstrap',
   'ngTouch',
+  'ngFileUpload',
   'presentacionProyectos',
   'listaProyectos',
   'nuevoProyecto'

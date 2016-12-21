@@ -1,7 +1,7 @@
 angular.module('nuevoProyecto').
   component('nuevoProyecto', {
     templateUrl: './nuevo-proyecto/nuevo-proyecto.template.html',
-    controller: ['$log',function NuevoProyectoController($log) {
+    controller: ['$log','Upload','$timeout',function NuevoProyectoController($log,Upload, $timeout) {
 			this.titulo = ''
 			this.descripcion = ''
       this.tags = []
@@ -120,6 +120,20 @@ angular.module('nuevoProyecto').
       this.clear_time = function() {
         this.mytime = null;
       };
+
+      /*<--------MI ARCHIVO</-------------------------------------------------------------*/
+      this.mi_archivo = undefined
+      this.mostrarPick = function() {
+        console.log(this.mi_archivo)
+      }
+      this.uploadPic = function(file) {
+        this.mi_archivo = file
+        console.log(this.mi_archivo)
+     }
+      /*----------------------------------------------------------------------------*/
+
+
+
       /*---------------------------------------------------------------------------------*/
       this.alerts = [
        ];
@@ -127,28 +141,49 @@ angular.module('nuevoProyecto').
          this.alerts.splice(index, 1);
        };
       this.submit = function() {
+        var contador = 0
         if (this.alerts.length != 0) {
           this.alerts = []
         }
         if(this.htmlContent == ''){
-          this.alerts.push({msg: 'NO INGRESO DESCRIPCION'})
+          this.alerts.push({type: 'danger',msg: 'NO INGRESO DESCRIPCION'})
+
+        } else {
+          contador = contador + 1
         }
         if (this.dt === null){
-          this.alerts.push({msg: 'NO INGRESO FECHA'})
+          this.alerts.push({type: 'danger',msg: 'NO INGRESO FECHA'})
+
+        } else {
+          contador = contador + 1
         }
         if (this.mytime === null){
-          this.alerts.push({msg: 'NO INGRESO HORA ENTREGA'})
+          this.alerts.push({type: 'danger',msg: 'NO INGRESO HORA ENTREGA'})
+
+        } else {
+          contador = contador + 1
         }
         if(this.titulo == '') {
-          this.alerts.push({msg: 'NO INGRESO TITULO'})
+          this.alerts.push({type: 'danger',msg: 'NO INGRESO TITULO'})
+
+        } else {
+          contador = contador + 1
         }
         if (this.tags.length == 0) {
-          this.alerts.push({msg: 'NO INGRESO TAGS'})
+          this.alerts.push({type: 'danger',msg: 'NO INGRESO TAGS'})
+
+        } else {
+          contador = contador + 1
+        }
+        console.log(contador)
+        if (contador == 5) {
+          this.alerts.push({type: 'success',msg: 'PROYECTO CREADO'})
         }
       }
 
       this.borrar_alertas = function() {
         this.alerts = []
       }
+
     }]
   })

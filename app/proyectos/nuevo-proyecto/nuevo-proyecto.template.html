@@ -89,11 +89,23 @@
       </div>
     </div>
     <back-top scroll-speed=600 button-theme="light"><i class='fa fa-arrow-up fa-2x'></i></back-top>
+
     <div class="archivo form-group">
       <label>Subir archivo</label>
+      <div class='subir'>
+
+        <label class="btn btn-default btn-file">Subir
+          <input type="file" ngf-select="picFile" ng-model="$ctrl.picFile" name="file"
+                 accept="*.py" ngf-max-size="2MB" required
+                 ngf-model-invalid="errorFile" style="display: none;">
+        </label>
+        <button ng-click="$ctrl.picFile = null" class="btn btn-danger" ng-show="$ctrl.picFile">Remove</button>
+        <img ng-show="$ctrl.myForm.file.$valid" ngf-thumbnail="$ctrl.picFile" class="thumb">
+      </div>
     </div>
-    <div uib-alert ng-repeat="alert in $ctrl.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="$ctrl.closeAlert($index)" style="background-color:#31B0D5;color:white">{{alert.msg}}</div>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.submit()">Crear</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.borrar_alertas()">Borrar Alertas</button>
+
+    <div uib-alert ng-repeat="alert in $ctrl.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="$ctrl.closeAlert($index)" >{{alert.msg}}</div>
+    <button type="button" class="btn btn-success" ng-click="$ctrl.submit();$ctrl.uploadPic($ctrl.picFile)">Crear</button>
+    <button type="button" class="btn btn-info" ng-click="$ctrl.borrar_alertas()">Borrar Alertas</button>
   </form>
 </div>
