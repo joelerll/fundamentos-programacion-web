@@ -41,6 +41,3 @@ $("#entrar").click(function(){
 	}
 });
 
-$("#sign-out").click(function(){
-		window.location.href = "index.html";
-})

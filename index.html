@@ -28,15 +28,15 @@
 			      <a class="navbar-brand" href="index.html">ESPOL</a>
 			    </div>
 			    <div class="collapse navbar-collapse myNavbar" id="myNavbar">
-			      <ul class="nav navbar-nav">
+			      <ul class="nav navbar-nav" id="pestanas">
 			        <li class="espol"><a href="index.html">Inicio</a></li>
 				        <li class="espol"><a href="app/curso/curso.html">El Curso</a></li>
 				        <li class="espol"><a href="app/semanal/semanal.html">Semana a Semana</a></li>
 				        <li class="espol"><a href="app/equipo/equipo.html">Equipo</a></li>
 				        <li class="espol"><a href="app/ayudantias/ayudantias.html">Ayudantías</a></li>
-				        <li class="espol"><a href="app/sandbox/index.html">Sandbox</a></li>
+				        <!--<li class="espol"><a href="app/sandbox/index.html">Sandbox</a></li>
 				        <li class="espol"><a href="app/proyectos/index.html">Proyectos</a></li>
-				        <li class="espol"><a href="app/perfil/perfil.html">Perfil</a></li>
+				        <li class="espol"><a href="app/perfil/perfil.html">Perfil</a></li>-->
 			      </ul>
 			      <ul class="nav navbar-nav navbar-right">
 			        <li>
@@ -72,7 +72,7 @@
 										  </form>
 							    	</div>
 							    	<div class="modal-footer">
-							    		<button type="button" class="btn btn-default inline pull-left" id="entrar">Entrar</button>
+							    		<button type="button" class="btn btn-default inline pull-left" id="entrar" data-dismiss='modal'>Entrar</button>
 							    		<button type="button" class="btn btn-default inline pull-right" data-dismiss="modal">Close</button>
 							    		<hr class="clearer">
 							    		<a href="#" class="words"><h6>Crear una cuenta</h6></a>
@@ -119,6 +119,7 @@
 		<script src="./public/js/jquery.js"></script>
 		<script src="./public/js/bootstrap.min.js"></script>
 		<script src="public/js/index.js"></script>
+		<script type="text/javascript" src='public/js/loginIndex.js'></script>
 	</footer>
 </div>
 </body>

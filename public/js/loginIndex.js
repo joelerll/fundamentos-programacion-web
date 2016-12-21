@@ -8,35 +8,35 @@ $(document).ready(function(){
 function reestablecerNavbar(){
 	var inicio = $('<li/>').addClass('espol');
 	var inicioLink = $('<a/>').attr({
-		'href' : '../../index.html'
+		'href' : 'index.html'
 	});
 	inicioLink.text('Inicio');
 	incicio.append(inicioLink);
 
 	var curso = $('<li/>').addClass('espol');
 	var cursoLink = $('<a/>').attr({
-		'href' : '../../app/curso/curso.html'
+		'href' : 'app/curso/curso.html'
 	});
 	cursoLink.text('El Curso');
 	curso.append(cursoLink)
 
 	var semana = $('<li/>').addClass('espol');
 	var semanaLink = $('<a/>').attr({
-		'href' : '../../app/semanal/semanal.html'
+		'href' : 'app/semanal/semanal.html'
 	});
 	semanaLink.text('Semana a Semana');
 	semana.append(semanaLink);
 
 	var equipo = $('<li/>').addClass('espol');
 	var equipoLink = $('<a/>').attr({
-		'href' : '../../app/equipo/equipo.html'
+		'href' : 'app/equipo/equipo.html'
 	});
 	equipoLink.text('Equipo');
 	equipo.append(equipoLink);
 
 	var ayudantias = $('<li/>').addClass('espol');
 	var ayudantiasLink = $('<a/>').attr({
-		'href' : '../../app/ayudantias/ayudantias.html'
+		'href' : 'app/ayudantias/ayudantias.html'
 	});
 	ayudantiasLink.text('Ayudantias');
 	ayudantias.append(ayudantiasLink)
@@ -50,45 +50,45 @@ function editarNavbar(flag){
 		//CAMBIAR LAS PESTAÑAS
 		var sandbox = $('<li/>').addClass('espol');
 		var sandboxLink = $('<a/>').attr({
-			'href' : '../../app/sandbox/index.html'
+			'href' : 'app/sandbox/index.html'
 		});
 		sandboxLink.text('Sandbox');
 		sandbox.append(sandboxLink);
 		var perfil = $('<li/>').addClass('espol');
 		var perfilLink = $('<a/>').attr({
-			'href' : '../../app/perfil/perfil.html'
+			'href' : 'app/perfil/perfil.html'
 		});
 		perfilLink.text('Perfil');
 		perfil.append(perfilLink)
 		$('#pestanas').append(sandbox, perfil);
 		//CAMBIAR EL ICONO DE LOGIN
-		$('#login').attr({'src' : "../../public/media/avatar/xidrovo.jpg"});
+		$('#login').attr({'src' : "public/media/avatar/xidrovo.jpg"});
 		//CAMBIAR EL MODULO DEL LOGIN
-		editarModalLogin('../../public/media/avatar/xidrovo.jpg', 'Xavier Idrovo', 'xidrovo');
+		editarModalLogin('public/media/avatar/xidrovo.jpg', 'Xavier Idrovo', 'xidrovo');
 	}else if(flag==='profesor'){
 		var sandbox = $('<li/>').addClass('espol');
 		var sandboxLink = $('<a/>').attr({
-			'href' : '../../app/sandbox/index.html'
+			'href' : 'app/sandbox/index.html'
 		});
 		sandboxLink.text('Sandbox');
 		sandbox.append(sandboxLink);
 		var proyectos = $('<li/>').addClass('espol');
 		var proyectosLink = $('<a/>').attr({
-			'href' : '../../app/proyectos/index.html'
+			'href' : 'app/proyectos/index.html'
 		});
 		proyectosLink.text('Proyectos');
 		proyectos.append(proyectosLink);
 		var perfil = $('<li/>').addClass('espol');
 		var perfilLink = $('<a/>').attr({
-			'href' : '../../app/perfil/perfil.html'
+			'href' : 'app/perfil/perfil.html'
 		});
 		perfilLink.text('Perfil');
 		perfil.append(perfilLink)
 		$('#pestanas').append(sandbox, proyectos,perfil);
 		//CAMBIAR EL ICONO DE LOGIN
-		$('#login').attr({'src' : "../../public/media/avatar/mcalderon.jpg"});
+		$('#login').attr({'src' : "public/media/avatar/mcalderon.jpg"});
 		//CAMBIAR EL MODULO DEL LOGIN
-		editarModalLogin('../../public/media/avatar/mcalderon.jpg', 'Marco Calderon', 'mcalderon');
+		editarModalLogin('public/media/avatar/mcalderon.jpg', 'Marco Calderon', 'mcalderon');
 	}else{
 
 	}
@@ -99,7 +99,7 @@ function editarModalLogin(headerImgSrc, name, user){
 	$('.modal-header').empty();	//vacio el header del modal
 	var btn = $('<button/>').attr({'type' : 'button', 'class' : 'close' , 'data-dismiss' : 'modal'})
 	var headerImg = $('<img/>').attr({'src' : headerImgSrc, 'class' : 'profile-img img-responsive center-block'})
-	var verPerfil = $('<a/>').attr({'href' : '../../app/perfil/perfil.html'})
+	var verPerfil = $('<a/>').attr({'href' : 'app/perfil/perfil.html'})
 	var p = $('<p/>').addClass('text-center').text('Ver Perfil');
 	verPerfil.append(p);
 	$('.modal-header').append(btn, headerImg, verPerfil);
@@ -120,7 +120,7 @@ function editarModalLogin(headerImgSrc, name, user){
 									'id' : 'sign-out'});
 	btnSignOut.text('Sign out');
 	btnSignOut.click(function(){
-		window.location.href = "../../index.html";
+		window.location.href = "index.html";
 		var obj = {
 				flag : 'generals'
 			};
