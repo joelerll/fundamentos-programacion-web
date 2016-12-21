@@ -6,8 +6,12 @@
 	background: rgba(255,255,255,0.8);
 }
 
-p{
+p, h4{
 	font-family: "Lora", sans-serif;
+}
+
+h4{
+	font-weight: bold;
 }
 
 body{
@@ -34,11 +38,12 @@ body{
     margin-top: 20px;
 }
 
-.col-md-4, .col-md-8{
+.col-md-4{
 	vertical-align: middle;
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 20px;
+	height: 200px;
 }
 
 .panel-body  {
@@ -70,9 +75,10 @@ body{
 		max-width: 250px;
 		min-width: 250px;
 		width: 250px;
+
 	}
 		#map{			
-			height: 400px;
+			max-height: 300px;
 			max-width: 100%;
 		}
 }
