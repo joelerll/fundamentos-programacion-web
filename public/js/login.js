@@ -1,11 +1,11 @@
 $(document).ready(function(){
 	var obj = JSON.parse(localStorage.getItem('temp'))
-	var flag = obj.flag;
-	editarNavbar(flag);
+	editarNavbar(obj.flag);
 	console.log(JSON.parse(localStorage.getItem('temp')));
 });
 
 function reestablecerNavbar(){
+	//Deja la navbar con las pestañas que el público en general puede ver
 	var inicio = $('<li/>').addClass('espol');
 	var inicioLink = $('<a/>').attr({
 		'href' : '../../index.html'
@@ -46,6 +46,7 @@ function reestablecerNavbar(){
 
 
 function editarNavbar(flag){
+	//Edita la barra de navegación de acuerdo al usuario que haya iniciado sesión
 	if(flag==='estudiante'){
 		//CAMBIAR LAS PESTAÑAS
 		var sandbox = $('<li/>').addClass('espol');
@@ -90,11 +91,12 @@ function editarNavbar(flag){
 		//CAMBIAR EL MODULO DEL LOGIN
 		editarModalLogin('../../public/media/avatar/mcalderon.jpg', 'Marco Calderon', 'mcalderon');
 	}else{
-
+		reestablecerNavbar();
 	}
 }
 
 function editarModalLogin(headerImgSrc, name, user){
+	//Cambia el modal de login una vez que algún usuario haya iniciado sesión, para presentar los datos de ese usuario
 	//CAMBIAR EL HEADER
 	$('.modal-header').empty();	//vacio el header del modal
 	var btn = $('<button/>').attr({'type' : 'button', 'class' : 'close' , 'data-dismiss' : 'modal'})
@@ -116,8 +118,7 @@ function editarModalLogin(headerImgSrc, name, user){
 	$('.modal-body').append(form);
 	//CAMBIAR EL FOOTER
 	$('.modal-footer').empty();	//vacio el footer
-	var btnSignOut = $('<button/>').attr({'type' : 'button', 'class' : 'btn btn-default inline pull-left' ,
-									'id' : 'sign-out'});
+	var btnSignOut = $('<button/>').attr({'type' : 'button', 'class' : 'btn btn-default inline pull-left' ,'id' : 'sign-out'});
 	btnSignOut.text('Sign out');
 	btnSignOut.click(function(){
 		window.location.href = "../../index.html";
@@ -125,15 +126,18 @@ function editarModalLogin(headerImgSrc, name, user){
 				flag : 'generals'
 			};
 		localStorage.setItem('temp', JSON.stringify(obj))
-		console.log('Ingreso de estudiante exitoso');
+		console.log('Salida exitosa');
 		console.log(JSON.parse(localStorage.getItem('temp')));
 		reestablecerNavbar();
-	})
+	});
+
 	var btnClose = $('<button/>').attr({'type' : 'button', 'class' : 'btn btn-default inline pull-right' , 
 									'data-dismiss' : 'modal'});
 	btnClose.text('Close');
 	$('.modal-footer').append(btnSignOut, btnClose, $('<hr/>').addClass('clearer'));
 }
+
+
 //EVENTOS A BOTON DE LOGIN
 $("#entrar").click(function(){
 	if($("#usr").val() == "user" && $("#pwd").val() == "user")
@@ -141,14 +145,13 @@ $("#entrar").click(function(){
 		//window.location.href = "indexStudent.html";
 		
 		if (typeof(Storage) !== "undefined") {
-		    // Code for localStorage/sessionStorage.
 		    var obj = {
 				flag : 'estudiante'
 			};
 			localStorage.setItem('temp', JSON.stringify(obj))
 			console.log('Ingreso de estudiante exitoso');
 			console.log(JSON.parse(localStorage.getItem('temp')));
-			var obj = JSON.parse(localStorage.getItem('temp'))
+			var obj = JSON.parse(localStorage.getItem('temp'));
 			var flag = obj.flag;
 			editarNavbar(flag);
 		} else {
@@ -160,12 +163,13 @@ $("#entrar").click(function(){
 		//window.location.href = "indexTeacher.html";
 
 		if (typeof(Storage) !== "undefined") {
-		    // Code for localStorage/sessionStorage.
 		    var obj = {
 				flag : 'profesor'
 			};
 			localStorage.setItem('temp', JSON.stringify(obj));
-			var obj = JSON.parse(localStorage.getItem('temp'))
+			console.log('Ingreso de profesor exitoso');
+			console.log(JSON.parse(localStorage.getItem('temp')));
+			var obj = JSON.parse(localStorage.getItem('temp'));
 			var flag = obj.flag;
 			editarNavbar(flag);
 		} else {

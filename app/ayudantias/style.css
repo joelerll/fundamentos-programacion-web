@@ -47,12 +47,13 @@ body{
 
 
 @media only screen and (min-device-width: 1280px) {
-	.col-md-4, .col-md-8{
+	.col-md-4{
 		vertical-align: middle;
 	    display: inline-block;
 	    float: none;
 	    align-items: center;
 	    padding: 15px;
+	    min-height: 400px;
 	}
 
 	.container, .row, .panel, .panel-body, #imgAyudante{
@@ -62,10 +63,6 @@ body{
 	p{
 		padding: 5px;
 	}
-	.col-md-8{
-		text-align: justify;
-	}
-
 	#imgAyudante{
 		max-height: 250px;
 		min-height: 250px;
@@ -74,9 +71,9 @@ body{
 		min-width: 250px;
 		width: 250px;
 	}
-		#map{
-			
-			height: 500px;
+		#map{			
+			height: 400px;
+			max-width: 100%;
 		}
 }
 

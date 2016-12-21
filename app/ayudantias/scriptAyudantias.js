@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	createDivs(info);
 	$('#mapModal').on('show.bs.modal', function(){
-	  setTimeout(function() {
-	    map.invalidateSize();
-	  }, 10);
-	 });
+		setTimeout(function() {
+		    map.invalidateSize();
+		}, 10);
+	});
 
 });
 
@@ -12,12 +12,56 @@ function createDivs(JSON){
 	var arrayTA = JSON.TA;
 	var i = 0;
 	arrayTA.forEach(function(ta){
-		createRow(ta, '.container', 'ta', i);
+		var id = 'map-canvas-' + ta.nombre;
+		createRow(ta, '.container', 'ta', i, id);
 		i++;
 	});
 }
 
-function createRow(obj, container, clase, i){
+function createRow(obj, container, clase, i, idMapa){
+	var row = $('<div/>').addClass('row featurette');
+	var colImg, colInfo, colMap;
+	colImg = $('<div/>').addClass('col-md-4');
+	colInfo = $('<div/>').addClass('col-md-4');
+	colMap = $('<div/>').addClass('col-md-4').attr({'id' : idMapa});
+
+	var img = $('<img/>').addClass('img-responsive center-block').attr({'src': obj.img, 'alt': 'imagen de ta', 'id' : 'imgAyudante'});
+	colImg.append(img);
+
+	var nombre = $('<p/>').text(obj.nombre);
+	var correo = $('<p/>').text(obj.correo);
+	colInfo.append(nombre, correo);
+
+	var horario;
+	for (var i = 0; i < obj.horario.length; i++) {
+		horario = obj.horario[i] + ' en ' + obj.aula[i];
+		colInfo.append($('<p/>').text(horario));
+	}
+
+	row.append(colImg, colInfo, colMap);
+	var hr = $('<hr/>').addClass('featurette-divider');
+	$(container).append(hr, row, hr);
+	/*FALTA CREAR EL MAPA*/
+
+	var map = L.map(idMapa,{
+	    center: [43.64701, -79.39425],
+	    zoom: 20
+	});
+
+	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+	   	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+	map.setView(new L.LatLng(obj.lat[0], obj.lng[0]), 20);
+		var marker, lat, lng, aula;
+		for (var j = 0; j < obj.lat.length; j++) {
+			lat = obj.lat[j];
+			lng = obj.lng[j];
+			marker = L.marker([lat, lng]).addTo(map);
+			aula = obj.aula[j];
+			marker.bindPopup(aula).openPopup();
+		}
+
+	/*
 	var row = $('<div/>').addClass('row featurette');
 	var colImg, colInfo;
 	if(i%2==0){
@@ -60,11 +104,10 @@ function createRow(obj, container, clase, i){
 	});
 
 
-	colInfo.append(mapLink);
-	row.append(colImg, colInfo);
+	colInfo.append(mapLink);*/
+	
 
-	var hr = $('<hr/>').addClass('featurette-divider');
-	$(container).append(hr, row, hr);
+	
 }
 
 function crearModal(){
