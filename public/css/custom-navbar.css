@@ -40,5 +40,13 @@
 				height: 50px;
 			}
 		}
+		.profile-img{
+			width: 200px;
+			border-radius: 100px;
+			margin-bottom: 2%;
+		}
+		.modal-footer button {
+    		width: 45%;
+		}
 		
 		/*end Navbar css*/
