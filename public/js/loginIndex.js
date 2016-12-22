@@ -11,7 +11,7 @@ function reestablecerNavbar(){
 		'href' : 'index.html'
 	});
 	inicioLink.text('Inicio');
-	incicio.append(inicioLink);
+	inicio.append(inicioLink);
 
 	var curso = $('<li/>').addClass('espol');
 	var cursoLink = $('<a/>').attr({
@@ -80,7 +80,7 @@ function editarNavbar(flag){
 		proyectos.append(proyectosLink);
 		var perfil = $('<li/>').addClass('espol');
 		var perfilLink = $('<a/>').attr({
-			'href' : 'app/perfil/perfil.html'
+			'href' : 'app/perfil/perfilTeacher.html'
 		});
 		perfilLink.text('Perfil');
 		perfil.append(perfilLink)

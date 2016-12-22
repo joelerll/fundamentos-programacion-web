@@ -11,7 +11,7 @@ function reestablecerNavbar(){
 		'href' : '../../index.html'
 	});
 	inicioLink.text('Inicio');
-	incicio.append(inicioLink);
+	inicio.append(inicioLink);
 
 	var curso = $('<li/>').addClass('espol');
 	var cursoLink = $('<a/>').attr({
@@ -73,18 +73,21 @@ function editarNavbar(flag){
 		});
 		sandboxLink.text('Sandbox');
 		sandbox.append(sandboxLink);
+
 		var proyectos = $('<li/>').addClass('espol');
 		var proyectosLink = $('<a/>').attr({
 			'href' : '../../app/proyectos/index.html'
 		});
 		proyectosLink.text('Proyectos');
 		proyectos.append(proyectosLink);
+
 		var perfil = $('<li/>').addClass('espol');
 		var perfilLink = $('<a/>').attr({
-			'href' : '../../app/perfil/perfil.html'
+			'href' : '../../app/perfil/perfilTeacher.html'
 		});
 		perfilLink.text('Perfil');
-		perfil.append(perfilLink)
+		perfil.append(perfilLink);
+
 		$('#pestanas').append(sandbox, proyectos,perfil);
 		//CAMBIAR EL ICONO DE LOGIN
 		$('#login').attr({'src' : "../../public/media/avatar/mcalderon.jpg"});

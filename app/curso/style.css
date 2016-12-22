@@ -12,21 +12,69 @@ p{
 
 .imagenCol{
 	margin: auto;
+	filter: blur(2px);
+	opacity: 0.5;
+	
+}
+
+#imgDesc{
+	height: 250px;
+}
+
+#imgSyllabus, #imgPol{
+	height: 280px;
+	width: 350px;
 }
 
 @media only screen and (min-device-width: 768px) {
 	.libro{
+		min-height: 400px;
+		min-width: 400px;
 		height: 400px;
 		max-height: 400px;
 		width: 400px;
 		max-width: 400px;
+		opacity: 0.2;
 	}
 }
 
 
 @media only screen and (max-device-width: 768px) {
-
 	.col-md-4{
 		width: 100%;
 	}
+}
+
+
+.text {
+	color: black;
+	font-size: 16px;
+	padding: 16px 32px;
+	font-weight: bold;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+#img-syllabus:hover .middle{
+	opacity: 1;
+}
+
+#img-syllabus:hover .imagenCol{
+	opacity: 0.3;
+}
+#img-politicas:hover .middle{
+	opacity: 1;
+}
+#img-politicas:hover .imagenCol{
+	opacity: 0.3;
+}
+
+.caption{
+	color: black;
 }

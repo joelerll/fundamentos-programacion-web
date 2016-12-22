@@ -67,12 +67,11 @@ function crearCarousel(){
 function anadirSlides(container, flag, imgSrc, imgAlt, nombre, autor, ref){
 	var item = $('<div/>').addClass('item');
 	if(flag==='active'){
-		console.log('hola');
 		item = $('<div/>').addClass('item active');
 	}
 	var img = $('<img/>').attr({'src' : imgSrc, 'alt' : imgAlt, 'class' : 'img-responsive center-block libro'});
 	var caption = $('<div/>').addClass('carousel-caption');
-	caption.append($('<h3/>').text(nombre), $('<p/>').text(autor));
+	caption.append($('<h3/>').text(nombre).addClass('caption'), $('<p/>').text(autor).addClass('caption'));
 	var link = $('<a/>').attr({'href' : ref, 'target' : '_blank'});
 	link.text('Descargar');
 	caption.append(link);
