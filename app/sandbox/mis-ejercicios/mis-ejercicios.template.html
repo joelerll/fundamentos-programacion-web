@@ -1,18 +1,9 @@
-<div class='nav-link'>
-  <div class="btn-group btn-group-justified" role="group" aria-label="...">
-    <div class="btn-group" role="group">
-      <a href="#!/"><button type="button" class="btn btn-default">Sandbox</button></a>
-    </div>
-    <div class="btn-group" role="group">
-      <a href="#!/profesores"><button type="button" class="btn btn-default">Profesores</button></a>
-    </div>
-    <div class="btn-group" role="group">
-      <a href="#!/profesor/{{$ctrl.autor}}"><button type="button" class="btn btn-default">Ejercicios</button></a>
-    </div>
-    <div class="btn-group" role="group">
-      <a  href="#!/profesor/ejercicios/{{$ctrl.autor}}/nuevo"><button type="button" class="btn btn-default">Nuevo</button></a>
-    </div>
-  </div>
+<div class="nav-link">
+  <span class='nav-links'><a href="#!/">Inicio sandbox</a></span><i class='icono fa fa-lg fa-chevron-right '></i>
+  <span class='nav-links'><a href="#!/profesores">Profesores</a></span>
+  <i class='icono fa fa-lg fa-chevron-right '></i>
+  <span class='nav-links'><a href="#!/profesor/{{$ctrl.autor}}">Todos ejercicios</a></span>
+    <a  href="#!/profesor/ejercicios/{{$ctrl.autor}}/nuevo"><button class='nav-links-button btn btn-success'  >Crear ejercicio</button></a>
 </div>
 <h2>Ejercicios {{$ctrl.autor}}</h2>
 <div class='row'>

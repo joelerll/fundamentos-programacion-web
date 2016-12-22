@@ -1,4 +1,5 @@
 angular.module('ejercicioDetalle', [
   'ngRoute',
-  'angular.backtop'
+  'angular.backtop',
+  'ngFileUpload'
 ])

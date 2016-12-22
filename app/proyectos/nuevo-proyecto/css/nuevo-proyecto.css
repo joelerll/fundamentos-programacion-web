@@ -34,3 +34,23 @@ div.hora-fecha {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
+span.errores {
+  color: red;
+}
+
+.formulario input.ng-invalid.ng-touched {
+    border: solid #FA787E 1px;
+  }
+
+  .formulario textarea.ng-invalid.ng-touched {
+      border: solid #FA787E 1px;
+    }
+
+  .formulario input.forms.ng-untouched {
+      border: solid rgb(91, 207, 57) 1px;
+    }
+
+    .formulario textarea.forms.ng-untouched {
+        border: solid rgb(91, 207, 57) 1px;
+      }

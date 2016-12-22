@@ -124,3 +124,38 @@ div.nav-link {
   margin-right: 8%;
   margin-left: 8%;
 }
+
+div.porcentaje-resueltos {
+  margin-top: 5%;
+}
+
+div.contenedor {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 0%;
+}
+
+
+span.todos-ejercicios {
+  margin-right: 1%;
+	margin-left: 1%;
+}
+
+span.todos-ejercicios > a {
+  color: #645F5E
+}
+
+span.ingreso {
+  margin-right: 1%;
+}
+
+span.ingreso > a {
+  color: #645F5E
+}
+
+div.nav-link {
+  margin-top: 2%;
+  color: #645F5E;
+  border-bottom: solid  rgba(36, 55, 66, 0.25) 1px;
+  padding-bottom: 2%;
+}

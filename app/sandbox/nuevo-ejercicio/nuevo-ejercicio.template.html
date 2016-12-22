@@ -1,173 +1,215 @@
+<div class="nav-link">
+  <span class='nav-links'><a href="#!/">Inicio sandbox</a></span><i class='icono fa fa-lg fa-chevron-right '></i>
+  <span class='nav-links'><a href="#!/profesores">Profesores</a></span>
+  <i class='icono fa fa-lg fa-chevron-right '></i>
+	<span class='nav-links'><a href="#!/profesor/{{$ctrl.autor}}">Todos ejercicios</a></span>
+</div>
 <div class='contenedor'>
-  <div class='nav-link'>
-    <div class="btn-group btn-group-justified" role="group" aria-label="...">
-      <div class="btn-group" role="group">
-        <a href="#!/"><button type="button" class="btn btn-default">Sandbox</button></a>
-      </div>
-      <div class="btn-group" role="group">
-        <a href="#!/profesores"><button type="button" class="btn btn-default">Profesores</button></a>
-      </div>
-      <div class="btn-group" role="group">
-        <a href="#!/profesor/{{$ctrl.autor}}"><button type="button" class="btn btn-default">Ejercicios</button></a>
-      </div>
-    </div>
-  </div>
   <h1>Crear Ejercicio {{$ctrl.autor}}</h1>
+	<div uib-alert ng-repeat="alert in $ctrl.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="$ctrl.closeAlert($index)" >{{alert.msg}}</div>
   <form class='formulario' name='ejercicioForm' novalidate>
 
-    <div class='titulo form-group'>
-      <div class="form-group" ng-class="{ 'has-error': ejercicioForm.titulo.$touched && ejercicioForm.titulo.$invalid }">
-        <label>Titulo</label>
-        <input type="text" name="titulo" class="form-control"
-          ng-model="$ctrl.titulo"
-          ng-minlength="5"
-          ng-maxlength="40"
-          required placeholder="min 5 - max 20">
+  <div uib-alert ng-repeat="alert in $ctrl.alert_terminado" ng-class="'alert-' + (alert.type || 'warning')" close="$ctrl.closeAlertT($index)" >{{alert.msg}}</div>
 
-        <div class="mensajes-errores" ng-messages="ejercicioForm.titulo.$error" ng-if="ejercicioForm.titulo.$touched">
-          <p ng-message="minlength">El tamaño minimo es de 15.</p>
-          <p ng-message="maxlength">El tamaño maximo es de 40.</p>
-          <p ng-message="required">Campo obligatorio</p>
-        </div>
+
+    <div class='titulo form-group'>
+      <div class="form-group">
+        <label>Titulo</label>
+        <input class='form-control forms' type="text" name="titulo"
+          ng-model="$ctrl.ejercicio.titulo" ng-minlength='15' ng-maxlength='50'
+          required placeholder="min 15 - max 50">
+          <div ng-show="ejercicioForm.$submitted || ejercicioForm.titulo.$touched">
+              <div ng-show="ejercicioForm.titulo.$error.required">
+                <span class='errores' >El campo es obligatorio</span>
+              </div>
+              <div ng-show="ejercicioForm.titulo.$error.minlength">
+                <span class='errores'>El tamaño es mayor a 15</span></div>
+              <div ng-show="ejercicioForm.titulo.$error.maxlength">
+                <span class='errores'>El tamaño es menor a 50</span>
+              </div>
+          </div>
       </div>
     </div>
 
     <div class="tags form-group">
-      <div class="form-group" name="tags" ng-class="{ 'has-error': ejercicioForm.tags.$touched && ejercicioForm.tags.$invalid }">
-        <tags-input ng-model="$ctrl.tags" placeholder='añadir tags (enter)' name='tags'></tags-input>
+      <div class="form-group" name="tags">
+        <tags-input class='form-tags' ng-model="$ctrl.ejercicio.tags" placeholder='añadir tags (enter)' name='tags' require></tags-input>
+        <!--
         <div ng-messages="{noTags:!$ctrl.tags.length}" ng-if="ejercicioForm.titulo.$touched">
           <div ng-message="noTags" style="color: red">Ingrese al menos un tag</div>
+        </div>-->
+        <div ng-show=" ejercicioForm.tags.$touched" >
+          <div ng-if="$ctrl.ejercicio.tags.length == 0"><span  class='errores'>El campo es obligatorio</span></div>
+          <div ng-show="ejercicioForm.tags.$error.required">
+            <span class='errores' >El campo es obligatorio</span>
+          </div>
         </div>
       </div>
     </div>
 
     <div class='dificultad form-group ' ng-mouseover="pasado = true" ng-init='pasado = false'>
       <div class="form-group" name="dificultad">
-        <label for="dificultad">Dificultad</label><input-stars max="5" name="dificultad" icon-base="fa fa-fw fa-star" icon-empty=" fa-star-o" icon-hover="hover" icon-full="fa-star" ng-model="$ctrl.dificultad"  ></input-stars>
-        <p ng-if="$ctrl.dificultad == 0 " style="color: red">*Campo obligatorio</p>
+        <label for="dificultad">Dificultad</label><input-stars max="5" name="dificultad" icon-base="fa fa-fw fa-star" icon-empty=" fa-star-o" icon-hover="hover" icon-full="fa-star" ng-model="$ctrl.ejercicio.dificultad"  ></input-stars>
+        <p ng-if="$ctrl.ejercicio.dificultad == 0 " style="color: red">*Campo obligatorio</p>
       </div>
     </div>
 
     <div class="declaracion-problema form-group ">
-      <div class="form-group" ng-class="{ 'has-error': ejercicioForm.declaracion_problema.$touched && ejercicioForm.declaracion_problema.$invalid }">
+      <div class="form-group">
         <label for="declaracion_problema">Declaracion Problema</label>
-        <textarea class="form-control" rows="10" placeholder="min 15 - max 200" name='declaracion_problema' ng-model="$ctrl.declaracion_problema"
+        <textarea class="form-control forms form-declaracion-problema" rows="10" placeholder="min 15 - max 200" name='declaracion_problema' ng-model="$ctrl.ejercicio.declaracion_problema"
         ng-minlength="15"
         ng-maxlength="200"
         required></textarea>
-        <div class="mensajes-errores" ng-messages="ejercicioForm.declaracion_problema.$error" ng-if="ejercicioForm.declaracion_problema.$touched">
-          <p ng-message="minlength">El tamaño minimo es de 15.</p>
-          <p ng-message="maxlength">El tamaño maximo es de 200.</p>
-          <p ng-message="required">Campo obligatorio</p>
+        <div ng-show="ejercicioForm.$submitted || ejercicioForm.declaracion_problema.$touched">
+            <div ng-show="ejercicioForm.declaracion_problema.$error.required">
+              <span class='errores' class='errores' >El campo es obligatorio</span>
+            </div>
+            <div ng-show="ejercicioForm.declaracion_problema.$error.minlength">
+              <span class='errores'>El tamaño es mayor a 15</span></div>
+            <div ng-show="ejercicioForm.declaracion_problema.$error.maxlength">
+              <span class='errores'>El tamaño es menor a 200</span>
+            </div>
         </div>
       </div>
     </div>
 
     <div class='nota form-group'>
-      <div class="form-group" ng-class="{ 'has-error': ejercicioForm.nota.$touched && ejercicioForm.nota.$invalid }">
+      <div class="form-group">
         <label>Notas</label>
-        <textarea type="text" name="nota" rows="5" class="form-control"
-          ng-model="$ctrl.nota"
+        <textarea type="text" name="nota" rows="5" class="form-control forms"
+          ng-model="$ctrl.ejercicio.nota"
           ng-minlength="5"
           ng-maxlength="50"
           required placeholder="min 5 - max 50"></textarea>
 
-        <div class="mensajes-errores" ng-messages="ejercicioForm.nota.$error" ng-if="ejercicioForm.nota.$touched">
-          <p ng-message="minlength">El tamaño minimo es de 5.</p>
-          <p ng-message="maxlength">El tamaño maximo es de 50.</p>
-          <p ng-message="required">Campo obligatorio</p>
-        </div>
+          <div ng-show="ejercicioForm.$submitted || ejercicioForm.nota.$touched">
+              <div ng-show="ejercicioForm.nota.$error.required">
+                <span class='errores' class='errores' >El campo es obligatorio</span>
+              </div>
+              <div ng-show="ejercicioForm.nota.$error.minlength">
+                <span class='errores'>El tamaño es mayor a 15</span></div>
+              <div ng-show="ejercicioForm.nota.$error.maxlength">
+                <span class='errores'>El tamaño es menor a 50</span>
+              </div>
+          </div>
       </div>
     </div>
 
     <div class="formato_de_entrada form-group">
-      <div ng-class="{ 'has-error': ejercicioForm.formato_de_entrada.$touched && ejercicioForm.formato_de_entrada.$invalid }">
+      <div >
         <label for="">Formato de entrada</label>
-        <textarea class="form-control" rows="5" placeholder="min 5 - max 50" name="formato_de_entrada" ng-model="$ctrl.formato_de_entrada"
+        <textarea class="form-control forms" rows="5" placeholder="min 5 - max 50" name="formato_de_entrada" ng-model="$ctrl.ejercicio.formato_de_entrada"
         ng-minlength="5"
         ng-maxlength="50"
         required></textarea>
-        <div class="mensajes-errores" ng-messages="ejercicioForm.formato_de_entrada.$error" ng-if="ejercicioForm.formato_de_entrada.$touched">
-          <p ng-message="minlength">El tamaño minimo es de 5.</p>
-          <p ng-message="maxlength">El tamaño maximo es de 50.</p>
-          <p ng-message="required">Campo obligatorio</p>
+        <div ng-show="ejercicioForm.$submitted || ejercicioForm.formato_de_entrada.$touched">
+            <div ng-show="ejercicioForm.formato_de_entrada.$error.required">
+              <span class='errores' class='errores' >El campo es obligatorio</span>
+            </div>
+            <div ng-show="ejercicioForm.formato_de_entrada.$error.minlength">
+              <span class='errores'>El tamaño es mayor a 5</span></div>
+            <div ng-show="ejercicioForm.formato_de_entrada.$error.maxlength">
+              <span class='errores'>El tamaño es menor a 50</span>
+            </div>
         </div>
       </div>
     </div>
 
     <div class="constrains form-group">
-      <div ng-class="{ 'has-error': ejercicioForm.constrains.$touched && ejercicioForm.constrains.$invalid }">
+      <div>
         <label for="">Constrains</label>
-        <textarea class="form-control" rows="5" placeholder="min 5 - 50 max" name="constrains"  ng-model="$ctrl.constrains"
+        <textarea class="form-control forms" rows="5" placeholder="min 5 - 50 max" name="constrains"  ng-model="$ctrl.ejercicio.constrains"
         ng-minlength="5"
         ng-maxlength="50"></textarea>
-        <div class="mensajes-errores" ng-messages="ejercicioForm.constrains.$error" ng-if="ejercicioForm.constrains.$touched">
-          <p ng-message="minlength">El tamaño minimo es de 5.</p>
-          <p ng-message="maxlength">El tamaño maximo es de 50.</p>
-          <p ng-message="required">Campo obligatorio</p>
+        <div ng-show="ejercicioForm.$submitted || ejercicioForm.constrains.$touched">
+            <div ng-show="ejercicioForm.constrains.$error.minlength">
+              <span class='errores'>El tamaño es mayor a 5</span></div>
+            <div ng-show="ejercicioForm.constrains.$error.maxlength">
+              <span class='errores'>El tamaño es menor a 50</span>
+            </div>
         </div>
       </div>
     </div>
 
     <div class="salida form-group">
-      <div ng-class="{ 'has-error': ejercicioForm.salida.$touched && ejercicioForm.salida.$invalid }">
+      <div>
         <label for="">Salida</label>
-        <textarea class="form-control" rows="5" placeholder="min 5 - 50 max" name="salida"  ng-model="$ctrl.salida"
+        <textarea class="form-control forms" rows="5" placeholder="min 5 - 50 max" name="salida"  ng-model="$ctrl.ejercicio.salida"
         ng-minlength="5"
         ng-maxlength="50" required></textarea>
-        <div class="mensajes-errores" ng-messages="ejercicioForm.salida.$error" ng-if="ejercicioForm.salida.$touched">
-          <p ng-message="minlength">El tamaño minimo es de 15.</p>
-          <p ng-message="maxlength">El tamaño maximo es de 50.</p>
-          <p ng-message="required">Campo obligatorio</p>
+        <div ng-show="ejercicioForm.$submitted || ejercicioForm.salida.$touched">
+            <div ng-show="ejercicioForm.salida.$error.required">
+              <span class='errores' class='errores' >El campo es obligatorio</span>
+            </div>
+            <div ng-show="ejercicioForm.salida.$error.minlength">
+              <span class='errores'>El tamaño es mayor a 5</span></div>
+            <div ng-show="ejercicioForm.salida.$error.maxlength">
+              <span class='errores'>El tamaño es menor a 50</span>
+            </div>
         </div>
       </div>
     </div>
 
+
     <div class="ejemplo_entrada form-group">
-      <div ng-class="{ 'has-error': ejercicioForm.ejemplo_entrada.$touched && ejercicioForm.ejemplo_entrada.$invalid }">
+      <div >
         <label for="">Ejemplo entrada</label>
-        <textarea class="form-control" rows="5" placeholder="min 5 - 50 max" name="ejemplo_entrada"  ng-model="$ctrl.ejemplo_entrada"
+        <textarea class="form-control forms" rows="5" placeholder="min 5 - 50 max" name="ejemplo_entrada"  ng-model="$ctrl.ejercicio.ejemplo_entrada"
         ng-minlength="5"
         ng-maxlength="50" required></textarea>
-        <div class="mensajes-errores" ng-messages="ejercicioForm.ejemplo_entrada.$error" ng-if="ejercicioForm.ejemplo_entrada.$touched">
-          <p ng-message="minlength">El tamaño minimo es de 5.</p>
-          <p ng-message="maxlength">El tamaño maximo es de 50.</p>
-          <p ng-message="required">Campo obligatorio</p>
+        <div ng-show="ejercicioForm.$submitted || ejercicioForm.ejemplo_entrada.$touched">
+            <div ng-show="ejercicioForm.ejemplo_entrada.$error.required">
+              <span class='errores'  >El campo es obligatorio</span>
+            </div>
+            <div ng-show="ejercicioForm.ejemplo_entrada.$error.minlength">
+              <span class='errores'>El tamaño es mayor a 5</span></div>
+            <div ng-show="ejercicioForm.ejemplo_entrada.$error.maxlength">
+              <span class='errores'>El tamaño es menor a 50</span>
+            </div>
         </div>
       </div>
     </div>
 
     <div class="ejemplo_salida form-group">
-      <div ng-class="{ 'has-error': ejercicioForm.ejemplo_salida.$touched && ejercicioForm.ejemplo_salida.$invalid }">
+      <div>
         <label for="">Ejemplo salida</label>
-        <textarea class="form-control" rows="5" placeholder="min 5 - 50 max" name="ejemplo_salida"  ng-model="$ctrl.ejemplo_salida"
+        <textarea class="form-control forms" rows="5" placeholder="min 5 - 50 max" name="ejemplo_salida"  ng-model="$ctrl.ejercicio.ejemplo_salida"
         ng-minlength="5"
         ng-maxlength="50" required></textarea>
-        <div class="mensajes-errores" ng-messages="ejercicioForm.ejemplo_salida.$error" ng-if="ejercicioForm.ejemplo_salida.$touched">
-          <p ng-message="minlength">El tamaño minimo es de 5.</p>
-          <p ng-message="maxlength">El tamaño maximo es de 50.</p>
-          <p ng-message="required">Campo obligatorio</p>
+        <div ng-show="ejercicioForm.$submitted || ejercicioForm.ejemplo_salida.$touched">
+            <div ng-show="ejercicioForm.ejemplo_salida.$error.required">
+              <span class='errores'  >El campo es obligatorio</span>
+            </div>
+            <div ng-show="ejercicioForm.ejemplo_salida.$error.minlength">
+              <span class='errores'>El tamaño es mayor a 5</span></div>
+            <div ng-show="ejercicioForm.ejemplo_salida.$error.maxlength">
+              <span class='errores'>El tamaño es menor a 50</span>
+            </div>
         </div>
       </div>
     </div>
 
     <div class="explicacion_problema form-group">
-      <div ng-class="{ 'has-error': ejercicioForm.explicacion_problema.$touched && ejercicioForm.explicacion_problema.$invalid }">
+      <div>
         <label for="">Explicacion Problema</label>
-        <textarea class="form-control" rows="10" placeholder="min 15 - max 200" name='explicacion_problema' ng-model="$ctrl.explicacion_problema"
+        <textarea class="form-control forms" rows="10" placeholder="min 15 - max 200" name='explicacion_problema' ng-model="$ctrl.ejercicio.explicacion_problema"
         ng-minlength="15"
         ng-maxlength="200"
         required></textarea>
-        <div class="mensajes-errores" ng-messages="ejercicioForm.explicacion_problema.$error" ng-if="ejercicioForm.explicacion_problema.$touched">
-          <p ng-message="minlength">El tamaño minimo es de 15.</p>
-          <p ng-message="maxlength">El tamaño maximo es de 200.</p>
-          <p ng-message="required">Campo obligatorio</p>
+        <div ng-show="ejercicioForm.$submitted || ejercicioForm.explicacion_problema.$touched">
+            <div ng-show="ejercicioForm.explicacion_problema.$error.required">
+              <span class='errores'  >El campo es obligatorio</span>
+            </div>
+            <div ng-show="ejercicioForm.explicacion_problema.$error.minlength">
+              <span class='errores'>El tamaño es mayor a 15</span></div>
+            <div ng-show="ejercicioForm.explicacion_problema.$error.maxlength">
+              <span class='errores'>El tamaño es menor a 200</span>
+            </div>
         </div>
       </div>
-
     </div>
 		<back-top scroll-speed=600 button-theme="light"><i class='fa fa-arrow-up fa-2x'></i></back-top>
-    <div uib-alert ng-repeat="alert in $ctrl.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="$ctrl.closeAlert($index)" style="background-color:#31B0D5;color:white">{{alert.msg}}</div>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.addAlert()">Crear</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.borrar_alertas()">Borrar Alertas</button>
+    <button type="button" class="btn btn-default" ng-click="$ctrl.update(ejercicioForm)"><span>Crear</span></button>
+    <button type="button" class="btn btn-default" ng-click="$ctrl.borrar_alertas()" >Borrar Alertas</button>
   </form>

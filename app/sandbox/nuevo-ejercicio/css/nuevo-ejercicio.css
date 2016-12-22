@@ -26,3 +26,43 @@ div.nav-link {
 .mensajes-errores.ng-inactive {
   color: green;
 }
+
+
+  span.nav-links {
+    margin-right: 1%;
+  }
+
+  span.nav-links > a {
+    color: #645F5E
+  }
+
+  div.nav-link {
+    margin-top: 2%;
+    color: #645F5E;
+    border-bottom: solid  rgba(36, 55, 66, 0.25) 1px;
+    padding-bottom: 2%;
+  }
+
+  span.nav-links-button > a {
+    color: white;
+  }
+
+span.errores {
+  color: red;
+}
+
+.formulario input.ng-invalid.ng-touched {
+    border: solid #FA787E 1px;
+  }
+
+  .formulario textarea.ng-invalid.ng-touched {
+      border: solid #FA787E 1px;
+    }
+
+  .formulario input.forms.ng-untouched {
+      border: solid rgb(91, 207, 57) 1px;
+    }
+
+    .formulario textarea.forms.ng-untouched {
+        border: solid rgb(91, 207, 57) 1px;
+      }

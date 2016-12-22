@@ -1,0 +1,24 @@
+<form novalidate class="css-form" name='form'>
+  <label>Name: <input type="text" ng-model="$ctrl.user.name" required name='uName'/></label><br />
+  <div ng-show="form.$submitted || form.uName.$touched">
+      <div ng-show="form.uName.$error.required">Tell us your name.</div>
+  </div>
+  <label>E-mail: <input type="email" ng-model="$ctrl.user.email" required /></label><br />
+  Gender: <label><input type="radio" ng-model="$ctrl.user.gender" value="male" />male</label>
+  <label><input type="radio" ng-model="$ctrl.user.gender" value="female" />female</label><br />
+  <input type="button" ng-click="$ctrl.reset()" value="Reset" />
+  <input type="submit" ng-click="$ctrl.update($ctrl.user)" value="Save" />
+   <input type="button" ng-click="$ctrl.reset_2(form)" value="Reset" />
+</form>
+<pre>user = {{user | json}}</pre>
+<pre>master = {{master | json}}</pre>
+
+<style type="text/css">
+.css-form input.ng-invalid.ng-touched {
+  background-color: #FA787E;
+}
+
+.css-form input.ng-valid.ng-touched {
+  background-color: #78FA89;
+}
+</style>

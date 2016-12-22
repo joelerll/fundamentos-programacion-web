@@ -7,20 +7,13 @@ estudiante que han resuelto el ejercicio
 rank user score country
 discussion?
 -->
-<div class='nav-link'>
-  <div class="btn-group btn-group-justified" role="group" aria-label="...">
-    <div class="btn-group" role="group">
-      <a href="#!/"><button type="button" class="btn btn-default">Ingreso</button></a>
-    </div>
-    <div class="btn-group" role="group">
-      <button type="button" ng-click='$ctrl.$back()' class="btn btn-default">Todos Ejercicios</button>
-    </div>
-  </div>
+<div class="nav-link">
+  <span class='ingreso'><a href="#!/">Inicio sandbox</a></span><span ><i class='icono fa fa-lg fa-chevron-right '></i></span>
+  <span class='todos-ejercicios'><a ng-click='$ctrl.$back()'>Todos los ejercicios</a></span>
 </div>
-
 <div class='contenedor'>
   <div class='row'>
-    <div class='col-lg-8'>
+    <div class=''>
       <h1>{{$ctrl.ejercicio_data.titulo}}</h1>
       <div class='info-autor row'>
         <div class='col-xs-12 col-md-1 col-lg-1'>
@@ -34,6 +27,17 @@ discussion?
         <div class='col-xs-12  col-md-12 col-lg-6 text-md-right'>
           <p class='nombre-autor'>{{$ctrl.autor.nombre}}</p>
         </div>
+      </div>
+
+      <div class='porcentaje-resueltos'>
+        <span>Porcentaje Resueltos: </span>
+        <span>{{$ctrl.ejercicio_data.porcentaje_resueltos}} %</span>
+      </div>
+      <div class='nivel-dificultad-nav'>
+        <span>Dificultad: </span>
+        <span class='dificultad'>
+            <icon  ng-repeat="n in $ctrl.range(1,$ctrl.ejercicio_data.nivel_dificultad)" class='fa fa-star fa-lg'></icon>
+        </span>
       </div>
 
       <section class="ejercicio-declaration card">
@@ -84,18 +88,22 @@ discussion?
           <p>{{ $ctrl.ejercicio.explanation}}</p>
         </article>
       </section>
+      <section class="archivo">
+        <label>Subir archivo</label>
+        <div class='subir'>
+
+          <label class="btn btn-default btn-file">Subir
+            <input type="file" ngf-select="picFile" ng-model="$ctrl.picFile" name="file"
+                   accept="*.py" ngf-max-size="2MB" required
+                   ngf-model-invalid="errorFile" style="display: none;">
+          </label>
+          <button ng-click="$ctrl.picFile = null" class="btn btn-danger" ng-show="$ctrl.picFile">Remove</button>
+          <img ng-show="$ctrl.myForm.file.$valid" ngf-thumbnail="$ctrl.picFile" class="thumb">
+        </section>
+      </div>
     </div>
-    <div class='col-lg-4 nav'>
-        <div class='porcentaje-resueltos'>
-          <span>Porcentaje Resueltos: </span>
-          <span>{{$ctrl.ejercicio_data.porcentaje_resueltos}} %</span>
-        </div>
-        <div class='nivel-dificultad-nav'>
-          <span>Dificultad: </span>
-          <span class='dificultad'>
-              <icon  ng-repeat="n in $ctrl.range(1,$ctrl.ejercicio_data.nivel_dificultad)" class='fa fa-star fa-lg'></icon>
-          </span>
-        </div>
+    <div class='nav'>
+
     </div>
     <back-top scroll-speed=600 button-theme="light"><i class='fa fa-arrow-up fa-2x'></i></back-top>
   </div>

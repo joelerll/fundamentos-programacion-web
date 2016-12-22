@@ -8,6 +8,14 @@ angular.
         self.$back = function() {
           window.history.back();
         };
+        this.mi_archivo = undefined
+        this.mostrarPick = function() {
+          console.log(this.mi_archivo)
+        }
+        this.uploadPic = function(file) {
+          this.mi_archivo = file
+          console.log(this.mi_archivo)
+       }
         self.range = function(min, max, step) {
             step = step || 1;
             var input = [];

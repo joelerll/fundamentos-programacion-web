@@ -94,3 +94,22 @@ div.nav-link {
     background-image: none;
     appearance: none;
   }
+
+  span.nav-links {
+    margin-right: 1%;
+  }
+
+  span.nav-links > a {
+    color: #645F5E
+  }
+
+  div.nav-link {
+    margin-top: 2%;
+    color: #645F5E;
+    border-bottom: solid  rgba(36, 55, 66, 0.25) 1px;
+    padding-bottom: 2%;
+  }
+
+  span.nav-links-button > a {
+    color: white;
+  }

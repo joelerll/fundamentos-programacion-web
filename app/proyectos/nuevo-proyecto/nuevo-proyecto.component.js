@@ -1,12 +1,12 @@
 angular.module('nuevoProyecto').
   component('nuevoProyecto', {
     templateUrl: './nuevo-proyecto/nuevo-proyecto.template.html',
-    controller: ['$log','Upload','$timeout',function NuevoProyectoController($log,Upload, $timeout) {
+    controller: ['$log','Upload','$timeout',"$anchorScroll",function NuevoProyectoController($log,Upload, $timeout,$anchorScroll) {
 			this.titulo = ''
 			this.descripcion = ''
       this.tags = []
 
-      this.htmlContent = ''
+
 
       /*---------------------------------------------------------------------------------*/
       this.today = function() {
@@ -124,9 +124,12 @@ angular.module('nuevoProyecto').
       /*<--------MI ARCHIVO</-------------------------------------------------------------*/
       this.mi_archivo = undefined
       this.mostrarPick = function() {
+        this.noMostrar = true
+
         console.log(this.mi_archivo)
       }
       this.uploadPic = function(file) {
+        this.noMostrar = true
         this.mi_archivo = file
         console.log(this.mi_archivo)
      }
@@ -140,6 +143,9 @@ angular.module('nuevoProyecto').
        this.closeAlert = function(index) {
          this.alerts.splice(index, 1);
        };
+
+       this.alert_terminado = []
+       /*
       this.submit = function() {
         var contador = 0
         if (this.alerts.length != 0) {
@@ -179,10 +185,77 @@ angular.module('nuevoProyecto').
         if (contador == 5) {
           this.alerts.push({type: 'success',msg: 'PROYECTO CREADO'})
         }
-      }
+      }*/
 
       this.borrar_alertas = function() {
         this.alerts = []
+      }
+
+      this.proyecto = {}
+      this.update = function(form) {
+        this.noMostrar = true
+        this.alerts = []
+        this.alert_terminado = []
+        var error = true
+        try {
+          if (this.proyecto.titulo === undefined){
+            this.alerts.push({type: 'danger',msg: 'TITULO NO ESTA CORRECTAMENTE INGRESADO '});
+            console.log('indefinido titulo')
+            error = false
+          }
+        }catch(err){
+          error = false
+          console.log('titulo indefinido')
+          this.alerts.push({type: 'danger',msg: 'TITULO NO ESTA CORRECTAMENTE INGRESADO '});
+        }
+
+        try {
+          if (this.proyecto.tags.length == 0 || this.proyecto.tags === undefined){
+            console.log('tags no ingresado')
+            this.alerts.push({type: 'danger',msg: 'TAGS NO ESTA CORRECTAMENTE INGRESADO '});
+            error = false
+          }
+        }catch(err){
+          error = false
+          console.log('tags indefinido')
+          this.alerts.push({type: 'danger',msg: 'TAGS NO ESTA CORRECTAMENTE INGRESADO '});
+        }
+
+        if (this.alert_terminado.length != 0){
+          this.alert_terminado = []
+        }
+
+        try {
+          if (this.proyecto.htmlContent === undefined || this.proyecto.htmlContent==''){
+            this.alerts.push({type: 'danger',msg: 'DESCRIPCION NO ESTA CORRECTAMENTE INGRESADO '});
+            console.log('indefinido descripcion')
+            error = false
+          }
+        }catch(err){
+          error = false
+          console.log('descripcion indefinido')
+          this.alerts.push({type: 'danger',msg: 'DESCRIPCION NO ESTA CORRECTAMENTE INGRESADO '});
+        }
+
+        if(!error){
+          $anchorScroll();
+        }
+
+        if (error) {
+          this.alerts.push({type: 'success',msg: 'PROYECTO CREADO CORRECTAMENTE'});
+          console.log(this.proyecto)
+          this.proyecto.titulo = ''
+          this.proyecto.tags= []
+          this.proyecto.descripcion = ''
+          this.proyecto.htmlContent = ''
+          this.clear()
+          this.clear_time()
+          form.$setPristine();
+          form.$setUntouched();
+          this.ejercicio = {}
+          this.noMostrar = false
+          $anchorScroll();
+        }
       }
 
     }]

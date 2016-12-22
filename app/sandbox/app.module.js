@@ -4,6 +4,7 @@ angular.module('sandboxApp', [
   'ngTagsInput',
   'ngAnimate',
   'angular.backtop',
+  'ngFileUpload',
   'ejerciciosLista',
   'ejercicioDetalle',
   'profesorElegir',

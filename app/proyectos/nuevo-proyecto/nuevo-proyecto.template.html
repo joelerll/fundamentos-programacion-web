@@ -1,29 +1,32 @@
 <div class='contenedor'>
   <h2>Nuevo Proyecto</h2>
-
+<div uib-alert ng-repeat="alert in $ctrl.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="$ctrl.closeAlert($index)" >{{alert.msg}}</div>
   <form class='formulario' name='proyectoForm' novalidate>
     <div class='titulo form-group'>
-      <div class="form-group" ng-class="{ 'has-error': proyectoForm.titulo.$touched && proyectoForm.titulo.$invalid }">
+      <div class="form-group">
         <label>Titulo</label>
         <input type="text" name="titulo" class="form-control"
-          ng-model="$ctrl.titulo"
+          ng-model="$ctrl.proyecto.titulo"
           ng-minlength="5"
           ng-maxlength="40"
-          required placeholder="min 5 - max 20">
-
-        <div class="mensajes-errores" ng-messages="proyectoForm.titulo.$error" ng-if="proyectoForm.titulo.$touched">
-          <p ng-message="minlength">El tamaño minimo es de 15.</p>
-          <p ng-message="maxlength">El tamaño maximo es de 40.</p>
-          <p ng-message="required">Campo obligatorio</p>
-        </div>
+          required placeholder="min 5 - max 40">
+          <div ng-show="proyectoForm.$submitted || proyectoForm.titulo.$touched">
+              <div ng-show="proyectoForm.titulo.$error.required">
+                <span class='errores' >El campo es obligatorio</span>
+              </div>
+              <div ng-show="proyectoForm.titulo.$error.minlength">
+                <span class='errores'>El tamaño es mayor a 5</span></div>
+              <div ng-show="proyectoForm.titulo.$error.maxlength">
+                <span class='errores'>El tamaño es menor a 40</span>
+              </div>
+          </div>
       </div>
     </div>
 
-
     <div class="tags form-group">
       <div class="form-group" name="tags" ng-class="{ 'has-error': proyectoForm.tags.$touched && proyectoForm.tags.$invalid }">
-        <tags-input ng-model="$ctrl.tags" placeholder='añadir tags (enter)' name='tags'></tags-input>
-        <div ng-messages="{noTags:!$ctrl.tags.length}" ng-if="proyectoForm.titulo.$touched">
+        <tags-input ng-model="$ctrl.proyecto.tags" placeholder='añadir tags (enter)' name='tags'></tags-input>
+        <div ng-messages="{noTags:!$ctrl.proyecto.tags.length}" ng-if="proyectoForm.tags.$touched">
           <div ng-message="noTags" style="color: red">Ingrese al menos un tag</div>
         </div>
       </div>
@@ -31,7 +34,17 @@
 
     <div class="descripcion form-group">
       <label>Descripcion</label>
-      <div text-angular ng-model="$ctrl.htmlContent" ta-toolbar="[['h1','h2','h3','p','pre'],['bold','italics','underline','quote','strikeThrough'],['ul','ol'],['justifyLeft','justifyCenter','justifyRight','justifyFull'],['insertImage','insertLink'],['wordcount']]" name="editor" ta-text-editor-class="border-around" ta-html-editor-class="" style='border: solid #cccccc 1px;'></div>
+      <div text-angular ng-model="$ctrl.proyecto.htmlContent" ta-toolbar="[['h1','h2','h3','p','pre'],['bold','italics','underline','quote','strikeThrough'],['ul','ol'],['justifyLeft','justifyCenter','justifyRight','justifyFull'],['insertImage','insertLink'],['wordcount']]" name="editor" ta-text-editor-class="border-around" ta-html-editor-class="" style='border: solid #cccccc 1px;' require name='htmlContent'></div>
+      <div ng-show="proyectoForm.$submitted || proyectoForm.htmlContent.$touched">
+          <div ng-show="proyectoForm.htmlContent.$error.required">
+            <span class='errores' >El campo es obligatorio</span>
+          </div>
+          <div ng-show="proyectoForm.htmlContent.$error.minlength">
+            <span class='errores'>El tamaño es mayor a 5</span></div>
+          <div ng-show="proyectoForm.htmlContent.$error.maxlength">
+            <span class='errores'>El tamaño es menor a 40</span>
+          </div>
+      </div>
     </div>
 
     <div class="hora-fecha form-group">
@@ -99,13 +112,13 @@
                  accept="*.py" ngf-max-size="2MB" required
                  ngf-model-invalid="errorFile" style="display: none;">
         </label>
-        <button ng-click="$ctrl.picFile = null" class="btn btn-danger" ng-show="$ctrl.picFile">Remove</button>
+        <button ng-click="$ctrl.picFile = null" class="btn btn-danger" ng-show="$ctrl.picFile"  ng-if='!$ctrl.noMostrar'>Remove</button>
         <img ng-show="$ctrl.myForm.file.$valid" ngf-thumbnail="$ctrl.picFile" class="thumb">
       </div>
     </div>
 
-    <div uib-alert ng-repeat="alert in $ctrl.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="$ctrl.closeAlert($index)" >{{alert.msg}}</div>
-    <button type="button" class="btn btn-success" ng-click="$ctrl.submit();$ctrl.uploadPic($ctrl.picFile)">Crear</button>
+    <button type="button" class="btn btn-default" ng-click="$ctrl.update(proyectoForm)"><span>Crear</span></button>
+    <!--<button type="button" class="btn btn-success" ng-click="$ctrl.submit();$ctrl.uploadPic($ctrl.picFile)">Crear</button>-->
     <button type="button" class="btn btn-info" ng-click="$ctrl.borrar_alertas()">Borrar Alertas</button>
   </form>
 </div>

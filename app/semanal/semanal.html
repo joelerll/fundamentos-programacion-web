@@ -123,7 +123,11 @@
     <div id="main">
       <button type="button" class="btn visible-xs" data-toggle="offcanvas"><i class="fa fa-calendar fa-lg"></i></button>
       <div ng-if=estado class="contenido-clase" ng-include="'./templates/nav_clase.html'" onload="item = clase_escogida"></div>
-      
+      <div ng-if=!estado>
+        <h1 style='text-align: center'>Escoga una semana</h1>
+        <i style='margin-left: 10%;color: rgb(144, 244, 226)'class=' fa-arrow-left fa-5x fa animated tada infinite'></i>
+      </div>
+
     </div>
 	</div><!--/row-offcanvas -->
 
