@@ -1,4 +1,4 @@
-angular.module('App', ['ngAnimate','diapoMostar']).
+angular.module('App', ['ngAnimate','diapoMostar','vtortola.ng-terminal','ui.codemirror']).
   controller('ActividadesClasesController', function($scope, $http) {
     $.fn.extend({
         animateCss: function (animationName) {
